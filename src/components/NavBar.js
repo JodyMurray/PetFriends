@@ -6,13 +6,16 @@ import logo from '../assets/logo.png'
 const NavBar = () => {
     return (
         <Navbar className={styles.NavBar} expand="md" fixed="top"><Container>
-            <Navbar.Brand href="#home"><img src={logo} alt="logo" height="50" /></Navbar.Brand>
+            <Navbar.Brand>
+                <img src={logo} alt="logo" height="50" />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
-                    
+                    <Nav.Link href="#link">Sign in</Nav.Link>
+                    <Nav.Link href="#link">Sign up</Nav.Link>
+
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
