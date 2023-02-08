@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Navbar, Nav, Button, Form, FormControl } from 'react-bootstrap'
+import { Container, Navbar, Nav } from 'react-bootstrap'
 import styles from "../styles/NavBar.module.css";
 import logo from '../assets/logo.png'
 
@@ -11,16 +11,11 @@ const NavBar = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link>Home</Nav.Link>
-                    <Nav.Link>Sign in</Nav.Link>
-                    <Nav.Link>Sign up</Nav.Link>
-
+                <Nav className="mx-auto">
+                    <Nav.Link>Home <i class="fas fa-house-chimney-window" fa-bounce></i></Nav.Link>
+                    <Nav.Link>Sign in <i class="fas fa-circle-right"></i></Nav.Link>
+                    <Nav.Link>Sign up <i class="fas fa-square-plus"></i></Nav.Link>
                 </Nav>
-                <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline">Search</Button>
-                </Form>
             </Navbar.Collapse>
         </Container>
         </Navbar>
