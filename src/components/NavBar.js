@@ -9,14 +9,16 @@ const NavBar = () => {
             <Navbar.Brand>
                 <img src={logo} alt="logo" height="50" />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="navbarScroll" className='navbarToggle'/>
+            <Navbar.Collapse id="navbarScroll">
                 <Nav className="mx-auto">
-                    <Nav.Link>Home <i class="fas fa-house-chimney-window" fa-bounce></i></Nav.Link>
+                    <Nav.Link>Home <i class="fas fa-house-chimney-window" ></i></Nav.Link>
                     <Nav.Link>Sign in <i class="fas fa-circle-right"></i></Nav.Link>
                     <Nav.Link>Sign up <i class="fas fa-square-plus"></i></Nav.Link>
                 </Nav>
+
             </Navbar.Collapse>
+        
         </Container>
         </Navbar>
     )
