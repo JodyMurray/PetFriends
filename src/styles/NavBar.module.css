@@ -23,7 +23,10 @@
   display: list-item;
   list-style-type: disc;
   list-style-position: inside;
+  
 }
+
+
 
 .Active i {
   color: rgb(76, 7, 76);
