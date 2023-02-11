@@ -1,6 +1,6 @@
 .App {
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(242, 251, 251);
+    background-color: rgb(249, 251, 251);
     min-height: 100vh;
 }
 
@@ -8,9 +8,17 @@
     box-sizing: border-box;
 }
 
+.Main {
+    padding-top: 85px;
+}
+
 a {
     color: #474444;
     transition: color ease-in-out 0.3s;
+}
+a:hover {
+    text-decoration: none;
+    color: #474444;
 }
 
 a:hover i {
@@ -21,7 +29,7 @@ a:hover i {
 i {
     color: #474444;
     font-size: 1.4rem;
-    padding: 9px;
+    padding: 12px;
     vertical-align: middle;
     font-weight: 400;
 }
