@@ -13,3 +13,18 @@
   transform: scale(1.1);
   transition: all 550ms;
 }
+
+.NavLink {
+  padding: 6px;
+}
+
+.NavLink.Active {
+  color: rgb(76, 7, 76);
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.Active i {
+  color: rgb(76, 7, 76);
+}

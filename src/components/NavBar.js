@@ -16,10 +16,10 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbarToggle' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="my-auto">
-                        <NavLink to="/" className={styles.NavLink}>Home <i class="fas fa-house-chimney-window" ></i></NavLink>
-                        <NavLink to="/signin" className={styles.NavLink}>Sign in <i class="fas fa-circle-right"></i></NavLink>
-                        <NavLink to="/signup" className={styles.NavLink}>Sign up <i class="fas fa-square-plus"></i></NavLink>
-                        <NavLink to="/about" className={styles.NavLink}>About <i class="fa-regular fa-circle-question"></i></NavLink>
+                        <NavLink exact to="/" className={styles.NavLink} activeClassName={styles.Active}>Home <i class="fas fa-house-chimney-window" ></i></NavLink>
+                        <NavLink to="/signin" className={styles.NavLink} activeClassName={styles.Active}>Sign in <i class="fas fa-circle-right"></i></NavLink>
+                        <NavLink to="/signup" className={styles.NavLink} activeClassName={styles.Active}>Sign up <i class="fas fa-square-plus"></i></NavLink>
+                        <NavLink to="/about" className={styles.NavLink} activeClassName={styles.Active}>About <i class="fa-regular fa-circle-question"></i></NavLink>
                     </Nav>
                 </Navbar.Collapse>
 
