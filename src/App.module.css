@@ -1,0 +1,32 @@
+.App {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(242, 251, 251);
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #474444;
+    transition: color ease-in-out 0.3s;
+}
+
+a:hover i {
+    color: rgb(41, 2, 43);
+    transition: color ease-in-out 0.4s;
+}
+
+i {
+    color: #474444;
+    font-size: 1.4rem;
+    padding: 9px;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+i:hover {
+    cursor: pointer;
+    transition: color ease-in-out 0.4s;
+}
