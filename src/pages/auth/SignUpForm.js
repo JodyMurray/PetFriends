@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import btnStyles from "../../styles/Button.module.css";
 import styles from "../../styles/SignInUpForm.module.css";
@@ -7,6 +7,12 @@ import { Form, Button, Image, Col, Row, Container } from "react-bootstrap";
 
 
 const SignUpForm = () => {
+    const [signUpData, setSignUpData] = useState({
+        username:"",
+        password1:"",
+        password2:""
+    })
+const {username, password1, password2} = signUpData;
     return (
         <Row className={styles.Row}>
             <Col
@@ -23,17 +29,32 @@ const SignUpForm = () => {
                     <Form>
                         <Form.Group controlId="username">
                             <Form.Label className="d-none">Username </Form.Label>
-                            <Form.Control className={styles.Input} type="text" placeholder="Username" name="username" />
+                            <Form.Control 
+                            className={styles.Input} 
+                            type="text" 
+                            placeholder="Username" 
+                            name="username"
+                            value={username} />
 
                         </Form.Group>
 
                         <Form.Group controlId="password1">
                             <Form.Label className="d-none">Password </Form.Label>
-                            <Form.Control className={styles.Input} type="password" placeholder="Password" name="password1" />
+                            <Form.Control 
+                            className={styles.Input} 
+                            type="password" 
+                            placeholder="Password" 
+                            name="password1" 
+                            value={password1}/>
                         </Form.Group>
                         <Form.Group controlId="password2">
                             <Form.Label className="d-none">Password </Form.Label>
-                            <Form.Control className={styles.Input} type="password" placeholder="Confirm Password" name="password2" />
+                            <Form.Control 
+                            className={styles.Input} 
+                            type="password" 
+                            placeholder="Confirm Password" 
+                            name="password2" 
+                            value={password2}/>
                         </Form.Group>
                         <Button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Light}`} type="submit">
                             Sign up
