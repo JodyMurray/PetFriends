@@ -13,6 +13,7 @@
     opacity: 0.8;
     border-color: transparent;
     cursor: pointer;
+    background-color: #cd88f7 !important;
 }
 
 .Button:hover:active {
@@ -24,6 +25,14 @@
 }
 
 .Button:focus {
-    background-color: #7a21b2;
+    background-color: #862bbe;
 }
 
+.Wide {
+    padding: 10px 50px;
+    width: 100%;
+}
+.Light {
+    background-color: #ddc6ec;
+    color: #5f1190;
+  }

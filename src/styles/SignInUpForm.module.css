@@ -3,8 +3,8 @@
 }
 
 .Input {
-    background: rgb(177, 246, 246);
-    border: 1px solid #7a21b2;
+    background: rgb(250, 243, 250);
+    border: 1px solid #dfcceb;
     box-sizing: border-box;
     border-radius: 5px;
     color: #9271a1;
@@ -44,4 +44,9 @@
 
 .SignUpCol {
     height: 350px;
+    
+}
+.FillerImage {
+    border-radius: 1%;
+    
 }
