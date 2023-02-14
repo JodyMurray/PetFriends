@@ -14,7 +14,6 @@
 
 
 .FillerImage {
-    padding-top: 4%;
     width: 80;
 }   
 
@@ -52,6 +51,12 @@
     height: 350px;
 }
 .FillerImage {
-    border-radius: 1%;
-    
+    border-radius: 4px;
+    margin-top: 15px;
+    height: 95%;
 }
+.FillerImage2 {
+    border-radius: 1%;
+    width: 90%;
+    height: 95%;
+}  
