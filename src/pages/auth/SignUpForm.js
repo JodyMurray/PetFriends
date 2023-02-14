@@ -46,14 +46,14 @@ const SignUpForm = () => {
     return (
         <Row className={styles.Row}>
             <Col
-                md={8}
+                md={7}
                 className={`my-auto d-none d-md-block p-6 ${styles.SignUpCol}`}>
                 <Image
                     className={`${styles.FillerImage}`}
                     src={"https://res.cloudinary.com/dmqu7iqfu/image/upload/v1676112304/friends_jvsfbh.png"}
                 />
             </Col>
-            <Col className="my-auto py-2 p-md-2" md={4}>
+            <Col className="my-auto py-2 p-md-3" md={4}>
                 <Container className={`${styles.Content} p-4 `}>
                     <h1 className={styles.Header}>Sign up</h1>
                     <Form onSubmit={handleSubmit}>

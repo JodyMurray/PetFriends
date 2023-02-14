@@ -10,11 +10,14 @@
 }
 
 .Button:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     border-color: transparent;
     cursor: pointer;
-    background-color: #cd88f7 !important;
+    background-color: #a04cd4 !important;
+    transform: scale(1.05);
+    transition: all 0.8s;
 }
+
 
 .Button:hover:active {
     background-color: #7a21b2 !important;
@@ -32,7 +35,8 @@
     padding: 10px 50px;
     width: 100%;
 }
+
 .Light {
     background-color: #ddc6ec;
     color: #5f1190;
-  }
+}

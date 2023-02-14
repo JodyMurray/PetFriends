@@ -1,5 +1,5 @@
 .Row {
-    height: calc(100vh - 90px);
+    height: calc(95vh - 90px);
 }
 
 .Input {
@@ -12,13 +12,19 @@
     padding: 10px;
 }
 
+
+.FillerImage {
+    padding-top: 4%;
+    width: 80;
+}   
+
 .Header {
-    font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'Hanken Grotesk', sans-serif;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.5em;
     text-transform: uppercase;
     color: #7a21b2;
 }
@@ -44,7 +50,6 @@
 
 .SignUpCol {
     height: 350px;
-    
 }
 .FillerImage {
     border-radius: 1%;
