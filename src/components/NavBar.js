@@ -14,7 +14,29 @@ const NavBar = () => {
             <i class="fa-regular fa-square-plus"></i>
         </NavLink>
     )
-    const loggedInIcons = <>{currentUser?.username}</>
+    const loggedInIcons = <>
+        <NavLink to="/pawfeed"
+            className={styles.NavLink}>PawFeed
+            <i class="fa-solid fa-paw"></i>
+        </NavLink>
+        <NavLink to="/saved"
+            className={styles.NavLink}>Saved
+            <i class="fa-solid fa-bookmark"></i>
+        </NavLink>
+        <NavLink to="/"
+            onClick={() => { }}
+            className={styles.NavLink}>Sign out
+
+            <i class="fa-solid fa-door-open"></i>
+        </NavLink>
+        <NavLink to={`/profiles/${currentUser?.profile_id}`}
+            className={styles.NavLink}>
+            <img src={currentUser?.profile_image} />
+
+            <i class="fa-solid fa-door-open"></i>
+        </NavLink>
+
+    </>
     const loggedOutIcons = (
         <>
             <NavLink to="/signin"
@@ -53,7 +75,9 @@ const NavBar = () => {
                             <i class="fa-regular fa-circle-question">
                             </i>
                         </NavLink>
+
                     </Nav>
+
                 </Navbar.Collapse>
                 {currentUser && newPostIcon}
                 {currentUser ? loggedInIcons : loggedOutIcons}
