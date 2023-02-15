@@ -1,10 +1,16 @@
 import React from 'react'
 import styles from '../styles/Avatar.module.css'
 
-const Avatar = (props) => {
-  return (
-    <div>Avatar</div>
-  )
+const Avatar = ({ src, height = 40, text }) => {
+
+    return (
+        <span>
+            <img className={styles.Avatar} src={src}
+                height={height} width={height} alt='avatar'
+            />
+            {text}
+        </span>
+    )
 }
 
 export default Avatar

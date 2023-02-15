@@ -4,13 +4,13 @@ import styles from "../styles/NavBar.module.css";
 import logo from '../assets/logo.png'
 import { NavLink } from "react-router-dom"
 import { useCurrentUser } from '../contexts/CurrentUserContext';
+import Avatar from './Avatar';
 
 const NavBar = () => {
     const currentUser = useCurrentUser();
     const newPostIcon = (
         <NavLink to="/posts/create"
-            className={styles.NavLink}
-            activeClassName={styles.Active}>
+            className={styles.NavLink}>
             <i class="fa-regular fa-square-plus"></i>
         </NavLink>
     )
@@ -27,13 +27,11 @@ const NavBar = () => {
             onClick={() => { }}
             className={styles.NavLink}>Sign out
 
-            <i class="fa-solid fa-door-open"></i>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </NavLink>
         <NavLink to={`/profiles/${currentUser?.profile_id}`}
             className={styles.NavLink}>
-            <img src={currentUser?.profile_image} />
-
-            <i class="fa-solid fa-door-open"></i>
+            <Avatar src={currentUser?.profile_image} text='Pawfile' height={40} />
         </NavLink>
 
     </>
