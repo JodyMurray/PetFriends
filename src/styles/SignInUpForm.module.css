@@ -12,11 +12,6 @@
     padding: 10px;
 }
 
-
-.FillerImage {
-    width: 80;
-}
-
 .Header {
     font-weight: bold;
     font-size: 15px;
@@ -61,4 +56,3 @@
     -webkit-box-shadow: 10px 10px 5px #ccc;
     -khtml-box-shadow: 10px 10px 5px #ccc;
 }
-

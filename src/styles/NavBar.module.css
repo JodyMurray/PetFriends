@@ -16,6 +16,8 @@
 
 .NavLink {
   padding: 6px;
+  font-weight: 500;
+  letter-spacing: 1;
 }
 
 .NavLink.Active {
@@ -23,10 +25,7 @@
   display: list-item;
   list-style-type: disc;
   list-style-position: inside;
-  
 }
-
-
 
 .Active i {
   color: rgb(76, 7, 76);
