@@ -15,7 +15,7 @@
 
 .FillerImage {
     width: 80;
-}   
+}
 
 .Header {
     font-weight: bold;
@@ -50,13 +50,15 @@
 .SignUpCol {
     height: 350px;
 }
+
 .FillerImage {
     border-radius: 4px;
     margin-top: 15px;
-    height: 95%;
-}
-.FillerImage2 {
-    border-radius: 1%;
     width: 90%;
     height: 95%;
-}  
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+

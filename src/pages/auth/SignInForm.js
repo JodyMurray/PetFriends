@@ -51,13 +51,13 @@ const SignInForm = () => {
                 md={7}
                 className={`my-auto d-none d-md-block p-6 ${styles.SignUpCol}`}>
                 <Image
-                    className={`${styles.FillerImage2}`}
-                    src={"https://res.cloudinary.com/dmqu7iqfu/image/upload/v1676395293/dog_opsdxf.jpg"}
+                    className={`${styles.FillerImage}`}
+                    src={"https://res.cloudinary.com/dmqu7iqfu/image/upload/v1676446767/pets_l8zebk.png"}
                 />
             </Col>
             <Col className="my-auto py-2 p-md-3" md={4}>
                 <Container className={`${styles.Content} p-4 `}>
-                    <h1 className={styles.Header}>Sign up</h1>
+                    <h1 className={styles.Header}>Sign in</h1>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group controlId="username">
                             <Form.Label className="d-none">Username </Form.Label>
