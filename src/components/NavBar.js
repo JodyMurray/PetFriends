@@ -7,11 +7,26 @@ import { useCurrentUser } from '../contexts/CurrentUserContext';
 
 const NavBar = () => {
     const currentUser = useCurrentUser();
+    const newPostIcon = (
+        <NavLink to="/posts/create"
+            className={styles.NavLink}
+            activeClassName={styles.Active}>
+            <i class="fa-regular fa-square-plus"></i>
+        </NavLink>
+    )
     const loggedInIcons = <>{currentUser?.username}</>
     const loggedOutIcons = (
         <>
-            <NavLink to="/signin" className={styles.NavLink} activeClassName={styles.Active}>Sign in <i class="fas fa-circle-right"></i></NavLink>
-            <NavLink to="/signup" className={styles.NavLink} activeClassName={styles.Active}>Sign up <i class="fas fa-square-plus"></i>
+            <NavLink to="/signin"
+                className={styles.NavLink}
+                activeClassName={styles.Active}>Sign in
+                <i class="fas fa-circle-right"></i>
+            </NavLink>
+            <NavLink to="/signup"
+                className={styles.NavLink}
+                activeClassName={styles.Active}>Sign up
+                <i class="fas fa-square-plus">
+                </i>
             </NavLink>
         </>
     );
@@ -32,7 +47,6 @@ const NavBar = () => {
                             <i class="fas fa-house-chimney-window" >
                             </i>
                         </NavLink>
-                        {currentUser ? loggedInIcons : loggedOutIcons}
                         <NavLink to="/about"
                             className={styles.NavLink}
                             activeClassName={styles.Active}>About
@@ -41,7 +55,8 @@ const NavBar = () => {
                         </NavLink>
                     </Nav>
                 </Navbar.Collapse>
-
+                {currentUser && newPostIcon}
+                {currentUser ? loggedInIcons : loggedOutIcons}
             </Container>
         </Navbar>
     )
