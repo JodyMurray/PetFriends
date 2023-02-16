@@ -70,7 +70,7 @@ const NavBar = () => {
                         <img src={logo} alt="logo" height="50" />
                     </Navbar.Brand>
                 </NavLink>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbarToggle' />
+                <Navbar.Toggle onClick={()=> setExpanded(!expanded)} aria-controls="responsive-navbar-nav" className='navbarToggle' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="my-auto">
 
