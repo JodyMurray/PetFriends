@@ -3,11 +3,21 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import styles from "../styles/NavBar.module.css";
 import logo from '../assets/logo.png'
 import { NavLink } from "react-router-dom"
-import { useCurrentUser } from '../contexts/CurrentUserContext';
+import { useCurrentUser, useSetCurrentUser } from '../contexts/CurrentUserContext';
 import Avatar from './Avatar';
+import axios from 'axios';
 
 const NavBar = () => {
     const currentUser = useCurrentUser();
+    const setCurrentUser = useSetCurrentUser();
+    const handleSignOut = async () => {
+        try {
+            await axios.post("dj-rest-auth/logout/");
+            setCurrentUser(null);
+        } catch (err) {
+            console.log(err);
+        }
+    };
     const newPostIcon = (
         <NavLink to="/posts/create"
             className={styles.NavLink}>
@@ -23,12 +33,11 @@ const NavBar = () => {
             className={styles.NavLink}>Saved
             <i class="fa-solid fa-bookmark"></i>
         </NavLink>
-        <NavLink to="/"
-            onClick={() => { }}
-            className={styles.NavLink}>Sign out
-
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out
         </NavLink>
+
+
         <NavLink to={`/profiles/${currentUser?.profile_id}`}
             className={styles.NavLink}>
             <Avatar src={currentUser?.profile_image} text='Pawfile' height={40} />
