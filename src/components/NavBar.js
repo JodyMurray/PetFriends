@@ -34,14 +34,15 @@ const NavBar = () => {
             <i class="fa-solid fa-bookmark"></i>
         </NavLink>
         <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out
+            Sign out
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </NavLink>
-
 
         <NavLink to={`/profiles/${currentUser?.profile_id}`}
-            className={styles.NavLink}>
+            className={`${styles.NavLink} ${styles.Pawfile}`}>
             <Avatar src={currentUser?.profile_image} text='Pawfile' height={40} />
         </NavLink>
+        {currentUser && newPostIcon}
 
     </>
     const loggedOutIcons = (
@@ -70,12 +71,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbarToggle' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="my-auto">
-                        <NavLink exact to="/"
-                            className={styles.NavLink}
-                            activeClassName={styles.Active}>Home
-                            <i class="fas fa-house-chimney-window" >
-                            </i>
-                        </NavLink>
+
                         <NavLink to="/about"
                             className={styles.NavLink}
                             activeClassName={styles.Active}>About
@@ -85,9 +81,9 @@ const NavBar = () => {
 
                     </Nav>
 
+                    {currentUser ? loggedInIcons : loggedOutIcons}
                 </Navbar.Collapse>
-                {currentUser && newPostIcon}
-                {currentUser ? loggedInIcons : loggedOutIcons}
+
             </Container>
         </Navbar>
     )
