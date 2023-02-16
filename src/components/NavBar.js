@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import styles from "../styles/NavBar.module.css";
 import logo from '../assets/logo.png'
@@ -10,6 +10,8 @@ import axios from 'axios';
 const NavBar = () => {
     const currentUser = useCurrentUser();
     const setCurrentUser = useSetCurrentUser();
+
+    const [expanded, setExpanded] = useState(false);
     const handleSignOut = async () => {
         try {
             await axios.post("dj-rest-auth/logout/");
@@ -61,7 +63,7 @@ const NavBar = () => {
         </>
     );
     return (
-        <Navbar className={styles.NavBar} expand="md" fixed="top">
+        <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
             <Container>
                 <NavLink to="/">
                     <Navbar.Brand className={styles.NavLink}>
