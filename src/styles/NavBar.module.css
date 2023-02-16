@@ -17,9 +17,6 @@
 .NavLink {
   padding: 6px;
   font-weight: 500;
-  /* padding: 1px;
-  line-height: 3; */
-  letter-spacing: 1%;
 }
 
 .NavLink.Active {
@@ -33,5 +30,7 @@
   color: rgb(76, 7, 76);
 }
 .Pawfile {
-  margin-left: 25%;
+  position: relative;
+  left: 40%;
 }
+

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import styles from "../styles/NavBar.module.css";
 import logo from '../assets/logo.png'
@@ -6,12 +6,18 @@ import { NavLink } from "react-router-dom"
 import { useCurrentUser, useSetCurrentUser } from '../contexts/CurrentUserContext';
 import Avatar from './Avatar';
 import axios from 'axios';
+import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
+
+
+
 
 const NavBar = () => {
     const currentUser = useCurrentUser();
     const setCurrentUser = useSetCurrentUser();
 
-    const [expanded, setExpanded] = useState(false);
+    const { expanded, setExpanded, ref } = useClickOutsideToggle();
+
+
     const handleSignOut = async () => {
         try {
             await axios.post("dj-rest-auth/logout/");
@@ -27,24 +33,30 @@ const NavBar = () => {
         </NavLink>
     )
     const loggedInIcons = <>
-        <NavLink to="/pawfeed"
+        <NavLink
+            to="/pawfeed"
+            activeClassName={styles.Active}
             className={styles.NavLink}>PawFeed
             <i class="fa-solid fa-paw"></i>
         </NavLink>
-        <NavLink to="/saved"
+        <NavLink
+            to="/saved"
             className={styles.NavLink}>Saved
             <i class="fa-solid fa-bookmark"></i>
         </NavLink>
-        <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
+        <NavLink className={styles.NavLink}
+            to="/"
+            onClick={handleSignOut}>
             Sign out
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </NavLink>
 
-        <NavLink to={`/profiles/${currentUser?.profile_id}`}
+        <NavLink
+            to={`/profiles/${currentUser?.profile_id}`}
             className={`${styles.NavLink} ${styles.Pawfile}`}>
             <Avatar src={currentUser?.profile_image} text='Pawfile' height={40} />
         </NavLink>
-        {currentUser && newPostIcon}
+
 
     </>
     const loggedOutIcons = (
@@ -70,9 +82,15 @@ const NavBar = () => {
                         <img src={logo} alt="logo" height="50" />
                     </Navbar.Brand>
                 </NavLink>
-                <Navbar.Toggle onClick={()=> setExpanded(!expanded)} aria-controls="responsive-navbar-nav" className='navbarToggle' />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="my-auto">
+                {currentUser && newPostIcon}
+                <Navbar.Toggle
+                    ref={ref}
+                    onClick={() => setExpanded(!expanded)}
+                    aria-controls="responsive-navbar-nav"
+                    className='navbarToggle' />
+                <Navbar.Collapse id="responsive-navbar-nav" >
+
+                    <Nav className="my-auto text-center">
 
                         <NavLink to="/about"
                             className={styles.NavLink}
@@ -80,12 +98,9 @@ const NavBar = () => {
                             <i class="fa-regular fa-circle-question">
                             </i>
                         </NavLink>
-
+                        {currentUser ? loggedInIcons : loggedOutIcons}
                     </Nav>
-
-                    {currentUser ? loggedInIcons : loggedOutIcons}
                 </Navbar.Collapse>
-
             </Container>
         </Navbar>
     )
