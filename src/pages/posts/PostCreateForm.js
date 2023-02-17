@@ -20,6 +20,10 @@ function PostCreateForm() {
 
     const textFields = (
         <div className="text-center">
+            <Form.Group>
+                <Form.Label>Title</Form.Label>
+                <Form.Control type="text" name="title" />
+            </Form.Group>
             <Button className={`${btnStyles.Button} ${btnStyles.Light}`} type="submit">
                 create
             </Button>
