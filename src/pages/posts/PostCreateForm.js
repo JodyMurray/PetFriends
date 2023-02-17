@@ -11,6 +11,7 @@ import Upload from "../../assets/upload.png";
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
+import Asset from "../../components/Asset";
 
 function PostCreateForm() {
 
@@ -46,6 +47,7 @@ function PostCreateForm() {
                                 className="d-flex justify-content-center"
                                 htmlFor="image-upload"
                             >
+                                <Asset src={Upload} message="Upload an image here!" />
                             </Form.Label>
                         </Form.Group>
                         <div className="d-md-none">{textFields}</div>
