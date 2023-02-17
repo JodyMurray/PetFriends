@@ -24,6 +24,10 @@ function PostCreateForm() {
                 <Form.Label>Title</Form.Label>
                 <Form.Control type="text" name="title" />
             </Form.Group>
+            <Form.Group>
+                <Form.Label>Content</Form.Label>
+                <Form.Control as="textarea" rows={7} name="content" />
+            </Form.Group>
             <Button className={`${btnStyles.Button} ${btnStyles.Light}`} type="submit">
                 create
             </Button>
