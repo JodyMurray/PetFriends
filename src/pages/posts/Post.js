@@ -1,4 +1,5 @@
 import React from 'react'
+import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import styles from '../../styles/Post.module.css';
 
 const Post = (props) => {
@@ -20,7 +21,9 @@ const Post = (props) => {
         postFeed,
     } = props;
 
-    
+    const currentUser = useCurrentUser();
+    const is_owner = currentUser?.username === owner;
+
     return (
         <div>Post</div>
     )
