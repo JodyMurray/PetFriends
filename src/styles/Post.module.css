@@ -1,0 +1,24 @@
+.Post {
+    background-color: rgba(249, 251, 251);
+    border: 1px solid #dadadf;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.Post figure,
+h5 {
+    margin: 0 0;
+}
+
+.Paw {
+    color: #e996ef;
+}
+
+.Paw:hover {
+    color: #9e0785;
+}
+
+.PawOutline:hover {
+    color: #e996ef;
+}
