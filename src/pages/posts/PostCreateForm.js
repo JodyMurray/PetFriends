@@ -42,6 +42,7 @@ function PostCreateForm() {
             });
         }
     };
+
     const [errors, setErrors] = useState({});
 
 
@@ -106,10 +107,13 @@ function PostCreateForm() {
                                     />
                                 </Form.Label>
                             )}
-                            <Form.File
+                            <Form.Control
+                                className="d-none"
+                                type="file"
                                 id="image-upload"
                                 accept="image/*"
                                 onChange={handleChangeImage}
+                                ref={imageInput}
                             />
                         </Form.Group>
                         <div className="d-md-none">{textFields}</div>

@@ -12,6 +12,12 @@
     padding-top: 85px;
 }
 
+.Image {
+    max-height: 40vh;
+    max-width: 100%;
+    object-fit: contain;
+}
+
 a {
     color: #474444;
     transition: color ease-in-out 0.3s;
