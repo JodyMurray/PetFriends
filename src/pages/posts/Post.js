@@ -45,6 +45,10 @@ const Post = (props) => {
             <Link to={`/posts/${id}`}>
                 <Card.Img src={image} alt={title} />
             </Link>
+            <Card.Body>
+                {title && <Card.Title classname='text-center'>{title}</Card.Title>}
+                {content && <Card.Text>{content}</Card.Text>}
+            </Card.Body>
         </Card>
     )
 }
