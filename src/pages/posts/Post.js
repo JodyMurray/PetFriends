@@ -55,13 +55,46 @@ const Post = (props) => {
                         </OverlayTrigger>
                     ) : vote_id ? (
                         <span onClick={() => { }}>
-                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i className={`fa-solid fa-thumbs-up${styles.Upvote}`} />
                         </span>
+                    ) : currentUser ? (
+                        <span onClick={() => { }}>
+                            <i className={`fa-regular fa-thumbs-up${styles.UpvoteOutline}`} />
+                        </span>
+                    ) : (
+                        <OverlayTrigger placement='right' overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}>
+                            <i class="fa-regular fa-thumbs-up" />
+                        </OverlayTrigger>
                     )}
+                
+                {votes_count}
+                
+                    {is_owner ? (
+                        <OverlayTrigger placement="bottom" overlay={<Tooltip>You cannot vote your own post!</Tooltip>}>
+                            <i class="fa-regular fa-thumbs-down" />
+                        </OverlayTrigger>
+                    ) : vote_id ? (
+                        <span onClick={() => { }}>
+                            <i className={`fa-solid fa-thumbs-down${styles.Downvote}`} />
+                        </span>
+                    ) : currentUser ? (
+                        <span onClick={() => { }}>
+                            <i className={`fa-regular fa-thumbs-down${styles.DownvoteOutline}`} />
+                        </span>
+                    ) : (
+                        <OverlayTrigger placement='top' overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}>
+                            <i class="fa-regular fa-thumbs-down" />
+                        </OverlayTrigger>
+                    )}
+                    {downvotes_count}
+                    <Link to={`/posts/${id}`}>
+                        <i class="fa-regular fa-comment-dots" />
+                    </Link>
+                    {reply_count}
                 </div>
             </Card.Body>
         </Card>
-    )
-}
+    );
+};
 
 export default Post
