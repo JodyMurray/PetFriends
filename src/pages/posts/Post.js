@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Media } from 'react-bootstrap';
+import { Card, Media, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import styles from '../../styles/Post.module.css';
@@ -48,6 +48,17 @@ const Post = (props) => {
             <Card.Body>
                 {title && <Card.Title classname='text-center'>{title}</Card.Title>}
                 {content && <Card.Text>{content}</Card.Text>}
+                <div className={styles.PostSection}>
+                    {is_owner ? (
+                        <OverlayTrigger placement="top" overlay={<Tooltip>You cannot vote your own post!</Tooltip>}>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                        </OverlayTrigger>
+                    ) : vote_id ? (
+                        <span onClick={() => { }}>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </span>
+                    )}
+                </div>
             </Card.Body>
         </Card>
     )
