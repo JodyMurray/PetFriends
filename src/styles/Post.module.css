@@ -11,14 +11,26 @@ h5 {
     margin: 0 0;
 }
 
-.Paw {
+.Upvote {
     color: #e996ef;
 }
 
-.Paw:hover {
+.Upvote:hover {
     color: #9e0785;
 }
 
-.PawOutline:hover {
+.UpvoteOutline:hover {
     color: #e996ef;
+}
+
+.Downvote {
+    color: rgb(3, 124, 124);
+}
+
+.Downvote:hover {
+    color: rgb(29, 215, 215);
+}
+
+.DownvoteOutline:hover {
+    color: rgb(7, 108, 108);
 }
