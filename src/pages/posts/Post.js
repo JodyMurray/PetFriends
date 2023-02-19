@@ -1,4 +1,6 @@
 import React from 'react'
+import { Card, Media } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import styles from '../../styles/Post.module.css';
 
@@ -25,7 +27,13 @@ const Post = (props) => {
     const is_owner = currentUser?.username === owner;
 
     return (
-        <div>Post</div>
+        <Card className={styles.Post}>
+            <Card.Body>
+                <Media className='align-items-center justify-content-between'>
+                    <Link to={`/profiles/${profile_id}`}></Link>
+                </Media>
+            </Card.Body>
+        </Card>
     )
 }
 
