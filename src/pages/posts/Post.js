@@ -17,6 +17,7 @@ const Post = (props) => {
         downvotes_count,
         vote_id,
         saved_id,
+        saved_count,
         downvotes_id,
         title,
         content,
@@ -39,6 +40,23 @@ const Post = (props) => {
                     <div className='d-flex align-items-center'>
                         <span>{updated_at}</span>
                         {is_owner && postFeed && '...'}
+                        {is_owner ? (
+                            <OverlayTrigger placement="bottom" overlay={<Tooltip>You cannot save your own post!</Tooltip>}>
+                                <i class="fa-regular fa-bookmark" />
+                            </OverlayTrigger>
+                        ) : saved_id ? (
+                            <span onClick={() => { }}>
+                                <i className={`fa-solid fa-bookmark${styles.Downvote}`} />
+                            </span>
+                        ) : currentUser ? (
+                            <span onClick={() => { }}>
+                                <i className={`fa-regular fa-bookmark${styles.DownvoteOutline}`} />
+                            </span>
+                        ) : (
+                            <OverlayTrigger placement='top' overlay={<Tooltip>Sign in to save posts!</Tooltip>}>
+                                <i class="fa-regular fa-bookmark" />
+                            </OverlayTrigger>
+                        )}
                     </div>
                 </Media>
             </Card.Body>
@@ -66,14 +84,14 @@ const Post = (props) => {
                             <i class="fa-regular fa-thumbs-up" />
                         </OverlayTrigger>
                     )}
-                
-                {votes_count}
-                
+
+                    {votes_count}
+
                     {is_owner ? (
                         <OverlayTrigger placement="bottom" overlay={<Tooltip>You cannot vote your own post!</Tooltip>}>
                             <i class="fa-regular fa-thumbs-down" />
                         </OverlayTrigger>
-                    ) : vote_id ? (
+                    ) : downvotes_id ? (
                         <span onClick={() => { }}>
                             <i className={`fa-solid fa-thumbs-down${styles.Downvote}`} />
                         </span>
@@ -87,6 +105,7 @@ const Post = (props) => {
                         </OverlayTrigger>
                     )}
                     {downvotes_count}
+
                     <Link to={`/posts/${id}`}>
                         <i class="fa-regular fa-comment-dots" />
                     </Link>
