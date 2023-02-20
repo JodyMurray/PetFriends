@@ -12,25 +12,37 @@ h5 {
 }
 
 .Upvote {
-    color: #e996ef;
+    color: rgb(135, 16, 135);
 }
 
 .Upvote:hover {
-    color: #9e0785;
+    color: rgb(163, 33, 163);
 }
 
 .UpvoteOutline:hover {
-    color: #e996ef;
+    color: rgb(135, 16, 135);
 }
 
 .Downvote {
-    color: rgb(3, 124, 124);
+    color: rgb(7, 108, 108);
 }
 
 .Downvote:hover {
-    color: rgb(29, 215, 215);
+    color: rgb(21, 197, 197);
 }
 
 .DownvoteOutline:hover {
     color: rgb(7, 108, 108);
+}
+
+.Bookmark {
+    color: rgb(7, 108, 108);
+}
+
+.Bookmark:hover {
+    color: rgb(29, 215, 215);
+}
+
+.BookmarkOutline:hover {
+    color: rgb(20, 111, 111);
 }

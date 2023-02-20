@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import appStyles from "../../App.module.css";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { useParams } from "react-router"; 
 import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
 
@@ -35,7 +35,7 @@ function PostsFeed() {
             </Col>
             <Col className="py-2 p-0 p-lg-2" lg={8}>
                 <p>Profiles</p>
-                <Post {...post.results[0]} setPosts={setPost} postFeed />
+                <Post {...post.results[0]} setPosts={setPost} postsFeed />
                 <Container className={appStyles.Content}>
                     Comments..
                 </Container>

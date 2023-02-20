@@ -1,8 +1,8 @@
-import React from 'react';
-import { Card, Media, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { useCurrentUser } from '../../contexts/CurrentUserContext';
-import styles from '../../styles/Post.module.css';
+import React from "react";
+import styles from "../../styles/Post.module.css";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 
 
@@ -23,7 +23,7 @@ const Post = (props) => {
         content,
         image,
         updated_at,
-        postFeed,
+        postsFeed,
     } = props;
 
     const currentUser = useCurrentUser();
@@ -33,28 +33,28 @@ const Post = (props) => {
         <Card className={styles.Post}>
             <Card.Body>
                 <Media className='align-items-center justify-content-between'>
-                    <Link to={`/profiles/${profile_id}`}>
+                    <Link to={`/profiles/ ${profile_id}`}>
                         <Avatar src={profile_image} height={50} />
                         {owner}
                     </Link>
                     <div className='d-flex align-items-center'>
                         <span>{updated_at}</span>
-                        {is_owner && postFeed && '...'}
+                        {is_owner && postsFeed && '...'}
                         {is_owner ? (
-                            <OverlayTrigger placement="bottom" overlay={<Tooltip>You cannot save your own post!</Tooltip>}>
+                            <OverlayTrigger placement="top" overlay={<Tooltip>You cannot save your own post!</Tooltip>}>
                                 <i class="fa-regular fa-bookmark" />
                             </OverlayTrigger>
                         ) : saved_id ? (
                             <span onClick={() => { }}>
-                                <i className={`fa-solid fa-bookmark${styles.Downvote}`} />
+                                <i className={`fa-solid fa-bookmark ${styles.Bookmark}`} />
                             </span>
                         ) : currentUser ? (
                             <span onClick={() => { }}>
-                                <i className={`fa-regular fa-bookmark${styles.DownvoteOutline}`} />
+                                <i className={`fa-regular fa-bookmark ${styles.BookmarkOutline}`} />
                             </span>
                         ) : (
                             <OverlayTrigger placement='top' overlay={<Tooltip>Sign in to save posts!</Tooltip>}>
-                                <i class="fa-regular fa-bookmark" />
+                                <i className="fa-regular fa-bookmark" />
                             </OverlayTrigger>
                         )}
                     </div>
@@ -67,47 +67,58 @@ const Post = (props) => {
                 {title && <Card.Title classname='text-center'>{title}</Card.Title>}
                 {content && <Card.Text>{content}</Card.Text>}
                 <div className={styles.PostSection}>
+
                     {is_owner ? (
-                        <OverlayTrigger placement="top" overlay={<Tooltip>You cannot vote your own post!</Tooltip>}>
-                            <i class="fa-regular fa-thumbs-up"></i>
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={<Tooltip>You can't vote for your own post!</Tooltip>}
+                        >
+                            <i className="far fa-thumbs-up" />
                         </OverlayTrigger>
                     ) : vote_id ? (
                         <span onClick={() => { }}>
-                            <i className={`fa-solid fa-thumbs-up${styles.Upvote}`} />
+                            <i className={`fas fa-thumbs-up ${styles.Upvote}`} />
                         </span>
                     ) : currentUser ? (
                         <span onClick={() => { }}>
-                            <i className={`fa-regular fa-thumbs-up${styles.UpvoteOutline}`} />
+                            <i className={`far fa-thumbs-up ${styles.UpvoteOutline}`} />
                         </span>
                     ) : (
-                        <OverlayTrigger placement='right' overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}>
-                            <i class="fa-regular fa-thumbs-up" />
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}
+                        >
+                            <i className="far fa-thumbs-up" />
                         </OverlayTrigger>
                     )}
-
                     {votes_count}
-
                     {is_owner ? (
-                        <OverlayTrigger placement="bottom" overlay={<Tooltip>You cannot vote your own post!</Tooltip>}>
-                            <i class="fa-regular fa-thumbs-down" />
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={<Tooltip>You cannot vote for your own post!</Tooltip>}
+                        >
+                            <i className="far fa-thumbs-down" />
                         </OverlayTrigger>
                     ) : downvotes_id ? (
                         <span onClick={() => { }}>
-                            <i className={`fa-solid fa-thumbs-down${styles.Downvote}`} />
+                            <i className={`fas fa-thumbs-down ${styles.Downvote}`} />
                         </span>
                     ) : currentUser ? (
                         <span onClick={() => { }}>
-                            <i className={`fa-regular fa-thumbs-down${styles.DownvoteOutline}`} />
+                            <i className={`far fa-thumbs-down ${styles.DownvoteOutline}`} />
                         </span>
                     ) : (
-                        <OverlayTrigger placement='top' overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}>
-                            <i class="fa-regular fa-thumbs-down" />
+                        <OverlayTrigger
+                            placement="bottom"
+                            overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}
+                        >
+                            <i className="far fa-thumbs-down" />
                         </OverlayTrigger>
                     )}
                     {downvotes_count}
 
-                    <Link to={`/posts/${id}`}>
-                        <i class="fa-regular fa-comment-dots" />
+                    <Link to={`/posts/ ${id}`}>
+                        <i className="far fa-comment-dots" />
                     </Link>
                     {reply_count}
                 </div>
@@ -116,4 +127,4 @@ const Post = (props) => {
     );
 };
 
-export default Post
+export default Post;
