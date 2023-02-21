@@ -33,19 +33,51 @@ const Post = (props) => {
 
     const handleLike = async () => {
         try {
-            const { data } = await axiosRes.post('/votes/', { post: id })
+            const { data } = await axiosRes.post("/votes/", { post: id });
             setPosts((prevPosts) => ({
                 ...prevPosts,
                 results: prevPosts.results.map((post) => {
                     return post.id === id
                         ? { ...post, votes_count: post.votes_count + 1, vote_id: data.id }
                         : post;
-                })
-            }))
+                }),
+            }));
         } catch (err) {
             console.log(err);
         }
-    }
+    };
+
+    const handleDownvote = async () => {
+        try {
+            const { data } = await axiosRes.post("/downvotes/", { post: id });
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? { ...post, downvotes_count: post.downvotes_count + 1, downvote_id: data.id }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleUnlike = async () => {
+        try {
+            await axiosRes.delete(`/votes/${vote_id}/`);
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? { ...post, votes_count: post.votes_count - 1, vote_id: null }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
     return (
         <Card className={styles.Post}>
@@ -60,7 +92,7 @@ const Post = (props) => {
                         {is_owner && postsFeed && '...'}
                         {is_owner ? (
                             <OverlayTrigger placement="top" overlay={<Tooltip>You cannot save your own post!</Tooltip>}>
-                                <i class="fa-regular fa-bookmark" />
+                                <i className="fa-regular fa-bookmark" />
                             </OverlayTrigger>
                         ) : saved_id ? (
                             <span onClick={() => { }}>
@@ -82,7 +114,7 @@ const Post = (props) => {
                 <Card.Img src={image} alt={title} />
             </Link>
             <Card.Body>
-                {title && <Card.Title classname='text-center'>{title}</Card.Title>}
+                {title && <Card.Title className='text-center'>{title}</Card.Title>}
                 {content && <Card.Text>{content}</Card.Text>}
                 <div className={styles.PostSection}>
 
@@ -94,11 +126,11 @@ const Post = (props) => {
                             <i className="far fa-thumbs-up" />
                         </OverlayTrigger>
                     ) : vote_id ? (
-                        <span onClick={() => { }}>
+                        <span onClick={handleUnlike}>
                             <i className={`fas fa-thumbs-up ${styles.Upvote}`} />
                         </span>
                     ) : currentUser ? (
-                        <span onClick={() => { }}>
+                        <span onClick={handleLike}>
                             <i className={`far fa-thumbs-up ${styles.UpvoteOutline}`} />
                         </span>
                     ) : (
@@ -122,7 +154,7 @@ const Post = (props) => {
                             <i className={`fas fa-thumbs-down ${styles.Downvote}`} />
                         </span>
                     ) : currentUser ? (
-                        <span onClick={() => { }}>
+                        <span onClick={handleDownvote}>
                             <i className={`far fa-thumbs-down ${styles.DownvoteOutline}`} />
                         </span>
                     ) : (
