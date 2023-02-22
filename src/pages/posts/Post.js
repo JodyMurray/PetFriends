@@ -18,13 +18,12 @@ const Post = (props) => {
         downvotes_count,
         vote_id,
         saved_id,
-        saved_count,
         downvote_id,
         title,
         content,
         image,
         updated_at,
-        postsFeed,
+        postFeed,
         setPosts,
     } = props;
 
@@ -70,7 +69,7 @@ const Post = (props) => {
                 ...prevPosts,
                 results: prevPosts.results.map((post) => {
                     return post.id === id
-                        ? { ...post, saved_count: post.saved_count + 1, saved_id: data.id }
+                        ? { ...post, saved_id: data.id }
                         : post;
                 }),
             }));
@@ -137,7 +136,7 @@ const Post = (props) => {
                     </Link>
                     <div className='d-flex align-items-center'>
                         <span>{updated_at}</span>
-                        {is_owner && postsFeed && '...'}
+                        {is_owner && postFeed && '...'}
                         {is_owner ? (
                             <OverlayTrigger placement="top" overlay={<Tooltip>You cannot save your own post!</Tooltip>}>
                                 <i className="fa-regular fa-bookmark" />
@@ -169,7 +168,7 @@ const Post = (props) => {
                     {is_owner ? (
                         <OverlayTrigger
                             placement="bottom"
-                            overlay={<Tooltip>You can't vote for your own post!</Tooltip>}
+                            overlay={<Tooltip>You cannot vote for your own post!</Tooltip>}
                         >
                             <i className="far fa-thumbs-up" />
                         </OverlayTrigger>

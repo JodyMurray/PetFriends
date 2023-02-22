@@ -8,7 +8,7 @@ import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
 
-function PostsFeed() {
+function PostFeed() {
     const { id } = useParams();
     const [post, setPost] = useState({ results: [] });
 
@@ -44,4 +44,4 @@ function PostsFeed() {
     );
 }
 
-export default PostsFeed;
+export default PostFeed;
