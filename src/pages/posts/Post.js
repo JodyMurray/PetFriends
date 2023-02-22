@@ -95,6 +95,22 @@ const Post = (props) => {
         }
     };
 
+    const handleUnsave = async () => {
+        try {
+            await axiosRes.delete(`/saved/${saved_id}/`);
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? { ...post, saved_count: post.saved_count - 1, saved_id: null }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
     const handleUndownvote = async () => {
         try {
             await axiosRes.delete(`/downvotes/${downvote_id}/`);
@@ -127,7 +143,7 @@ const Post = (props) => {
                                 <i className="fa-regular fa-bookmark" />
                             </OverlayTrigger>
                         ) : saved_id ? (
-                            <span onClick={() => { }}>
+                            <span onClick={handleUnsave}>
                                 <i className={`fa-solid fa-bookmark ${styles.Bookmark}`} />
                             </span>
                         ) : currentUser ? (
