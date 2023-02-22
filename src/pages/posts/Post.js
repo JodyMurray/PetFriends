@@ -63,6 +63,22 @@ const Post = (props) => {
         }
     };
 
+    const handleSave = async () => {
+        try {
+            const { data } = await axiosRes.post("/saved/", { post: id });
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? { ...post, saved_count: post.saved_count + 1, saved_id: data.id }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
     const handleUnlike = async () => {
         try {
             await axiosRes.delete(`/votes/${vote_id}/`);
@@ -115,7 +131,7 @@ const Post = (props) => {
                                 <i className={`fa-solid fa-bookmark ${styles.Bookmark}`} />
                             </span>
                         ) : currentUser ? (
-                            <span onClick={() => { }}>
+                            <span onClick={handleSave}>
                                 <i className={`fa-regular fa-bookmark ${styles.BookmarkOutline}`} />
                             </span>
                         ) : (
