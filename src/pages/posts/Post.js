@@ -19,7 +19,7 @@ const Post = (props) => {
         vote_id,
         saved_id,
         saved_count,
-        downvotes_id,
+        downvote_id,
         title,
         content,
         image,
@@ -71,6 +71,22 @@ const Post = (props) => {
                 results: prevPosts.results.map((post) => {
                     return post.id === id
                         ? { ...post, votes_count: post.votes_count - 1, vote_id: null }
+                        : post;
+                }),
+            }));
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
+    const handleUndownvote = async () => {
+        try {
+            await axiosRes.delete(`/downvotes/${downvote_id}/`);
+            setPosts((prevPosts) => ({
+                ...prevPosts,
+                results: prevPosts.results.map((post) => {
+                    return post.id === id
+                        ? { ...post, downvotes_count: post.downvotes_count - 1, downvote_id: null }
                         : post;
                 }),
             }));
@@ -149,8 +165,8 @@ const Post = (props) => {
                         >
                             <i className="far fa-thumbs-down" />
                         </OverlayTrigger>
-                    ) : downvotes_id ? (
-                        <span onClick={() => { }}>
+                    ) : downvote_id ? (
+                        <span onClick={handleUndownvote}>
                             <i className={`fas fa-thumbs-down ${styles.Downvote}`} />
                         </span>
                     ) : currentUser ? (
