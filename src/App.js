@@ -21,6 +21,18 @@ function App() {
       <Container className={styles.Main}>
         <Switch>
           <Route exact path='/home' render={() => <PostsFeed message="Found no results! Use another keyword." />} />
+          <Route exact path='/pawfeed'
+            render={() =>
+              <PostsFeed message="Found no results! Use another keyword or follow a user!"
+                filter={`owner__followed__owner__profile=${profile_id}&`}
+              />}
+          />
+          <Route exact path='/saved'
+            render={() =>
+              <PostsFeed message="Found no results! Use another keyword or save a post!"
+                filter={`saved__owner__profile=${profile_id}&ordering=-saved__created_at&`}
+              />}
+          />
           <Route exact path='/signin' render={() => <SignInForm />} />
           <Route exact path='/signup' render={() => <SignUpForm />} />
           <Route exact path='/about' render={() => <h1>About</h1>} />

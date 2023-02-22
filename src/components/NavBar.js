@@ -41,7 +41,8 @@ const NavBar = () => {
         </NavLink>
         <NavLink
             to="/saved"
-            className={styles.NavLink}>Saved
+            className={styles.NavLink}
+            activeClassName={styles.Active}>Saved
             <i class="fa-solid fa-bookmark"></i>
         </NavLink>
         <NavLink className={styles.NavLink}
@@ -77,7 +78,7 @@ const NavBar = () => {
     return (
         <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
             <Container>
-                <NavLink to="/">
+                <NavLink to="/home">
                     <Navbar.Brand className={styles.NavLink}>
                         <img src={logo} alt="logo" height="50" />
                     </Navbar.Brand>
@@ -91,13 +92,18 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" >
 
                     <Nav className="my-auto text-center">
-
+                        <NavLink to="/home"
+                            className={styles.NavLink}
+                            activeClassName={styles.Active}>Home
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </NavLink>
                         <NavLink to="/about"
                             className={styles.NavLink}
                             activeClassName={styles.Active}>About
                             <i class="fa-regular fa-circle-question">
                             </i>
                         </NavLink>
+
                         {currentUser ? loggedInIcons : loggedOutIcons}
                     </Nav>
                 </Navbar.Collapse>
