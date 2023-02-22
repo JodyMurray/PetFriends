@@ -7,15 +7,20 @@ import SignUpForm from './pages/auth/SignUpForm';
 import SignInForm from './pages/auth/SignInForm';
 import PostCreateForm from './pages/posts/PostCreateForm';
 import PostFeed from './pages/posts/PostFeed';
+import PostsFeed from './pages/posts/PostsFeed';
+import { useCurrentUser } from './contexts/CurrentUserContext';
 
 
 function App() {
+  const currentUser = useCurrentUser();
+  const profile_id = currentUser?.profile_id || "";
 
   return (
     <div className={styles.App}>
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
+          <Route exact path='/home' render={() => <PostsFeed message="Found no results! Use another keyword." />} />
           <Route exact path='/signin' render={() => <SignInForm />} />
           <Route exact path='/signup' render={() => <SignUpForm />} />
           <Route exact path='/about' render={() => <h1>About</h1>} />
