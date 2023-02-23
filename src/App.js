@@ -20,7 +20,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
-          <Route exact path='/home' render={() => <PostsFeed message="Found no results! Use another keyword." />} />
+          <Route exact path='/' render={() => <PostsFeed message="Found no results! Use another keyword." />} />
           <Route exact path='/pawfeed'
             render={() =>
               <PostsFeed message="Found no results! Use another keyword or follow a user!"

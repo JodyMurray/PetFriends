@@ -1,12 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import appStyles from "../../App.module.css";
 import styles from "../../styles/PostsFeed.module.css";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { axiosReq } from "../../api/axiosDefaults";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import Post from "./Post";
 
-function PostsFeed() {
+function PostsFeed({ message, filter = "" }) {
+    const [posts, setPosts] = useState({ results: [] });
+    const [hasLoaded, setHasLoaded] = useState(false);
+    const { pathname } = useLocation();
+    const currentUser = useCurrentUser();
+    const [query, setQuery] = useState("");
+
+    useEffect(() => {
+        const fetchPosts = async () => {
+            try {
+                const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
+                setPosts(data);
+                setHasLoaded(true);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+
+        setHasLoaded(false);
+        const timer = setTimeout(() => {
+            fetchPosts();
+        }, 1000);
+
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [filter, query, pathname, currentUser]);
+
 
     return (
         <Row className="h-100">
@@ -15,7 +46,19 @@ function PostsFeed() {
             </Col>
             <Col className="py-2 p-0 p-lg-2" lg={8}>
                 <p>Popular profiles mobile</p>
-                <p>Post list</p>
+                {hasLoaded ? (
+                    <>
+                    {posts.results.length ?(
+                        posts.results.map(post => (
+                            <Post key={post.id} {...post} setPosts={setPosts} />
+                        ))
+                    ):(
+                        console.log("show no results asset")
+                    )}
+                    </>
+                ) : (
+                    console.log("show spinner")
+                )}
             </Col>
         </Row>
     );

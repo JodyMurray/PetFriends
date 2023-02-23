@@ -78,7 +78,7 @@ const NavBar = () => {
     return (
         <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
             <Container>
-                <NavLink to="/home">
+                <NavLink to="/">
                     <Navbar.Brand className={styles.NavLink}>
                         <img src={logo} alt="logo" height="50" />
                     </Navbar.Brand>
@@ -92,7 +92,7 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" >
 
                     <Nav className="my-auto text-center">
-                        <NavLink to="/home"
+                        <NavLink to="/"
                             className={styles.NavLink}
                             activeClassName={styles.Active}>Home
                             <i class="fa-solid fa-house-chimney"></i>
