@@ -129,12 +129,12 @@ const Post = (props) => {
     return (
         <Card className={styles.Post}>
             <Card.Body>
-                <Media className='align-items-center justify-content-between'>
+                <Media className={'align-items-center justify-content-between'}>
                     <Link to={`/profiles/ ${profile_id}`}>
                         <Avatar src={profile_image} height={50} />
                         {owner}
                     </Link>
-                    <div className='d-flex align-items-center'>
+                    <div className={'d-flex align-items-center'}>
                         <span>{updated_at}</span>
                         {is_owner && postFeed && '...'}
                         {is_owner ? (
@@ -158,7 +158,7 @@ const Post = (props) => {
                 </Media>
             </Card.Body>
             <Link to={`/posts/${id}`}>
-                <Card.Img src={image} alt={title} />
+                <Card.Img src={image} alt={title} className={styles.PostImage} />
             </Link>
             <Card.Body>
                 {title && <Card.Title className='text-center'>{title}</Card.Title>}
