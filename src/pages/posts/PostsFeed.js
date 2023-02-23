@@ -12,6 +12,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import Post from "./Post";
 import Asset from "../../components/Asset";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 function PostsFeed({ message, filter = "" }) {
     const [posts, setPosts] = useState({ results: [] });
@@ -49,22 +50,26 @@ function PostsFeed({ message, filter = "" }) {
             </Col>
             <Col className="py-2 p-0 p-lg-2" lg={8}>
                 {/* <p>Popular profiles mobile</p> */}
-                <i className={`fas fa-search ${styles.SearchIcon}`}/>
+                <i className={`fas fa-search ${styles.SearchIcon}`} />
                 <Form className={styles.SearchBar}
-                onSubmit={(event) => event.preventDefault()}>
-                    <Form.Control 
-                    value={query}
-                    onChange={(event) => setQuery(event.target.value)}
-                    type="text" 
-                    className="mr-sm-4" 
-                    placeholder="Search" />
+                    onSubmit={(event) => event.preventDefault()}>
+                    <Form.Control
+                        value={query}
+                        onChange={(event) => setQuery(event.target.value)}
+                        type="text"
+                        className="mr-sm-4"
+                        placeholder="Search" />
                 </Form>
                 {hasLoaded ? (
                     <>
                         {posts.results.length ? (
-                            posts.results.map(post => (
-                                <Post key={post.id} {...post} setPosts={setPosts} />
-                            ))
+                            <InfiniteScroll
+                                children={
+                                    posts.results.map(post => (
+                                        <Post key={post.id} {...post} setPosts={setPosts} />
+                                    ))
+                                }
+                            />
                         ) : (
                             <Container className={appStyles.Content}>
                                 <Asset src={NoResults} message={message} />
