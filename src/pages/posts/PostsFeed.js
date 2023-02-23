@@ -5,10 +5,13 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import appStyles from "../../App.module.css";
 import styles from "../../styles/PostsFeed.module.css";
+import NoResults from "../../assets/noresults.png";
+
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import Post from "./Post";
+import Asset from "../../components/Asset";
 
 function PostsFeed({ message, filter = "" }) {
     const [posts, setPosts] = useState({ results: [] });
@@ -48,16 +51,20 @@ function PostsFeed({ message, filter = "" }) {
                 <p>Popular profiles mobile</p>
                 {hasLoaded ? (
                     <>
-                    {posts.results.length ?(
-                        posts.results.map(post => (
-                            <Post key={post.id} {...post} setPosts={setPosts} />
-                        ))
-                    ):(
-                        console.log("show no results asset")
-                    )}
+                        {posts.results.length ? (
+                            posts.results.map(post => (
+                                <Post key={post.id} {...post} setPosts={setPosts} />
+                            ))
+                        ) : (
+                            <Container className={appStyles.Content}>
+                                <Asset src={NoResults} message={message} />
+                            </Container>
+                        )}
                     </>
                 ) : (
-                    console.log("show spinner")
+                    <Container className={appStyles.Content}>
+                        <Asset spinner />
+                    </Container>
                 )}
             </Col>
         </Row>
