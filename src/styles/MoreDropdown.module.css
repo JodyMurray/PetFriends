@@ -1,7 +1,14 @@
 .DropdownItem {
     display: inline-block;
-    max-width: 50%;
+    max-width: 30%;
     padding: 0px;
+    
+}
+.DropdownItem:hover {
+    background-color: transparent;
+}
+.DropdownMenu {
+    background-color: transparent!important;
 }
 
 .Absolute {
