@@ -7,14 +7,10 @@
 .DropdownItem:hover {
     background-color: transparent;
 }
-.DropdownMenu {
-    background-color: transparent!important;
-}
 
 .Absolute {
     position: absolute;
     right: 0;
     bottom: 12%;
     z-index: 99;
-    
 }

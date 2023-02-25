@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 
 const Post = (props) => {
@@ -30,6 +31,20 @@ const Post = (props) => {
 
     const currentUser = useCurrentUser();
     const is_owner = currentUser?.username === owner;
+    const history = useHistory();
+
+    const handleEdit = () => {
+        history.push(`/posts/${id}/edit/`)
+    }
+
+    const handleDelete = async () => {
+        try {
+            await axiosRes.delete(`/posts/${id}/`);
+            history.goBack();
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
     const handleLike = async () => {
         try {
@@ -162,7 +177,8 @@ const Post = (props) => {
                 <Card.Img src={image} alt={title} className={styles.PostImage} />
             </Link>
             {is_owner && postFeed &&
-                <MoreDropdown className={styles.DropDown}
+                <MoreDropdown handleEdit={handleEdit}
+                handleDelete={handleDelete}
                 />
             }
             <Card.Body>
