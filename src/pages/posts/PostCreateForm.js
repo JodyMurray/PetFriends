@@ -27,7 +27,9 @@ function PostCreateForm() {
     const { title, content, image, imageFilter } = postData;
 
     const imageInput = useRef(null);
+
     const history = useHistory();
+
 
     const handleChange = (event) => {
         setPostData({
@@ -52,7 +54,7 @@ function PostCreateForm() {
         formData.append('title', title)
         formData.append('content', content)
         formData.append('image', imageInput.current.files[0])
-        formData.append('imageFilter', imageFilter)
+        formData.append('image_filter', imageFilter)
 
         try {
             const { data } = await axiosReq.post('/posts/', formData)
@@ -84,7 +86,7 @@ function PostCreateForm() {
                     onChange={handleChange} />
             </Form.Group>
             {errors?.content?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
+                <Alert variant="secondary" key={idx}>
                     {message}
                 </Alert>
             ))}
@@ -98,7 +100,7 @@ function PostCreateForm() {
             >
                 cancel
             </Button>
-        </div>
+        </div >
     );
     return (
         <Form onSubmit={handleSubmit}>

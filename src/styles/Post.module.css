@@ -4,12 +4,73 @@
     border-radius: 5px;
     margin-bottom: 16px;
     text-align: center;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+    border: 1px solid rgb(121, 118, 118);
+    justify-content: center;
 }
 
-.PostImage {
-    padding: 15px;
+/* .PostImage {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem auto;
+    position: relative;
+    background: #612e5e;
+    border: 0.5px solid #612e5e;
+    border-radius: 2px;
+    transition: 0.3s ease;
+    font-size: 0;
+} */
+
+/* .PostImage {
+    padding: 1px;
     border-radius: 1%;
+
+
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 8px;
+} */
+
+/* .PostImage:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+} */
+
+
+.PostImage{
+    border-radius: 12px;
+    padding: 5px;
+    margin-bottom: 2px;
+    background: rgb(206, 176, 201);
+    -webkit-box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
+    box-shadow: 10px 10px 24px -12px rgba(200, 185, 201, 0.75);
+    transition: 0.5s;
 }
+
+.PostImage:hover {
+    -webkit-box-shadow: inset 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
+    -moz-box-shadow: inset 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
+    box-shadow: inset 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
+}
+
+.PostImage:hover {
+    transform: scale(0.97);
+}
+
+/* @media screen and (max-width: 985px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card-columns {
+        column-count: 1;
+    }
+} */
+
 
 .Post figure,
 h5 {
