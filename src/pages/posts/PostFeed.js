@@ -21,11 +21,12 @@ function PostFeed() {
     useEffect(() => {
         const handleMount = async () => {
             try {
-                const [{ data: post }] = await Promise.all([
+                const [{ data: post }, { data: replies }] = await Promise.all([
                     axiosReq.get(`/posts/${id}`),
+                    axiosReq.get(`/reply/?post=${id}`),
                 ]);
                 setPost({ results: [post] });
-                console.log(post);
+                setReplies(replies);
             } catch (err) {
                 console.log(err);
             }
@@ -52,9 +53,23 @@ function PostFeed() {
                             setReplies={setReplies}
                         />
                     ) : replies.results.length ? (
-                        "Comments"
+                        "Replies"
                     ) : null}
+                    {replies.results.length ? (
+                        replies.results.map((reply) => (
+                            <p key={reply.id}>
+                                {reply.owner} : {reply.content}
+                            </p>
+                        ))
+                    ) : currentUser ? (
+                        <span>Nothing yet! Be the first to say something!</span>
+                    ) : (
+                        <span>Nothing yet!</span>
+                    )}
                 </Container>
+            </Col>
+            <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
+                Popular profiles for desktop
             </Col>
         </Row>
     );
