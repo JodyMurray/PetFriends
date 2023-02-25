@@ -23,7 +23,7 @@ function EditPostForm() {
         image: "",
         imageFilter: "",
     });
-    const { title, content, image, imageFilter } = postData;
+    const { title, content, image } = postData;
 
     const imageInput = useRef(null);
 
@@ -67,7 +67,6 @@ function EditPostForm() {
 
         formData.append("title", title);
         formData.append("content", content);
-        formData.append('image_filter', imageFilter)
 
         if (imageInput?.current?.files[0]) {
             formData.append("image", imageInput.current.files[0]);

@@ -41,6 +41,9 @@
 .PostImage{
     border-radius: 12px;
     padding: 5px;
+    width: 90%;
+    max-height: 60vh;
+    object-fit: cover;
     margin-bottom: 2px;
     background: rgb(206, 176, 201);
     -webkit-box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.75);
