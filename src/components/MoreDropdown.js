@@ -5,7 +5,7 @@ import styles from "../styles/MoreDropdown.module.css";
 
 const ThreeDots = React.forwardRef(({ onClick }, ref) => (
     <i
-        className="fa fa-ellipsis"
+        className="fa fa-ellipsis-v"
         ref={ref}
         onClick={(e) => {
             e.preventDefault();
@@ -16,7 +16,7 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
 
 export const MoreDropdown = () => {
     return (
-        <Dropdown className="ml-auto" drop="right">
+        <Dropdown className={`ml-auto" ${styles.Absolute}`} drop="right">
             <Dropdown.Toggle as={ThreeDots} />
 
             <Dropdown.Menu

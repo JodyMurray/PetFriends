@@ -14,5 +14,7 @@
 .Absolute {
     position: absolute;
     right: 0;
+    bottom: 12%;
     z-index: 99;
+    
 }
