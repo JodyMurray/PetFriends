@@ -34,10 +34,10 @@ a:hover i {
 }
 
 .Content {
-    background-color: #f2eef7;
+    background-color: rgb(246,239,245);
     padding: 15px;
-    border-radius: 4px;
-    border: 1px solid #d2ced4;
+    border-radius: 5px;
+    border: 1px solid rgb(121, 118, 118);
     opacity: 0.9;
 }
 
