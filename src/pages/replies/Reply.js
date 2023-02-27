@@ -22,7 +22,7 @@ const Reply = (props) => {
 
     const handleDelete = async () => {
         try {
-            await axiosRes.delete(`/replies/${id}/`);
+            await axiosRes.delete(`/reply/${id}/`);
             setPost((prevPost) => ({
                 results: [
                     {
@@ -53,7 +53,7 @@ const Reply = (props) => {
                 </Media.Body>
 
                 {is_owner && (
-                    <MoreDropdown handleEdit={() => { }} handleDelete={() => { }} />
+                    <MoreDropdown handleEdit={() => { }} handleDelete={handleDelete} />
                 )}
             </Media>
         </div>
