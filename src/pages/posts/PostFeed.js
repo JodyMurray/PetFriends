@@ -7,8 +7,9 @@ import appStyles from "../../App.module.css";
 import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
-import CommentCreateForm from "../replies/CommentCreateForm";
+import CommentCreateForm from "../replies/ReplyCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import Reply from "../replies/Reply";
 
 function PostFeed() {
     const { id } = useParams();
@@ -57,9 +58,7 @@ function PostFeed() {
                     ) : null}
                     {replies.results.length ? (
                         replies.results.map((reply) => (
-                            <p key={reply.id}>
-                                {reply.owner} : {reply.content}
-                            </p>
+                            <Reply />
                         ))
                     ) : currentUser ? (
                         <span>Nothing yet! Be the first to say something!</span>
