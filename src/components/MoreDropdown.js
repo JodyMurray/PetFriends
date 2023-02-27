@@ -5,7 +5,7 @@ import styles from "../styles/MoreDropdown.module.css";
 
 const ThreeDots = React.forwardRef(({ onClick }, ref) => (
     <i
-        className="fa fa-ellipsis-v"
+        className="fas fa-ellipsis-v"
         ref={ref}
         onClick={(e) => {
             e.preventDefault();
