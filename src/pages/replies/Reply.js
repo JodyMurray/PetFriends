@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import { Media } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { axiosRes } from '../../api/axiosDefaults';
@@ -6,6 +6,8 @@ import Avatar from "../../components/Avatar";
 import { MoreDropdown } from '../../components/MoreDropdown';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
 import styles from '../../styles/Reply.module.css';
+import ReplyEditForm from "./ReplyEditForm";
+
 
 
 const Reply = (props) => {
@@ -17,6 +19,8 @@ const Reply = (props) => {
         id,
         setPost,
         setReplies } = props;
+
+    const [showEditForm, setShowEditForm] = useState(false);
     const currentUser = useCurrentUser();
     const is_owner = currentUser?.username === owner;
 
@@ -40,7 +44,7 @@ const Reply = (props) => {
     };
 
     return (
-        <div>
+        <>
             <hr />
             <Media>
                 <Link to={`/profiles/${profile_id}`}>
@@ -49,16 +53,28 @@ const Reply = (props) => {
                 <Media.Body className="align-self-center ml-2">
                     <span className={styles.Owner}>{owner}</span>
                     <span className={styles.Date}>{updated_at}</span>
-                    <p>{content}</p>
+                    {showEditForm ? (
+                        <ReplyEditForm
+                            id={id}
+                            profile_id={profile_id}
+                            content={content}
+                            profileImage={profile_image}
+                            setReplies={setReplies}
+                            setShowEditForm={setShowEditForm}
+                        />
+                    ) : (
+                        <p>{content}</p>
+                    )}
                 </Media.Body>
-
-                {is_owner && (
-                    <MoreDropdown handleEdit={() => { }} handleDelete={handleDelete} />
+                {is_owner && !showEditForm && (
+                    <MoreDropdown
+                        handleEdit={() => setShowEditForm(true)}
+                        handleDelete={handleDelete}
+                    />
                 )}
             </Media>
-        </div>
+        </>
     );
 };
 
-
-export default Reply
+export default Reply;
