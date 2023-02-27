@@ -236,7 +236,7 @@ const Post = (props) => {
                     )}
                     {downvotes_count}
 
-                    <Link to={`/posts/ ${id}`}>
+                    <Link to={`/posts/${id}`}>
                         <i className="far fa-comment-dots" />
                     </Link>
                     {reply_count}
