@@ -58,7 +58,7 @@ function PostFeed() {
                     ) : null}
                     {replies.results.length ? (
                         replies.results.map((reply) => (
-                            <Reply />
+                            <Reply key={reply.id} {...reply} />
                         ))
                     ) : currentUser ? (
                         <span>Nothing yet! Be the first to say something!</span>
