@@ -7,9 +7,12 @@ import appStyles from "../../App.module.css";
 import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import Post from "./Post";
-import CommentCreateForm from "../replies/ReplyCreateForm";
+import ReplyCreateForm from "../replies/ReplyCreateForm";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import Reply from "../replies/Reply";
+import InfiniteScroll from "react-infinite-scroll-component";
+import Asset from "../../components/Asset";
+import { fetchMoreData } from "../../utils/utils";
 
 function PostFeed() {
     const { id } = useParams();
@@ -46,7 +49,7 @@ function PostFeed() {
                 <Post {...post.results[0]} setPosts={setPost} postFeed />
                 <Container className={`${appStyles.Content}`}>
                     {currentUser ? (
-                        <CommentCreateForm
+                        <ReplyCreateForm
                             profile_id={currentUser.profile_id}
                             profileImage={profile_image}
                             post={id}
@@ -56,13 +59,22 @@ function PostFeed() {
                     ) : replies.results.length ? (
                         "Replies"
                     ) : null}
+
                     {replies.results.length ? (
-                        replies.results.map((reply) => (
-                            <Reply key={reply.id} {...reply}
-                            setPost={setPost} 
-                            setReplies={setReplies} 
-                            />
-                        ))
+                        <InfiniteScroll
+                            children={replies.results.map((reply) => (
+                                <Reply
+                                    key={reply.id}
+                                    {...reply}
+                                    setPost={setPost}
+                                    setReplies={setReplies}
+                                />
+                            ))}
+                            dataLength={replies.results.length}
+                            loader={<Asset spinner />}
+                            hasMore={!!replies.next}
+                            next={() => fetchMoreData(replies, setReplies)}
+                        />
                     ) : currentUser ? (
                         <span className='py-2 p-0 p-lg-4 text-muted'>Nothing yet! Be the first to say something!</span>
                     ) : (
