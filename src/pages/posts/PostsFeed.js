@@ -14,6 +14,7 @@ import Post from "./Post";
 import Asset from "../../components/Asset";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
+import PopularProfiles from "../profiles/PopularProfiles";
 
 function PostsFeed({ message, filter = "" }) {
     const [posts, setPosts] = useState({ results: [] });
@@ -47,7 +48,7 @@ function PostsFeed({ message, filter = "" }) {
     return (
         <Row className="h-100">
             <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
-                <p>placeholder</p>
+                <PopularProfiles />
             </Col>
             <Col className="py-2 p-0 p-lg-2" lg={8}>
                 {/* <p>Popular profiles mobile</p> */}
