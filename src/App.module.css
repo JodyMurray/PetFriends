@@ -40,6 +40,10 @@ a:hover i {
     border: 1px solid rgb(121, 118, 118);
     opacity: 0.9;
 }
+.ProfilesContent {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 54px!important;
+}
 
 i {
     color: #474444;

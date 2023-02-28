@@ -37,10 +37,10 @@ const PopularProfiles = ({ mobile }) => {
 
 
     return (
-        <Container className={`${appStyles.Content} ${mobile && 'd-lg-none text-center mb-4'}`}>
+        <Container className={`${appStyles.Content} ${appStyles.ProfilesContent} mt-4 ${mobile && 'd-lg-none text-center mb-4'}`}>
             {popularProfiles.results.length ? (
                 <>
-                    <p>The popular gang!</p>
+                    <p>Recommended Users to follow:</p>
                     {mobile ? (
                         <div className="d-flex justify-content-around">
                             {popularProfiles.results.slice(0, 3).map((profile) => (
