@@ -10,7 +10,6 @@ import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
 
 
 
-
 const NavBar = () => {
     const currentUser = useCurrentUser();
     const setCurrentUser = useSetCurrentUser();
@@ -28,7 +27,7 @@ const NavBar = () => {
     };
     const newPostIcon = (
         <NavLink to="/posts/create"
-            className={styles.NavLink}>
+            className={styles.NavLink}>Add post
             <i class="fa-regular fa-square-plus"></i>
         </NavLink>
     )
@@ -79,19 +78,26 @@ const NavBar = () => {
         <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
             <Container>
                 <NavLink to="/">
+
                     <Navbar.Brand className={styles.NavLink}>
                         <img src={logo} alt="logo" height="50" />
+
                     </Navbar.Brand>
+
                 </NavLink>
-                {currentUser && newPostIcon}
+
                 <Navbar.Toggle
+
                     ref={ref}
                     onClick={() => setExpanded(!expanded)}
-                    aria-controls="responsive-navbar-nav"
-                    className='navbarToggle' />
-                <Navbar.Collapse id="responsive-navbar-nav" >
+                    aria-controls="basic-navbar-nav"
+                    className='navbarToggle ' />
+                <Navbar.Collapse id="basic-navbar-nav"
+                    className='mr-auto flex-column text-center' >
 
-                    <Nav className="my-auto text-center">
+
+                    <Nav className="me-auto">
+                        {currentUser && newPostIcon}
                         <NavLink to="/"
                             className={styles.NavLink}
                             activeClassName={styles.Active}>Home
