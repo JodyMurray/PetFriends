@@ -7,7 +7,7 @@ import appStyles from "../../App.module.css";
 import styles from "../../styles/PostsFeed.module.css";
 import NoResults from "../../assets/noresults.png";
 
-import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import Post from "./Post";

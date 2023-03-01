@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
-import { axiosReq } from '../../api/axiosDefaults';
-import appStyles from '../../App.module.css';
-import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
+import { axiosReq } from "../../api/axiosDefaults";
+import appStyles from "../../App.module.css";
 import Asset from "../../components/Asset";
-import Profile from './Profile';
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import Profile from "./Profile";
 
 
 
 const PopularProfiles = ({ mobile }) => {
     const [profileData, setProfileData] = useState({
-        popularProfiles: { results: [] }
+        pageProfile: { results: [] },
+        popularProfiles: { results: [] },
     });
-
     const { popularProfiles } = profileData;
     const currentUser = useCurrentUser();
+
 
 
     useEffect(() => {
@@ -60,4 +61,4 @@ const PopularProfiles = ({ mobile }) => {
     );
 };
 
-export default PopularProfiles
+export default PopularProfiles;
