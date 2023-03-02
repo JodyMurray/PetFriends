@@ -5,6 +5,18 @@
   margin-bottom: 20px;
 }
 
+.SearchBar input:active, 
+.SearchBar input:active,
+.SearchBar input:focus, 
+.SearchBar input:focus,
+.SearchBar input:hover, 
+.SearchBar input:hover{
+    border:1px solid #ce8acb !important;
+    outline:1px solid #b188b0 !important;
+    box-shadow: none !important;
+    transition:  0.3s ease-in-out;
+}
+
 .NewPostIcon a {
   border: 1px solid #ae82ac;
   border-radius: 5px;

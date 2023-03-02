@@ -71,7 +71,9 @@ function PostsFeed({ message, filter = "" }) {
                         className="mr-sm-4"
                         placeholder="Search" />
                 </Form>
-                <span className={`d-flex justify-content-center ${styles.NewPostIcon}`}>{currentUser && newPostIcon}</span>
+                <span className={`d-flex justify-content-center ${styles.NewPostIcon}`}>
+                    {currentUser && newPostIcon}
+                </span>
 
                 {hasLoaded ? (
                     <>
