@@ -3,7 +3,7 @@
   border: 1px solid #dadadf;
   background-image: linear-gradient(to right, rgba(241, 231, 254), rgba(213, 184, 255));
   text-align: center;
-  opacity: 0.96;
+  opacity: 0.97;
 }
 
 .NavLink:hover {
@@ -15,7 +15,7 @@
 }
 
 .NavLink {
-  padding: 6px;
+  padding: 7px;
   font-weight: 550;
   line-height: 40px;
 }
