@@ -25,12 +25,7 @@ const NavBar = () => {
             console.log(err);
         }
     };
-    const newPostIcon = (
-        <NavLink to="/posts/create"
-            className={styles.NavLink}>Add post
-            <i class="fa-regular fa-square-plus"></i>
-        </NavLink>
-    )
+
     const loggedInIcons = <>
         <NavLink
             to="/pawfeed"
@@ -97,7 +92,6 @@ const NavBar = () => {
 
 
                     <Nav className="me-auto">
-                        {currentUser && newPostIcon}
                         <NavLink to="/"
                             className={styles.NavLink}
                             activeClassName={styles.Active}>Home

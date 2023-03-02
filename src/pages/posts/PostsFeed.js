@@ -15,6 +15,7 @@ import Asset from "../../components/Asset";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
+import { Link } from "react-router-dom";
 
 function PostsFeed({ message, filter = "" }) {
     const [posts, setPosts] = useState({ results: [] });
@@ -22,6 +23,13 @@ function PostsFeed({ message, filter = "" }) {
     const { pathname } = useLocation();
     const currentUser = useCurrentUser();
     const [query, setQuery] = useState("");
+
+    const newPostIcon = (
+        <Link to="/posts/create"
+            className={styles.NavLink}>Add post
+            <i class="fa-regular fa-square-plus"></i>
+        </Link>
+    )
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -48,6 +56,7 @@ function PostsFeed({ message, filter = "" }) {
     return (
         <Row className="h-100">
             <Col md={4} className="d-none d-lg-block p-0 p-lg-2">
+                <span className={`d-flex justify-content-center ${styles.NewPostIcon}`}>{currentUser && newPostIcon}</span>
                 <PopularProfiles />
             </Col>
             <Col className="py-2 p-0 p-lg-2" lg={8}>
