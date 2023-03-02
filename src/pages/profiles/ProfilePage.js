@@ -10,5 +10,9 @@ function ProfilePage() {
     const currentUser = useCurrentUser();
 }
 
+useEffect(() => {
+    setHasLoaded(true);
+}, [])
+
 
 export default ProfilePage;
