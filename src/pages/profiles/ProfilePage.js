@@ -14,6 +14,7 @@ import {
     useSetProfileData,
 } from "../../contexts/ProfileDataContext";
 import { Image } from "react-bootstrap";
+import Post from "../posts/Post";
 
 function ProfilePage() {
     const [hasLoaded, setHasLoaded] = useState(false);
@@ -57,6 +58,14 @@ function ProfilePage() {
                         <Col xs={4} className='my-3'>
                             <div>{profile?.posts_count}</div>
                             <div>posts</div>
+                        </Col>
+                        <Col xs={4} className='my-3'>
+                            <div>{profile?.followers_count}</div>
+                            <div>followers</div>
+                        </Col>
+                        <Col xs={4} className='my-3'>
+                            <div>{profile?.following_count}</div>
+                            <div>following</div>
                         </Col>
                     </Row>
                 </Col>
