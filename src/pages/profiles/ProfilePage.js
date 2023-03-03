@@ -78,7 +78,7 @@ function ProfilePage() {
                             <div>{profile?.following_count}</div>
                             <div>following</div>
                         </Col>
-                        <Col lg={3} className="text-lg-right">
+                        <Col lg={5} className="text-lg-left">
                             {currentUser &&
                                 !is_owner &&
                                 (profile?.following_id ? (
