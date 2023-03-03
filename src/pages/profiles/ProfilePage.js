@@ -92,7 +92,7 @@ function ProfilePage() {
                         </Col>
                     </Row>
                 </Col>
-                <Col className="col-12 p-5">Content</Col>
+                {profile?.content &&<Col className="col-12 p-5">{profile.content}</Col>}
             </Row>
         </>
     );
