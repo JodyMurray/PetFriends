@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import styles from "../../styles/ProfilePage.module.css";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import Asset from "../../components/Asset";
 import appStyles from "../../App.module.css";
 import PopularProfiles from "./PopularProfiles";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
@@ -40,5 +42,27 @@ function ProfilePage() {
             <hr />
         </>
     );
+
+    return (
+        <Row>
+            <Col className="py-2 p-0 p-lg-2" lg={8}>
+                <PopularProfiles mobile />
+                <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
+                    <PopularProfiles />
+                </Col>
+                <Container className={appStyles.Content}>
+                    {hasLoaded ? (
+                        <>
+                            {mainProfile}
+                            {mainProfilePosts}
+                        </>
+                    ) : (
+                        <Asset spinner />
+                    )}
+                </Container>
+            </Col>
+        </Row>
+    );
 }
+
 export default ProfilePage;
