@@ -16,6 +16,13 @@ const NavBar = () => {
 
     const { expanded, setExpanded, ref } = useClickOutsideToggle();
 
+    const checkActive = (match, location) => {
+        if(!location) return false;
+        const {pathname} = location;
+        console.log(pathname);
+        return pathname === "/";
+    }
+
 
     const handleSignOut = async () => {
         try {
@@ -94,7 +101,7 @@ const NavBar = () => {
                     <Nav className="me-auto">
                         <NavLink to="/"
                             className={styles.NavLink}
-                            activeClassName={styles.Active}>Home
+                            activeClassName={styles.Active} isActive={checkActive}>Home
                             <i class="fa-solid fa-house-chimney"></i>
                         </NavLink>
                         <NavLink to="/about"
