@@ -52,8 +52,13 @@ function ProfilePage() {
                     />
                 </Col>
                 <Col lg={6}>
-                    <h3 className="m-2">Username</h3>
-                    <p>Stats</p>
+                    <h3 className="m-2">{profile?.owner}</h3>
+                    <Row className="justify-content-center no-gutters">
+                        <Col xs={4} className='my-3'>
+                            <div>{profile?.posts_count}</div>
+                            <div>posts</div>
+                        </Col>
+                    </Row>
                 </Col>
                 <Col lg={3} className="text-lg-right">
                     <p>Follow button</p>
