@@ -53,26 +53,28 @@ function ProfilePage() {
         <>
             <Row noGutters className="px-3 text-center">
                 <Col lg={3} className="text-lg-left">
+
                     <Image
                         className={styles.ProfileImage}
                         roundedCircle
                         src={profile?.image}
-                    />
 
+                    />
+                    <h3 className="mr-5 d-flex justify-content-center">{profile?.owner}</h3>
 
                 </Col>
-                <Col lg={6}>
-                    <h3 className="m-2">{profile?.owner}</h3>
+                <Col lg={8}>
+
                     <Row className="justify-content-center no-gutters">
-                        <Col xs={4} className='my-3'>
+                        <Col xs={4} className='my-5'>
                             <div>{profile?.posts_count}</div>
                             <div>posts</div>
                         </Col>
-                        <Col xs={4} className='my-3'>
+                        <Col xs={4} className='my-5'>
                             <div>{profile?.followers_count}</div>
                             <div>followers</div>
                         </Col>
-                        <Col xs={4} className='my-3'>
+                        <Col xs={4} className='my-5'>
                             <div>{profile?.following_count}</div>
                             <div>following</div>
                         </Col>
