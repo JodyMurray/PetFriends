@@ -87,7 +87,7 @@ function ProfilePage() {
                                 !is_owner &&
                                 (profile?.following_id ? (
                                     <Button
-                                        className={`${btnStyles.Button} ${btnStyles.Light}`}
+                                        className={btnStyles.UnFollow}
                                         onClick={() => { }}
                                     >
                                         unfollow

@@ -40,8 +40,32 @@
     background-color: #ddc6ec;
     color: #5f1190;
 }
+
 .Follow {
     background-color: #ddc6ec;
     color: #5f1190;
     transform: 1.2;
+}
+
+.UnFollow {
+    background-color: rgb(99, 183, 183);
+    color: #ffff;
+    transform: 1.2;
+    font-size: 0.8rem;
+    align-self: center;
+    border-radius: 100px;
+    border-color: transparent;
+    padding: 4px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    min-width: 75px;
+}
+
+.UnFollow:hover {
+    opacity: 0.7;
+    border-color: transparent;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.8s;
+    background-color: teal;
 }
