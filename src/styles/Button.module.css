@@ -69,3 +69,7 @@
     transition: all 0.8s;
     background-color: teal;
 }
+.UnFollow:focus {
+    background-color: teal;
+    border-color: transparent !important;
+}
