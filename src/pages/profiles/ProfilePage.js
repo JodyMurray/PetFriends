@@ -12,7 +12,6 @@ import { useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/noresults.png";
-
 import Post from "../posts/Post";
 import {
     useProfileData,
@@ -128,7 +127,7 @@ function ProfilePage() {
             ) : (
                 <Asset
                     src={NoResults}
-                    message={`No results found, ${profile?.owner} hasn't posted anything yet!`}
+                    message={`No posts found, ${profile?.owner} hasn't posted anything yet!`}
                 />
             )}
         </>
