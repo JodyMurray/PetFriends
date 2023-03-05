@@ -55,6 +55,12 @@ a:hover i {
     transition: color ease-in-out 0.6s;
 }
 
+.ProfileContent2 {
+    margin-top: -2.5% !important;
+}
+.Post2 {
+    margin-top: 19px !important;
+}
 i {
     color: #474444;
     font-size: 1.4rem;
