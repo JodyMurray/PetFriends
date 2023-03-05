@@ -50,7 +50,7 @@ function PostFeed() {
                 <PopularProfiles mobile />
 
                 <Post {...post.results[0]} setPosts={setPost} postFeed />
-                <Container className={`${appStyles.Content}`}>
+                <Container className={`mb-3 ${appStyles.Content}`}>
                     {currentUser ? (
                         <ReplyCreateForm
                             profile_id={currentUser.profile_id}
@@ -79,9 +79,9 @@ function PostFeed() {
                             next={() => fetchMoreData(replies, setReplies)}
                         />
                     ) : currentUser ? (
-                        <span className='py-2 p-0 p-lg-4 text-muted'>Nothing yet! Be the first to say something!</span>
+                        <span className={`py-2 p-0 p-lg-4 d-flex justify-content-center text-muted ${appStyles.CommentContainer}`}>Nothing yet! Be the first to say something!</span>
                     ) : (
-                        <span className="py-2 p-0 p-lg-4 text-muted">Nothing yet!</span>
+                        <span className={`py-2 p-0 p-lg-4 d-flex justify-content-center text-muted ${appStyles.CommentContainer}`}>Nothing yet!</span>
                     )}
                 </Container>
             </Col>
