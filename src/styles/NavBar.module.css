@@ -36,4 +36,12 @@
 }
 
 
+/* For large phone screens sizes from 425px wide and down */
+@media screen and (max-width: 425px) {
+  .Pawfile {
+    left: unset;
+  }
+  
+}
+
 
