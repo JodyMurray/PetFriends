@@ -1,6 +1,5 @@
 .Post {
     background-color: rgb(246, 239, 246);
-    border: 1px solid #dadadf;
     border-radius: 5px;
     margin-bottom: 16px;
     text-align: center;
@@ -47,37 +46,16 @@
     max-height: 60vh;
     object-fit: cover;
     margin-bottom: 2px;
-    background: rgb(206, 176, 201);
-    -webkit-box-shadow: 10px 10px 24px -12px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
+    background-color: rgba(149, 112, 156, 0.75);
+    -webkit-box-shadow: 10px 10px 24px -12px rgba(157, 143, 143, 0.75);
+    -moz-box-shadow: 10px 10px 24px -12px rgba(163, 142, 167, 0.75);
     box-shadow: 10px 10px 24px -12px rgba(200, 185, 201, 0.75);
-    transition: 0.5s;
-}
-
-.PostImage:hover {
-    -webkit-box-shadow: inset 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
-    -moz-box-shadow: inset 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
-    box-shadow: inset 10px 10px 24px -12px rgba(149, 112, 156, 0.75);
+    transition: 0.6s;
 }
 
 .PostImage:hover {
     transform: scale(0.96);
 }
-
-
-
-/* @media screen and (max-width: 985px) {
-    .card-columns {
-        column-count: 2;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .card-columns {
-        column-count: 1;
-    }
-} */
-
 
 .Post figure,
 h5 {
@@ -86,15 +64,16 @@ h5 {
 
 
 .Upvote {
-    color: rgb(135, 16, 135);
+    color: rgb(185, 102, 185);
 }
 
 .Upvote:hover {
-    color: rgb(163, 33, 163);
+    color: rgb(239, 151, 239);
 }
 
 .UpvoteOutline:hover {
-    color: rgb(135, 16, 135);
+    color: rgb(147, 87, 147);
+    transition: 0.6s;
 }
 
 .Downvote {
@@ -102,7 +81,7 @@ h5 {
 }
 
 .Downvote:hover {
-    color: rgb(29, 215, 215);
+    color: rgb(108, 182, 182);
 }
 
 .DownvoteOutline:hover {
@@ -114,7 +93,7 @@ h5 {
 }
 
 .Bookmark:hover {
-    color: rgb(29, 215, 215);
+    color: rgb(104, 184, 184);
 }
 
 .BookmarkOutline:hover {
