@@ -43,4 +43,4 @@ export const unfollowHelper = (profile, clickedProfile) => {
             { ...profile, following_count: profile.following_count - 1 }
             :
             profile;
-}
+};
