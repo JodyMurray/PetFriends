@@ -18,7 +18,7 @@
 }
 
 .NewPostIcon a {
-  border: 1px solid #ae82ac;
+  border: 1px solid rgb(121, 118, 118);
   border-radius: 5px;
   font-weight: 700;
   padding: 1px 6px;
@@ -35,7 +35,7 @@
 
 .NewPostIcon i:hover {
   color: #d176ce;
-  transform: scale(1);
+  transform: scale(1.1);
   transition: 0.3s ease-in-out;
 }
 
