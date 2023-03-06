@@ -11,8 +11,8 @@ import PostsFeed from './pages/posts/PostsFeed';
 import { useCurrentUser } from './contexts/CurrentUserContext';
 import EditPostForm from './pages/posts/EditPostForm';
 import ProfilePage from './pages/profiles/ProfilePage';
-import UsernameForm from "./pages/profiles/UsernameForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
+import UsernamePasswordForm from './pages/profiles/UsernamePasswordForm';
 
 
 
@@ -48,7 +48,12 @@ function App() {
           <Route
             exact
             path="/profiles/:id/edit/username"
-            render={() => <UsernameForm />}
+            render={() => <UsernamePasswordForm />}
+          />
+          <Route
+            exact
+            path="/profiles/:id/edit/password"
+            render={() => <UsernamePasswordForm />}
           />
           <Route
             exact
