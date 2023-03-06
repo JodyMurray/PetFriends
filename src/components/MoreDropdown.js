@@ -15,12 +15,23 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
     />
 ));
 
+const ProfileSettings = React.forwardRef(({ onClick }, ref) => (
+    <i
+        className="fas fa-bars"
+        ref={ref}
+        onClick={(e) => {
+            e.preventDefault();
+            onClick(e);
+        }}
+    />
+));
+
 
 export function ProfileEditDropdown({ id }) {
     const history = useHistory();
     return (
       <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="right">
-        <Dropdown.Toggle as={ThreeDots} />
+        <Dropdown.Toggle as={ProfileSettings} />
         <Dropdown.Menu>
           <Dropdown.Item
             onClick={() => history.push(`/profiles/${id}/edit`)}

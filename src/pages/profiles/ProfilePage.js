@@ -60,18 +60,14 @@ function ProfilePage() {
             {profile?.is_owner && <ProfileEditDropdown id={profile?.id} />}
             <Row noGutters className="px-3 text-center">
                 <Col lg={3} className="text-lg-left">
-
                     <Image
                         className={styles.ProfileImage}
                         roundedCircle
                         src={profile?.image}
-
                     />
                     <h3 className="mr-5 d-flex justify-content-center">{profile?.owner}</h3>
-
                 </Col>
                 <Col lg={8}>
-
                     <Row className="justify-content-center no-gutters">
                         <Col xs={4} className='my-5'>
                             <div>{profile?.posts_count}</div>
