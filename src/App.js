@@ -12,6 +12,7 @@ import { useCurrentUser } from './contexts/CurrentUserContext';
 import EditPostForm from './pages/posts/EditPostForm';
 import ProfilePage from './pages/profiles/ProfilePage';
 import UsernameForm from "./pages/profiles/UsernameForm";
+import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 
 
 
@@ -48,6 +49,11 @@ function App() {
             exact
             path="/profiles/:id/edit/username"
             render={() => <UsernameForm />}
+          />
+          <Route
+            exact
+            path="/profiles/:id/edit"
+            render={() => <ProfileEditForm />}
           />
           <Route render={() => <p>Page not found!</p>} />
         </Switch>
