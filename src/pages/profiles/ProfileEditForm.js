@@ -121,7 +121,7 @@ const ProfileEditForm = () => {
                         <Form.Group>
                             {image && (
                                 <figure>
-                                    <Image src={image} fluid />
+                                    <Image src={image} fluid rounded />
                                 </figure>
                             )}
                             {errors?.image?.map((message, idx) => (

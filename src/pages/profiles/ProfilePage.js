@@ -103,7 +103,7 @@ function ProfilePage() {
                     </Row>
                 </Col>
                 <hr />
-                {profile?.content && <Col className="col-12 p-5">{profile.content}</Col>}
+                {profile?.content && <Col className={`col-12 p-5 ${styles.BioContent}`}>{profile.content}</Col>}
             </Row>
         </>
     );
@@ -111,7 +111,7 @@ function ProfilePage() {
     const mainProfilePosts = (
         <>
             <hr />
-            <p className="text-center">{profile?.owner}'s posts</p>
+            <p className={`text-center ${styles.OwnersPosts}`}>{profile?.owner}'s posts</p>
             <hr />
             {profilePosts.results.length ? (
                 <InfiniteScroll
