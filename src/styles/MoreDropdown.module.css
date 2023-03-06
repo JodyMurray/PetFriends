@@ -15,4 +15,11 @@
     left: 93%;
     color: grey;
 }
+.Bars {
+    position: absolute;
+    right: 10px;
+    z-index: 99;
+    left: 90%;
+    color: grey;
+}
 

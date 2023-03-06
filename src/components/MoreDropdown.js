@@ -30,7 +30,7 @@ const ProfileSettings = React.forwardRef(({ onClick }, ref) => (
 export function ProfileEditDropdown({ id }) {
     const history = useHistory();
     return (
-      <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="right">
+      <Dropdown className={`ml-auto px-3 ${styles.Bars}`} drop="right">
         <Dropdown.Toggle as={ProfileSettings} />
         <Dropdown.Menu>
           <Dropdown.Item
