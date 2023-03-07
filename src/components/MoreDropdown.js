@@ -40,7 +40,8 @@ export function ProfileEditDropdown({ id }) {
             <i className="fas fa-user-pen" /> Edit profile
           </Dropdown.Item>
           <Dropdown.Item
-            onClick={() => history.push(`/profiles/${id}/edit/username`)}
+            onClick={() => history.push(`/profiles/${id}/edit/username`)
+          }
             aria-label="edit-username"
           >
             <i className="fas fa-user" />
