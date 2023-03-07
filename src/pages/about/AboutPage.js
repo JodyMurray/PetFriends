@@ -19,7 +19,7 @@ const AboutPage = () => {
               Make your lovely fur friend a profile, set them up with a bio and a profile picture and start making friends!
               You can also save posts for viewing specifically on your "saved feed". Follow, unfollow as your paw desires!
               You can also upvote or downvote posts, I know some of you cats won't like our caninie friends posts and vice versa!
-              So show approval or disapproval as you like!
+              So show approval or disapproval as you like, by voting and commenting!
             </p>
             <i className="fa-regular fa-face-grin-tongue"></i>
             <p>We hope you like our website! Fully adaptable for your tablet and mobile viewing!
