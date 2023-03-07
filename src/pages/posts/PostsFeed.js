@@ -27,7 +27,7 @@ function PostsFeed({ message, filter = "" }) {
     const newPostIcon = (
         <Link to="/posts/create"
             className={styles.NavLink}>Add post
-            <i class="fa-regular fa-square-plus"></i>
+            <i className="fa-regular fa-square-plus"></i>
         </Link>
     )
 

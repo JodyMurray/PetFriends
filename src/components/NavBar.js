@@ -38,19 +38,19 @@ const NavBar = () => {
             to="/pawfeed"
             activeClassName={styles.Active}
             className={styles.NavLink}>PawFeed
-            <i class="fa-solid fa-paw"></i>
+            <i className="fa-solid fa-paw"></i>
         </NavLink>
         <NavLink
             to="/saved"
             className={styles.NavLink}
             activeClassName={styles.Active}>Saved
-            <i class="fa-solid fa-bookmark"></i>
+            <i className="fa-solid fa-bookmark"></i>
         </NavLink>
         <NavLink className={styles.NavLink}
             to="/"
             onClick={handleSignOut}>
             Sign out
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </NavLink>
 
         <NavLink
@@ -66,12 +66,12 @@ const NavBar = () => {
             <NavLink to="/signin"
                 className={styles.NavLink}
                 activeClassName={styles.Active}>Sign in
-                <i class="fas fa-circle-right"></i>
+                <i className="fas fa-circle-right"></i>
             </NavLink>
             <NavLink to="/signup"
                 className={styles.NavLink}
                 activeClassName={styles.Active}>Sign up
-                <i class="fas fa-square-plus">
+                <i className="fas fa-square-plus">
                 </i>
             </NavLink>
         </>
@@ -102,12 +102,12 @@ const NavBar = () => {
                         <NavLink to="/"
                             className={styles.NavLink}
                             activeClassName={styles.Active} isActive={checkActive}>Home
-                            <i class="fa-solid fa-house-chimney"></i>
+                            <i className="fa-solid fa-house-chimney"></i>
                         </NavLink>
                         <NavLink to="/about"
                             className={styles.NavLink}
                             activeClassName={styles.Active}>About
-                            <i class="fa-regular fa-circle-question">
+                            <i className="fa-regular fa-circle-question">
                             </i>
                         </NavLink>
 
