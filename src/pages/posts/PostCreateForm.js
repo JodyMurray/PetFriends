@@ -6,10 +6,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Alert from "react-bootstrap/Alert";
-
 import Upload from "../../assets/upload.png";
 import { useHistory } from "react-router";
-
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
