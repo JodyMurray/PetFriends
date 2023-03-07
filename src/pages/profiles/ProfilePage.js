@@ -29,6 +29,7 @@ function ProfilePage() {
 
     const currentUser = useCurrentUser();
     const { id } = useParams();
+    const {vote_id} = useParams();
     const { setProfileData, handleFollow, handleUnfollow } = useSetProfileData();
     const { pageProfile } = useProfileData();
     const [profile] = pageProfile.results;
@@ -53,7 +54,7 @@ function ProfilePage() {
             }
         };
         fetchData();
-    }, [id, setProfileData]);
+    }, [id, vote_id, setProfileData]);
 
     const mainProfile = (
         <>
@@ -81,6 +82,7 @@ function ProfilePage() {
                             <div>{profile?.following_count}</div>
                             <div>following</div>
                         </Col>
+                        
                         <Col lg={5} className="text-lg-left">
                             {currentUser &&
                                 !is_owner &&

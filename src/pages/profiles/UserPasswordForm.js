@@ -11,6 +11,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
+
 const UserPasswordForm = () => {
     const history = useHistory();
     const { id } = useParams();
@@ -50,7 +51,7 @@ const UserPasswordForm = () => {
 
     return (
         <Row>
-            <Col className="py-2 mx-auto text-center" md={6}>
+            <Col className="py-2 mx-auto text-center mt-4" md={6}>
                 <Container className={appStyles.Content}>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group>
