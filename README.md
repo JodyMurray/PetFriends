@@ -1,7 +1,5 @@
 # **PetFriends**
 
-<hr>
-
 [RESPONSIVE SCREENSHOT]
 
 This is a website for pets only! We have here a social media for pets. We can make our beloved pets a profile so they can post silly photos of themselves and follow, vote (or downvote) and comment on other pet's profiles! Saving posts is even possible. All pets welcome! From cats, dogs, hedgehogs, lizards and so on. The site is a content sharing platform, which, once you sign up, you will be redirected to sign in and then redirected to the home page/main feed. From there you can click on your profile icon in the top right of the NavBar and see your profile stats (once you gain some), see your posts, and click on the bars to edit your profile, password and username. Personalise your pet's profile with a picture and a bio, a little bit about your pet!
@@ -87,3 +85,18 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 - [Future plans to implement](#future-plans-to-implement "Future plans to implement")
 
 </details>
+
+------------------------------------------------------------------------------------------------------------
+
+## **UX**
+
+### **User Demographic**
+
+This application has been designed for pets of all kinds who want to share content and make some friends!
+Mkae your pet a profile, add a post and start interacting with fellow domesticated animals! 
+
+### **Site Goals**
+
+To build a content sharing platform to allow users to make profiles for their pets, add posts, follow and unfollow other users, vote or downvote posts, as well as save them, and comment on posts too! You can use the provided search bar to search through the posts with a keyword or a user's name. 
+
+
