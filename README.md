@@ -34,7 +34,7 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 - [Audience](#audience "Audience")
 - [User Stories](#user-stories "User Stories")
 
-
+</details>
 <details><summary>Design</summary>
 
 - [Colour Scheme](#colour-scheme "Colour Scheme")
