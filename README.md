@@ -32,15 +32,8 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 - [Site Goals](#site-goals "Site Goals")
 - [User Goals](#user-goals "User Goals")
 - [Audience](#audience "Audience")
+- [User Stories](#user-stories "User Stories")
 
-
-</details>
-<details><summary>User Stories</summary>
-
-- [Site User Stories](#site-user-stories "Site User Stories")
-- [Admin Stories](#admin-stories "Admin Stories")
-
-</details>
 
 <details><summary>Design</summary>
 
@@ -98,5 +91,26 @@ Mkae your pet a profile, add a post and start interacting with fellow domesticat
 ### **Site Goals**
 
 To build a content sharing platform to allow users to make profiles for their pets, add posts, follow and unfollow other users, vote or downvote posts, as well as save them, and comment on posts too! You can use the provided search bar to search through the posts with a keyword or a user's name. 
+
+
+### **Audience**
+
+For your pets! Especially those looking to make new friends.
+
+
+### **User Stories**
+User Stories and Backend Tasks can be found in this GitHub repository project Kanban board, and for this project, all user stories can be found [here] (https://github.com/users/JodyMurray/projects/11)
+
+## **Design**
+
+### **Colour Scheme**
+The colour scheme chosen, was decided from looking up trending colour schemes online from this website 
+[(https://coolors.co/palettes/trending)]
+- The colour for the NavBar is 
+- The colour for the content boxes is 
+- The colour for the downVotes and saved icons in posts is 
+- The colour for headings is
+- The colour for most buttons is 
+- The colour for the unfollow button is 
 
 
