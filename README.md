@@ -39,6 +39,7 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 
 - [Colour Scheme](#colour-scheme "Colour Scheme")
 - [Typography](#typography "Typography")
+- [Iconography](#iconography "Iconography")
 - [Wireframes](#wireframes "Wireframes")
 - [Images](#images "Images")
 
@@ -99,7 +100,7 @@ For your pets! Especially those looking to make new friends.
 
 
 ### **User Stories**
-User Stories and Backend Tasks can be found in this GitHub repository project Kanban board, and for this project, all user stories can be found [here] (https://github.com/users/JodyMurray/projects/11)
+User Stories and Backend Tasks can be found in this GitHub repository project Kanban board, and for this project, all user stories can be found [here](https://github.com/users/JodyMurray/projects/11)
 
 ## **Design**
 
@@ -113,4 +114,28 @@ The colour scheme chosen, was decided from looking up trending colour schemes on
 - The colour for most buttons is 
 - The colour for the unfollow button is 
 
+
+### **Typography**
+
+All fonts are from the Google Fonts library.The following fonts were chosen for the page:
+- 'Hanken Grotesk', sans-serif for the headers in the SignInUpForms.
+- 'Raleway', sans-serif for the rest of the font on the page.
+
+### **Iconography**
+
+The logo used for this project was made using [Looka](https://looka.com/explore).
+
+### **Wireframes**
+
+[WIREFRAME SCREENSHOTS]
+
+### **Images**
+
+All images for the websites pages were sourced through google and stored on Cloudinary.
+
+The images used for the posts and pet's profiles were sourced from google, but mostly from pets I live with (Yoda) and my friend's pets. 
+
+## **Features**
+
+### **NavBar**
 
