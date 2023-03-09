@@ -17,8 +17,8 @@ const NavBar = () => {
     const { expanded, setExpanded, ref } = useClickOutsideToggle();
 
     const checkActive = (match, location) => {
-        if(!location) return false;
-        const {pathname} = location;
+        if (!location) return false;
+        const { pathname } = location;
         console.log(pathname);
         return pathname === "/";
     }
@@ -37,20 +37,25 @@ const NavBar = () => {
         <NavLink
             to="/pawfeed"
             activeClassName={styles.Active}
-            className={styles.NavLink}>PawFeed
+            className={styles.NavLink}>
             <i className="fa-solid fa-paw"></i>
+            PawFeed
+
         </NavLink>
         <NavLink
             to="/saved"
             className={styles.NavLink}
-            activeClassName={styles.Active}>Saved
+            activeClassName={styles.Active}>
             <i className="fa-solid fa-bookmark"></i>
+            Saved
+
         </NavLink>
         <NavLink className={styles.NavLink}
             to="/"
             onClick={handleSignOut}>
-            Sign out
             <i className="fa-solid fa-arrow-right-from-bracket"></i>
+            Sign out
+
         </NavLink>
 
         <NavLink
@@ -65,14 +70,16 @@ const NavBar = () => {
         <>
             <NavLink to="/signin"
                 className={styles.NavLink}
-                activeClassName={styles.Active}>Sign in
+                activeClassName={styles.Active}>
                 <i className="fas fa-circle-right"></i>
+                Sign in
             </NavLink>
             <NavLink to="/signup"
                 className={styles.NavLink}
-                activeClassName={styles.Active}>Sign up
+                activeClassName={styles.Active}>
                 <i className="fas fa-square-plus">
                 </i>
+                Sign up
             </NavLink>
         </>
     );
@@ -101,14 +108,18 @@ const NavBar = () => {
                     <Nav className="me-auto">
                         <NavLink to="/"
                             className={styles.NavLink}
-                            activeClassName={styles.Active} isActive={checkActive}>Home
+                            activeClassName={styles.Active} isActive={checkActive}>
                             <i className="fa-solid fa-house-chimney"></i>
+                            Home
+
                         </NavLink>
                         <NavLink to="/about"
                             className={styles.NavLink}
-                            activeClassName={styles.Active}>About
+                            activeClassName={styles.Active}>
                             <i className="fa-regular fa-circle-question">
                             </i>
+                            About
+
                         </NavLink>
 
                         {currentUser ? loggedInIcons : loggedOutIcons}

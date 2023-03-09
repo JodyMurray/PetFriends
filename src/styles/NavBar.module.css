@@ -22,9 +22,10 @@
 
 .NavLink.Active {
   color: rgb(76, 7, 76);
-  display: list-item;
+  transform: scale(1.1);
+  /* display: list-item;
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: calc(20%); */
 }
 
 .Active i {
