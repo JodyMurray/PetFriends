@@ -2,7 +2,7 @@ import { rest } from 'msw';
 const baseURL = 'https://petfriends-api.herokuapp.com/'
 
 export const handlers = [
-    rest.get(`${baseUrl}dj-rest-auth/user/`, (req, res, ctx) => {
+    rest.get(`${baseURL}dj-rest-auth/user/`, (req, res, ctx) => {
         return res(ctx.json(
             {
                 "pk": 3,
