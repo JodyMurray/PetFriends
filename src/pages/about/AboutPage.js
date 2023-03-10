@@ -1,11 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import appStyles from "../../App.module.css";
+import styles from "../../styles/About.module.css";
 
 
 const AboutPage = () => {
   return (
-    <Container className={`${appStyles.Content} ${appStyles.AboutContent} p-5 mt-4`}>
+    <Container className={`${appStyles.Content} ${styles.AboutContent} p-5 mt-4`}>
       <Row>
         <Col>
           <div className='d-flex justify-content-center'>
