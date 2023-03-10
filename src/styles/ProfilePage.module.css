@@ -27,6 +27,10 @@
     .ProfileContent {
         margin-top: -9px !important;
     }
+
+    .ProfileName {
+        margin-left: 25%;
+    }
 }
 
 @media screen and (max-width: 991px) {

@@ -66,7 +66,7 @@ function ProfilePage() {
                         roundedCircle
                         src={profile?.image}
                     />
-                    <h3 className="mr-5 d-flex justify-content-center">{profile?.owner}</h3>
+                    <h3 className={`mr-5 d-flex justify-content-center ${styles.ProfileName}`}>{profile?.owner}</h3>
                 </Col>
                 <Col lg={8}>
                     <Row className="justify-content-center no-gutters">
