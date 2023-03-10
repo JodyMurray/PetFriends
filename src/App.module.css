@@ -41,7 +41,7 @@ a:hover i {
     opacity: 0.9;
 }
 
-.ProfilesContent {
+/* .ProfilesContent {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top: 13% !important;
 }
@@ -57,7 +57,7 @@ a:hover i {
 .ProfilesContent p i:hover {
     transform: scale(1.1);
     transition: color ease-in-out 0.6s;
-}
+} */
 
 .ProfileContent2 {
     margin-top: -2.5% !important;

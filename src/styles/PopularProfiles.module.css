@@ -1,0 +1,24 @@
+.ProfilesContent {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 13% !important;
+}
+
+.ProfilesContent p {
+    text-align: center;
+}
+
+.ProfilesContent p i {
+    color: rgb(187, 81, 187);
+}
+
+.ProfilesContent p i:hover {
+    transform: scale(1.1);
+    transition: color ease-in-out 0.6s;
+}
+
+/* For medium laptop screens sizes from 1024px wide and down */
+@media screen and (max-width: 1024px){
+    .ProfilesContent {
+        margin-top: 16% !important;
+    }
+}

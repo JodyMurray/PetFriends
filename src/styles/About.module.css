@@ -3,3 +3,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+
+/* For medium laptop screens sizes from 1024px wide and down */
+@media screen and (max-width: 1024px){
+    .AboutContent {
+        margin-bottom: 4% !important;
+    }
+}
