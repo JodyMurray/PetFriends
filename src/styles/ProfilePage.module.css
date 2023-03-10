@@ -22,6 +22,13 @@
     color: rgb(177, 74, 177);
 }
 
+/* For medium laptop screens sizes from 1024px wide and down */
+@media screen and (max-width: 1024px){
+    .ProfileContent {
+        margin-top: -9px !important;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .ProfileImage {
         width: 250px;

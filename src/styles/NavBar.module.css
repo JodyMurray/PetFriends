@@ -37,7 +37,7 @@
 }
 
 
-/* For large phone screens sizes from 1024px wide and down */
+/* For medium laptop screens sizes from 1024px wide and down */
 @media screen and (max-width: 1024px) {
   .Pawfile {
     left: 10%;
