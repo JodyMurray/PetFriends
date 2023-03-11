@@ -72,4 +72,8 @@
   .Pawfile {
     left: unset;
   }
+
+  .NavLogo {
+    margin-left: 0.5px !important;
+  }
 }

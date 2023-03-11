@@ -46,7 +46,7 @@
 /* For large tablet screens sizes from 768px wide and down */
 @media screen and (max-width: 768px){
     .ProfileName {
-        margin-left: 10%;
+        margin-left: 7%;
         padding-top: 10px;
     }
 }
