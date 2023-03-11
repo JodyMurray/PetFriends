@@ -8,8 +8,9 @@
 .ProfileContent {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin-top: 6.3%;
-    
+
 }
+
 .BioContent {
     border: 1px solid rgb(211, 211, 249);
     border-radius: 20px;
@@ -18,13 +19,14 @@
     font-size: 18px;
     background-color: rgb(249, 243, 249);
 }
+
 .OwnersPosts {
     font-weight: 600;
     color: rgb(177, 74, 177);
 }
 
 /* For medium laptop screens sizes from 1024px wide and down */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .ProfileContent {
         margin-top: 7.6% !important;
     }
@@ -38,5 +40,13 @@
     .ProfileImage {
         width: 250px;
         height: 250px;
+    }
+}
+
+/* For large tablet screens sizes from 768px wide and down */
+@media screen and (max-width: 768px){
+    .ProfileName {
+        margin-left: 10%;
+        padding-top: 10px;
     }
 }
