@@ -55,7 +55,6 @@ const NavBar = () => {
             onClick={handleSignOut}>
             <i className="fa-solid fa-arrow-right-from-bracket"></i>
             Sign out
-
         </NavLink>
 
         <NavLink
@@ -88,7 +87,7 @@ const NavBar = () => {
             <Container>
                 <NavLink to="/">
 
-                    <Navbar.Brand className={styles.NavLink}>
+                    <Navbar.Brand className={`${styles.NavLink} ${styles.NavLogo}`}>
                         <img src={logo} alt="logo" height="50" />
 
                     </Navbar.Brand>
@@ -100,9 +99,11 @@ const NavBar = () => {
                     ref={ref}
                     onClick={() => setExpanded(!expanded)}
                     aria-controls="basic-navbar-nav"
-                    className='navbarToggle ' />
+                    className='navbarToggle'
+                     />
+                    
                 <Navbar.Collapse id="basic-navbar-nav"
-                    className='mr-auto flex-column text-center' >
+                    className='mr-auto flex-column text-center'>
 
 
                     <Nav className="me-auto">
@@ -119,7 +120,6 @@ const NavBar = () => {
                             <i className="fa-regular fa-circle-question">
                             </i>
                             About
-
                         </NavLink>
 
                         {currentUser ? loggedInIcons : loggedOutIcons}
