@@ -51,13 +51,14 @@
 
 /* For large tablet screens sizes from 768px wide and down */
 @media screen and (max-width: 768px) {
+
   .NavLink,
   .NavLink i {
     font-size: 14px;
     padding: 5.6px;
     line-height: 3.5;
   }
-  
+
   .NavLogo {
     margin-left: -30px !important;
   }

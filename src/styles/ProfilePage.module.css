@@ -50,3 +50,10 @@
         padding-top: 10px;
     }
 }
+
+/* For large phone screen sizes from 425px wide and down */
+@media screen and (max-width: 425px){
+    .ProfileName {
+        margin-right: 8% !important;
+    }
+}
