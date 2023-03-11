@@ -56,3 +56,11 @@
     -webkit-box-shadow: 10px 10px 5px #ccc;
     -khtml-box-shadow: 10px 10px 5px #ccc;
 }
+
+/* For medium laptop screens sizes from 1024px wide and down */
+@media screen and (max-width: 1024px){
+    .FillerImage {
+        width: 95%;
+        height: 90%;
+    }
+}
