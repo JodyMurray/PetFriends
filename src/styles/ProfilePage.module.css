@@ -25,7 +25,7 @@
 /* For medium laptop screens sizes from 1024px wide and down */
 @media screen and (max-width: 1024px){
     .ProfileContent {
-        margin-top: -9px !important;
+        margin-top: -0.5px !important;
     }
 
     .ProfileName {

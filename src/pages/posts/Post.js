@@ -8,7 +8,6 @@ import { axiosRes } from "../../api/axiosDefaults";
 import { MoreDropdown } from "../../components/MoreDropdown";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-
 const Post = (props) => {
     const {
         id,
@@ -176,10 +175,12 @@ const Post = (props) => {
             <Link to={`/posts/${id}`}>
                 <Card.Img src={image} alt={title} className={styles.PostImage} />
             </Link>
+                            
             {is_owner && postFeed &&
                 <MoreDropdown handleEdit={handleEdit}
-                handleDelete={handleDelete}
+                    handleDelete={handleDelete}
                 />
+
             }
             <Card.Body>
                 {title && <Card.Title className='text-center'>{title}</Card.Title>}
