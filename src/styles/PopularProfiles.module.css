@@ -22,3 +22,10 @@
         margin-top: 16% !important;
     }
 }
+
+/* For large tablet screens sizes from 768px wide and down */
+@media screen and (max-width: 768px){
+    .ProfilesContent {
+        margin-top: 9% !important;
+    }
+}

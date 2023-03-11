@@ -7,6 +7,7 @@
 
 .ProfileContent {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 6.3%;
     
 }
 .BioContent {
@@ -25,7 +26,7 @@
 /* For medium laptop screens sizes from 1024px wide and down */
 @media screen and (max-width: 1024px){
     .ProfileContent {
-        margin-top: -0.5px !important;
+        margin-top: 7.6% !important;
     }
 
     .ProfileName {
