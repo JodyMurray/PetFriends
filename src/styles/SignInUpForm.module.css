@@ -64,3 +64,17 @@
         height: 90%;
     }
 }
+
+/* For large tablet screens sizes from 768px wide and down */
+@media screen and (max-width: 768px){
+    .FillerImage {
+        width: 98%;
+        height: auto;
+    }
+    .Input {
+        width: 120%;
+    }
+    .Header {
+        margin-left: 10%;
+    }
+}
