@@ -1,5 +1,7 @@
-import React from 'react'
-import { Container, Navbar, Nav } from 'react-bootstrap'
+import React from 'react';
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav"; 
 import styles from "../styles/NavBar.module.css";
 import logo from '../assets/logo.png'
 import { NavLink } from "react-router-dom"
@@ -7,6 +9,7 @@ import { useCurrentUser, useSetCurrentUser } from '../contexts/CurrentUserContex
 import Avatar from './Avatar';
 import axios from 'axios';
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
+import { removeTokenTimestamp } from '../utils/utils';
 
 
 
@@ -28,6 +31,7 @@ const NavBar = () => {
         try {
             await axios.post("dj-rest-auth/logout/");
             setCurrentUser(null);
+            removeTokenTimestamp();
         } catch (err) {
             console.log(err);
         }
@@ -100,8 +104,8 @@ const NavBar = () => {
                     onClick={() => setExpanded(!expanded)}
                     aria-controls="basic-navbar-nav"
                     className='navbarToggle'
-                     />
-                    
+                />
+
                 <Navbar.Collapse id="basic-navbar-nav"
                     className='mr-auto flex-column text-center'>
 
