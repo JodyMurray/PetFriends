@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav"; 
+import Nav from "react-bootstrap/Nav";
 import styles from "../styles/NavBar.module.css";
 import logo from '../assets/logo.png'
 import { NavLink } from "react-router-dom"
@@ -71,6 +71,13 @@ const NavBar = () => {
     </>
     const loggedOutIcons = (
         <>
+            <NavLink to="/about"
+                className={styles.NavLink}
+                activeClassName={styles.Active}>
+                <i className="fa-regular fa-circle-question">
+                </i>
+                About
+            </NavLink>
             <NavLink to="/signin"
                 className={styles.NavLink}
                 activeClassName={styles.Active}>
@@ -118,13 +125,7 @@ const NavBar = () => {
                             Home
 
                         </NavLink>
-                        <NavLink to="/about"
-                            className={styles.NavLink}
-                            activeClassName={styles.Active}>
-                            <i className="fa-regular fa-circle-question">
-                            </i>
-                            About
-                        </NavLink>
+
 
                         {currentUser ? loggedInIcons : loggedOutIcons}
                     </Nav>

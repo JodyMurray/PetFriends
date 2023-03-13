@@ -37,6 +37,15 @@
   left: 20%;
 }
 
+/* For large laptop screens sizes from 1440px wide and down */
+@media screen and (max-width: 1440px){
+  .NavLink {
+    font-size: 17px;
+  }
+  .Pawfile {
+    left: 30%;
+  }
+}
 
 /* For medium laptop screens sizes from 1024px wide and down */
 @media screen and (max-width: 1024px) {
@@ -45,7 +54,7 @@
   }
 
   .NavLink {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -54,8 +63,8 @@
 
   .NavLink,
   .NavLink i {
-    font-size: 14px;
-    padding: 5.6px;
+    font-size: 15px;
+    padding: 8px;
     line-height: 3.5;
   }
 
@@ -64,7 +73,7 @@
   }
 
   .Pawfile {
-    left: 15px;
+    left: 19px;
   }
 }
 
