@@ -130,7 +130,25 @@ The logo used for this project was made using [Looka](https://looka.com/explore)
 
 ### **Wireframes**
 
-[WIREFRAME SCREENSHOTS]
+- Wireframe for home page/feed:
+
+![screenshot](documentation/wireframes/wireframes1.png)
+<br>
+<br>
+
+- Wireframe for post page:
+![screenshot](documentation/wireframes/wireframes2.png)
+<br>
+<br>
+
+- Wireframe for profile page:
+![screenshot](documentation/wireframes/wireframes3.png)
+<br>
+<br>
+
+- Wireframe for add post page:
+![screenshot](documentation/wireframes/wireframes4.png)
+
 
 ### **Images**
 
