@@ -99,3 +99,10 @@ h5 {
 .BookmarkOutline:hover {
     color: rgb(20, 111, 111);
 }
+
+/* For large phone screen sizes from 425px wide and down */
+/* @media screen and (max-width: 425px){
+    .Post {
+        margin: auto;
+    }
+} */
