@@ -236,10 +236,14 @@ const Post = (props) => {
                         </OverlayTrigger>
                     )}
                     {downvotes_count}
-
+                    <OverlayTrigger
+                            placement="bottom"
+                            overlay={<Tooltip>Sign in to comment on posts!</Tooltip>}
+                        >
                     <Link to={`/posts/${id}`}>
                         <i className="far fa-comment-dots" />
                     </Link>
+                    </OverlayTrigger>
                     {reply_count}
 
                 </div>
