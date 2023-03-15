@@ -173,7 +173,7 @@ const Post = (props) => {
             </Card.Body>
 
             <Link to={`/posts/${id}`}>
-                <Card.Img src={image} alt={title} className={styles.PostImage} />
+                <Card.Img src={image} height={350} width={350} alt={title} className={styles.PostImage} />
             </Link>
                             
             {is_owner && postFeed &&
