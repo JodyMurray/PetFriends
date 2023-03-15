@@ -1,3 +1,4 @@
+/* SearchBar */
 .SearchBar input {
   border-radius: 20px;
   color: #3d243c;
@@ -17,6 +18,20 @@
     transition:  0.3s ease-in-out;
 }
 
+.SearchIcon {
+  position: absolute;
+  font-size: 1.4rem;
+  padding: 8px;
+  padding-left: 15px;
+}
+
+.SearchIcon:hover {
+  cursor: default;
+  color: rgb(18, 126, 126);
+}
+
+
+/* Add post section  */
 .NewPostIcon a {
   border: 1px solid rgb(121, 118, 118);
   border-radius: 5px;
@@ -45,15 +60,14 @@
   transition: 0.3s ease-in-out;
 }
 
-.SearchIcon {
-  position: absolute;
-  font-size: 1.4rem;
-  padding: 8px;
-  padding-left: 15px;
-}
 
-
-.SearchIcon:hover {
-  cursor: default;
-  color: rgb(18, 126, 126);
+/* Media query */
+/* For large phone screen sizes from 425px wide and down */
+@media screen and (max-width: 425px){
+  .SearchBar {
+    padding-top: 6px;
+  }
+  .SearchIcon {
+    margin-top: 6px;
+  }
 }

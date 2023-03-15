@@ -16,6 +16,7 @@
     transition: color ease-in-out 0.6s;
 }
 
+/* Media query */
 /* For medium laptop screens sizes from 1024px wide and down */
 @media screen and (max-width: 1024px){
     .ProfilesContent {

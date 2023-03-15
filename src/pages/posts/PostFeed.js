@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -48,7 +47,6 @@ function PostFeed() {
             </Col>
             <Col className={`py-2 p-0 p-lg-2 ${appStyles.Post2}`} lg={8}>
                 <PopularProfiles mobile />
-
                 <Post {...post.results[0]} setPosts={setPost} postFeed />
                 <Container className={`mb-3 ${appStyles.Content}`}>
                     {currentUser ? (

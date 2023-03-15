@@ -10,35 +10,6 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-
-/* .PostImage {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
-    position: relative;
-    background: #612e5e;
-    border: 0.5px solid #612e5e;
-    border-radius: 2px;
-    transition: 0.3s ease;
-    font-size: 0;
-} */
-
-/* .PostImage {
-    padding: 1px;
-    border-radius: 1%;
-
-
-    transition: 0.3s;
-    width: 100%;
-    border-radius: 8px;
-} */
-
-/* .PostImage:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
-} */
-
-
 .PostImage {
     border-radius: 12px;
     padding: 5px;
@@ -62,7 +33,7 @@ h5 {
     margin: 0 0;
 }
 
-
+/* Votes and bookmark styling */
 .Upvote {
     color: rgb(185, 102, 185);
 }
@@ -100,9 +71,3 @@ h5 {
     color: rgb(20, 111, 111);
 }
 
-/* For large phone screen sizes from 425px wide and down */
-/* @media screen and (max-width: 425px){
-    .Post {
-        margin: auto;
-    }
-} */

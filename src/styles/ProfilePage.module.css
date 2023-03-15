@@ -11,6 +11,7 @@
 
 }
 
+/* Bio section */
 .BioContent {
     border: 1px solid rgb(211, 211, 249);
     border-radius: 20px;
@@ -20,6 +21,7 @@
     background-color: rgb(249, 243, 249);
 }
 
+/* Owner's post container */
 .OwnersPosts {
     font-weight: 600;
     color: rgb(177, 74, 177);
@@ -43,6 +45,8 @@
     }
 }
 
+
+/* Media query */
 /* For large tablet screens sizes from 768px wide and down */
 @media screen and (max-width: 768px){
     .ProfileName {

@@ -23,9 +23,6 @@
 .NavLink.Active {
   color: rgb(76, 7, 76);
   transform: scale(1.1);
-  /* display: list-item;
-  list-style-type: disc;
-  list-style-position: calc(20%); */
 }
 
 .Active i {
@@ -37,6 +34,8 @@
   left: 20%;
 }
 
+
+/* Media query */
 /* For large laptop screens sizes from 1440px wide and down */
 @media screen and (max-width: 1440px){
   .NavLink {

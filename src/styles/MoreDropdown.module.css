@@ -2,7 +2,6 @@
     display: inline-block;
     max-width: 50%;
     padding: 0px;
-    
 }
 .DropdownItem:hover {
     background-color: transparent;
@@ -15,6 +14,8 @@
     left: 93%;
     color: grey;
 }
+
+/* Edit bars */
 .Bars {
     position: absolute;
     right: 10px;
@@ -23,6 +24,8 @@
     color: grey;
 }
 
+
+/* media query */
 /* For medium laptop screens sizes from 1024px wide and down */
 @media screen and (max-width: 1024px){
     .Bars {
