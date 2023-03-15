@@ -19,16 +19,10 @@
 }
 
 
-.Button:hover:active {
-    background-color: #7a21b2 !important;
-}
-
-.Button:active {
-    background-color: #7a21b2 !important;
-}
-
+.Button:hover:active,
+.Button:active,
 .Button:focus {
-    background-color: #862bbe;
+    background-color: #7a21b2 !important;
 }
 
 .Wide {

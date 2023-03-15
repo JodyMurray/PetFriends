@@ -18,13 +18,13 @@ This project is the final of five projects that needs to be completed in order t
 
 A live version of this website will be found here: https://pet-friends.herokuapp.com/
 
-* Deployed FrontEnd - 
+* Deployed FrontEnd - https://pet-friends.herokuapp.com/
 
-* Deployed BackEnd API - 
+* Deployed BackEnd API - https://petfriends-api.herokuapp.com/
 
-* BackEnd Repo - 
+* BackEnd Repo - https://github.com/JodyMurray/my-api.git
 
-* FrontEnd Repo - 
+* FrontEnd Repo - https://github.com/JodyMurray/petfriends.git
 
 
 
@@ -51,12 +51,14 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 
 - [NavBar](#navbar "NavBar")
 - [Home Landing Page](#home-landing-page "Home Landing Page")
-- [About](#about "About")
+- [Post Page](#post-page "Post Page")
+- [About Page](#about-page "About Page")
 - [PawFeed](#pawfeed "PawFeed")
 - [Saved](#saved "Saved")
 - [Profile Page](#profile-page "Profile Page")
 - [Sign-in](#sign-in "Sign-in")
 - [Sign-up](#sign-up "Sign-up")
+- [No results found](#no-results-found "No results found")
 - [CRUD](#crud "CRUD")
 - [Defensive Design](#defensive-design "Defensive Design")
 
@@ -80,6 +82,14 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 - [Fixed Bugs and Solutions](#fixed-bugs-and-solutions "Fixed Bugs and Solutions") 
 - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 - [Future plans to implement](#future-plans-to-implement "Future plans to implement")
+
+</details>
+
+<details><summary>Credits</summary>
+
+- [Acknowledgements](#acknowledgements "Acknowledgements")
+- [Sources](#sources "Sources")
+- [Media](#media "Media")
 
 </details>
 
@@ -110,12 +120,12 @@ User Stories and Backend Tasks can be found in this GitHub repository project Ka
 ### **Colour Scheme**
 The colour scheme chosen, was decided from looking up trending colour schemes online from this website 
 [(https://coolors.co/palettes/trending)]
-- The colour for the NavBar is 
-- The colour for the content boxes is 
-- The colour for the downVotes and saved icons in posts is 
-- The colour for headings is
-- The colour for most buttons is 
-- The colour for the unfollow button is 
+- The colour for the NavBar is a linear-gradient (to right, rgba(241, 231, 254), rgba(213, 184, 255))
+- The colour for the content boxes is rgb(246, 239, 245)
+- The colour for the downVotes and saved icons in posts is rgb(7, 108, 108)
+- The colour for headings in the signup/in page is #7a21b2
+- The colour for the "light" buttons is #7a21b2, #ddc6ec
+- The colour for the unfollow button is rgb(139, 227, 218)
 
 
 ### **Typography**
@@ -163,4 +173,46 @@ The images used for the posts and pet's profiles were sourced from google, but m
 ## **Features**
 
 ### **NavBar**
+NavBar, user not logged in.
 
+![screenshot](documentation/features/NavBar2.png)
+
+NavBar, user loggeed in.
+
+![screenshot](documentation/features/NavBar.png)
+
+### **Home Landing Page**
+
+![screenshot](documentation/features/HomePage.png)
+
+### **Post Page**
+
+![screenshot](documentation/features/PostPage1.png)
+![screenshot](documentation/features/PostPage2.png)
+
+
+### **About Page**
+
+![screenshot](documentation/features/About.png)
+
+### **PawFeed**
+
+![screenshot](documentation/features/PawFeed.png)
+
+### **Saved**
+
+![screenshot](documentation/features/Saved.png)
+
+### **Profile Page**
+
+![screenshot](documentation/features/ProfilePage.png)
+
+### **Sign-in**
+
+![screenshot](documentation/features/SignIn.png)
+
+### **Sign-up**
+
+![screenshot](documentation/features/SignUp.png)
+
+### **CRUD**
