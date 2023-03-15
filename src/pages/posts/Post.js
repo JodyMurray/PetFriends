@@ -184,7 +184,7 @@ const Post = (props) => {
             }
             <Card.Body>
                 {title && <Card.Title className='text-center'>{title}</Card.Title>}
-                {content && <Card.Text className="text-muted">{content}</Card.Text>}
+                {content && <Card.Text>{content}</Card.Text>}
 
                 <div className={styles.PostSection}>
 
@@ -240,7 +240,7 @@ const Post = (props) => {
                             placement="bottom"
                             overlay={<Tooltip>Sign in to comment on posts!</Tooltip>}
                         >
-                    <Link to={`/posts/${id}`}>
+                    <Link to={`/posts/${id}`} aria-label="comment">
                         <i className="far fa-comment-dots" />
                     </Link>
                     </OverlayTrigger>
