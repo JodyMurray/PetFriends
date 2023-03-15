@@ -31,7 +31,7 @@ const Reply = (props) => {
                 results: [
                     {
                         ...prevPost.results[0],
-                        replies_count: prevPost.results[0].replies_count - 1,
+                        reply_count: prevPost.results[0].reply_count - 1,
                     },
                 ],
             }));

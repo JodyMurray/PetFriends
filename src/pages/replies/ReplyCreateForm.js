@@ -8,7 +8,7 @@ import styles from "../../styles/CommentForm.module.css";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 
-function CommentCreateForm(props) {
+function ReplyCreateForm(props) {
     const { post, setPost, setReplies, profileImage, profile_id } = props;
     const [content, setContent] = useState("");
 
@@ -31,7 +31,7 @@ function CommentCreateForm(props) {
                 results: [
                     {
                         ...prevPost.results[0],
-                        replies_count: prevPost.results[0].replies_count + 1,
+                        reply_count: prevPost.results[0].reply_count + 1,
                     },
                 ],
             }));
@@ -69,4 +69,4 @@ function CommentCreateForm(props) {
     );
 }
 
-export default CommentCreateForm;
+export default ReplyCreateForm;
