@@ -294,3 +294,25 @@ This project has been continuously tested throughout development stages using th
 
 
 #### LightHouse testing
+
+* **For Desktop:**
+
+    | Section | Performance | Accessibility | Best Practices | SEO |
+    | --- | --- | --- | --- | --- |
+    | Home | 73 | 100 | 92 | 100 |
+    | PawFeed | 73 | 100 | 92 | 100 |
+    | Saved | 73 | 100 | 92 | 100 |
+    | Sign Up | 86 | 100 | 67 | 100 |
+    | Sign in | 87 | 100 | 67 | 100 |
+    | Profile | 83 | 100 | 92 | 100 |
+
+* **For Mobile devices:**
+
+    | Section | Performance | Accessibility | Best Practices | SEO |
+    | --- | --- | --- | --- | --- |
+    | Home | 51 | 100 | 92 | 100 |
+    | PawFeed | 53 | 100 | 92 | 100 |
+    | Saved | 51 | 100 | 92 | 100 |
+    | Sign Up | 53 | 100 | 83 | 100 |
+    | Sign in | 53 | 100 | 83 | 100 |
+    | Profile | 51 | 100 | 92 | 100 |
