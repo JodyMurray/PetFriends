@@ -271,6 +271,13 @@ Sign-up page, along with a link to sign in if you have an account already!
 - [Heroku](https://heroku.com/): a cloud platform as a service (PaaS) supporting several programming languages. Used to 
 deploy and store for final deployment.
 
+### **Databases platform and cloud storage**
+
+- ElephantSQL Postgres: database service provided by ElephantSQL for data storage.
+- Heroku Postgres: SQL database service provided directly by Heroku for storing data.
+- Cloudinary: to store images and static files in production.
+- Heroku: to deploy and run the application in production.
+
 ## **Testing**
 ### **Introduction**
 This project has been continuously tested throughout development stages using the following features:
@@ -293,7 +300,7 @@ This project has been continuously tested throughout development stages using th
 - All JSX code was validated and corrected throughout the development of the project.
 
 
-#### LightHouse testing
+#### **LightHouse testing**
 
 * **For Desktop:**
 
