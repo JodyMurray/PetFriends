@@ -13,7 +13,7 @@ This project is the final of five projects that needs to be completed in order t
 
 ## Responsive screen display
 
-![screenshot](documentation/screenshots/responsive.png)
+![screenshot](documentation/test_screenshots/responsive.png)
 
 
 A live version of this website will be found here: https://pet-friends.herokuapp.com/
@@ -67,10 +67,8 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 <details><summary>Technologies Used</summary>
 
 - [Languages Used](#languages-used "Languages Used")
-- [Frameworks, Libraries & Programs Used](#framewords-libraries-and-programs-used "Frameworks, Libraries & Programs Used")
+- [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used "Frameworks, Libraries and Programs Used")
 - [Databases platform and cloud storage](#databases-platform-and-cloud-storage "Databases platform and cloud storage")
-- [Relational Database Diagram](#relational-database-diagram "Relational Database Diagram")
-- [Database Structure](#database-structure "Database Structure")
 
 </details>
 <details><summary>Testing</summary>
@@ -255,7 +253,7 @@ Sign-up page, along with a link to sign in if you have an account already!
 - React
 
 
-## **Frameworks, Libraries & Programs Used**
+### **Frameworks, Libraries and Programs Used**
 - [Axios](https://axios-http.com/): a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data.
 - [Favicon](https://favicon.io/): Used to generate the favicon image from a logo generated.
 - [jwt-decode](https://jwt.io/): is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.
@@ -264,7 +262,52 @@ Sign-up page, along with a link to sign in if you have an account already!
 - [react-infinite-scroll-component](https://www.npmjs.com/package/react-infinite-scroll-component): a technique that automatically adds the next page as the user scrolls down through content, more content is loaded.
 - [Font Awesome](https://fontawesome.com/): a widely-used icon set that gives you scalable vector images that can be customized with CSS.
 - [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): an open source tool for running technical website audits.
+- [Am I Responsive?](https://ui.dev/amiresponsive): to ensure the project looked good across all devices.
+- [HTML Markup Validation](https://validator.w3.org/): used to validate HTML code syntax.
+- [CSS Validation Service](https://jigsaw.w3.org/css-validator/): used to validate CSS code syntax.
+- [Balsamiq](https://balsamiq.com/): used to create mockups/wireframes of the project prior to starting.
 - [Google Fonts](https://fonts.google.com/): a computer font and web font service owned by Google. This includes free and open source font families.
 - [GitHub](https://github.com/): an Internet hosting service for software development and version control using Git.
 - [Heroku](https://heroku.com/): a cloud platform as a service (PaaS) supporting several programming languages. Used to 
 deploy and store for final deployment.
+
+
+### **Databases platform and cloud storage**
+
+- ElephantSQL Postgres: database service provided by ElephantSQL for data storage.
+- Heroku Postgres: SQL database service provided directly by Heroku for storing data.
+- Cloudinary: to store images and static files in production.
+- Heroku: to deploy and run the application in production.
+
+
+## **Testing**
+### **Introduction**
+This project has been continuously tested throughout development stages using the following features:
+- Python terminal for backend functionalities
+- Google Developer Tools
+- Manual Testing
+- Automated Testing
+
+### **Validator Testing**
+- All HTML files passed through the HTML checker with no errors, but with an info message to remove trailing slashes in the index.html.
+- After removal of these slashes, there was so message and everything passed.
+
+![screenshot](documentation/test_screenshots/HTML_validator.png)
+
+
+- CSS files pass through the Jigsaw validator without error.
+
+![screenshot](documentation/test_screenshots/CSS_validator.png)
+
+- All JSX code was validated and corrected throughout the development of the project.
+
+
+#### LightHouse testing
+
+* **For Desktop:**
+
+* **For Desktop:**
+
+
+
+
