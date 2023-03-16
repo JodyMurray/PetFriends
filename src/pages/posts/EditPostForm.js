@@ -132,7 +132,7 @@ function EditPostForm() {
 
 
                             <figure>
-                                <Image className={appStyles.Image} src={image} rounded />
+                                <Image className={appStyles.Image} src={image} rounded alt="profile"/>
                             </figure>
                             <div>
                                 <Form.Label

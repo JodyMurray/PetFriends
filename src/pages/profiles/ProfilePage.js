@@ -65,6 +65,7 @@ function ProfilePage() {
                         className={styles.ProfileImage}
                         roundedCircle
                         src={profile?.image}
+                        alt="avatar"
                     />
                     <h3 className={`mr-5 d-flex justify-content-center ${styles.ProfileName}`}>{profile?.owner}</h3>
                 </Col>

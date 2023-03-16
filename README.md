@@ -13,7 +13,7 @@ This project is the final of five projects that needs to be completed in order t
 
 ## Responsive screen display
 
-![screenshot](documentation/screenshots/responsive.png)
+![screenshot](documentation/test_screenshots/responsive.png)
 
 
 A live version of this website will be found here: https://pet-friends.herokuapp.com/
@@ -253,7 +253,7 @@ Sign-up page, along with a link to sign in if you have an account already!
 - React
 
 
-## **Frameworks, Libraries and Programs Used**
+### **Frameworks, Libraries and Programs Used**
 - [Axios](https://axios-http.com/): a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data.
 - [Favicon](https://favicon.io/): Used to generate the favicon image from a logo generated.
 - [jwt-decode](https://jwt.io/): is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.
@@ -272,9 +272,62 @@ Sign-up page, along with a link to sign in if you have an account already!
 deploy and store for final deployment.
 
 
-## **Databases platform and cloud storage**
+### **Databases platform and cloud storage**
 
 - ElephantSQL Postgres: database service provided by ElephantSQL for data storage.
 - Heroku Postgres: SQL database service provided directly by Heroku for storing data.
 - Cloudinary: to store images and static files in production.
 - Heroku: to deploy and run the application in production.
+
+
+## **Testing**
+### **Introduction**
+This project has been continuously tested throughout development stages using the following features:
+- Python terminal for backend functionalities
+- Google Developer Tools
+- Manual Testing
+- Automated Testing
+
+### **Validator Testing**
+- All HTML files passed through the HTML checker with no errors, but with an info message to remove trailing slashes in the index.html.
+- After removal of these slashes, there was so message and everything passed.
+
+![screenshot](documentation/test_screenshots/HTML_validator.png)
+
+
+- CSS files pass through the Jigsaw validator without error.
+
+![screenshot](documentation/test_screenshots/CSS_validator.png)
+
+- All JSX code was validated and corrected throughout the development of the project.
+
+
+#### LightHouse testing
+
+* **For Desktop:**
+
+    | Section | Performance | Accessibility | Best Practices | SEO |
+    | --- | --- | --- | --- | --- |
+    | Home | 99 | 95 | 83 | 100 |
+    | Featured | 99 | 93 | 75 | 100 |
+    | Newsletter | 99 | 80 | 83 | 100 |
+    | Sign Up | 99 | 81 | 83 | 100 |
+    | Login | 99 | 94 | 83 | 100 |
+    | Profile | 99 | 94 | 83 | 100 |
+    | Edit Profile | 99 | 83 | 83 | 100 |
+
+* **For Mobile devices:**
+
+    | Section | Performance | Accessibility | Best Practices | SEO |
+    | --- | --- | --- | --- | --- |
+    | Home | 96 | 95 | 83 | 92 |
+    | Featured | 96 | 95 | 83 | 100 |
+    | Newsletter | 91 | 86 | 83 | 100 |
+    | Sign Up | 90 | 86 | 83 | 100 |
+    | Login | 90 | 95 | 83 | 100 |
+    | Profile | 92 | 94 | 83 | 100 |
+    | Edit Profile | 89 | 86 | 75 | 100 |
+
+
+
+
