@@ -75,18 +75,16 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 
 - [Introduction](#introduction "Introduction")
 - [Validator testing](#validator-testing "Validator Testing")
-- [Automated testing](#automated-testing "Automated Testing")
-- [Testing and bugs](#testing-and-bugs "Testing and bugs")
 - [Fixed Bugs and Solutions](#fixed-bugs-and-solutions "Fixed Bugs and Solutions") 
 - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 - [Future plans to implement](#future-plans-to-implement "Future plans to implement")
 
 </details>
 
-<details><summary>Development and Deployment</summary>
+<details><summary>Deployment</summary>
 
-- [Development](#development "Development")
-- [Deployment](#deployment "Deployment")
+- [GitHub](#github "GitHub")
+- [Heroku](#heroku "heroku")
 
 </details>
 
@@ -323,3 +321,30 @@ This project has been continuously tested throughout development stages using th
     | Sign Up | 53 | 100 | 83 | 100 |
     | Sign in | 53 | 100 | 83 | 100 |
     | Profile | 51 | 100 | 92 | 100 |
+
+
+### **Fixed bugs and solutions**
+
+- TokenTimestamp wasn't functioning as it should.
+    * Solution: A spelling error fix solved the issue.
+
+- Reply count unpon testing wasn't going up in count as a reply is added.
+    * Solution: The variable was wrongly named "replies_count", resolved once renamed "reply_count".
+
+- For smaller screen sizes, the navlink's text and icons stacked on top of each other.
+    * Solution: Reduce padding, size of font and reduce margin on the logo as it was pushing everything to the right.
+
+- An error logged to the console for the logo/favicon image. 
+    * Solution: I had deleted the original favicon.io 16x16 images when I first opened the project, adding these back with. the new logo resolved this error.
+
+- Errors would show up in the console claiming that there were several icons with "class" instead of "className" 
+obviously from copying and pasting from font awesome.
+    * Solution: Searching all icons in the sidebar on github, this was quicky resolved.
+
+- When the reply icon was clicked on, the page wasn't redirecting to the reply section on the post page.
+    * Solution: There was an unnecessary space in the link - {posts/$id}.
+
+
+## **Deployment**
+### **GitHub**
+
