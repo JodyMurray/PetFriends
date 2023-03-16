@@ -85,6 +85,14 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 
 </details>
 
+<details><summary>Development and Deployment</summary>
+
+- [Development](#development "Development")
+- [Deployment](#deployment "Deployment")
+
+</details>
+
+
 <details><summary>Credits</summary>
 
 - [Acknowledgements](#acknowledgements "Acknowledgements")
@@ -236,3 +244,27 @@ Sign-up page, along with a link to sign in if you have an account already!
 ![screenshot](documentation/features/SignUp.png)
 
 ### **CRUD**
+
+
+
+## **Technologies Used**
+### **Languages Used**
+- HTML
+- CSS
+- Javascript
+- React
+
+
+## **Frameworks, Libraries & Programs Used**
+- [Axios](https://axios-http.com/): a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data.
+- [Favicon](https://favicon.io/): Used to generate the favicon image from a logo generated.
+- [jwt-decode](https://jwt.io/): is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.
+- [React-Bootstrap](https://react-bootstrap.github.io/): a component-based library that provides native Bootstrap components as pure React components.
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom): enables you to implement dynamic routing in a web app. 
+- [react-infinite-scroll-component](https://www.npmjs.com/package/react-infinite-scroll-component): a technique that automatically adds the next page as the user scrolls down through content, more content is loaded.
+- [Font Awesome](https://fontawesome.com/): a widely-used icon set that gives you scalable vector images that can be customized with CSS.
+- [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): an open source tool for running technical website audits.
+- [Google Fonts](https://fonts.google.com/): a computer font and web font service owned by Google. This includes free and open source font families.
+- [GitHub](https://github.com/): an Internet hosting service for software development and version control using Git.
+- [Heroku](https://heroku.com/): a cloud platform as a service (PaaS) supporting several programming languages. Used to 
+deploy and store for final deployment.
