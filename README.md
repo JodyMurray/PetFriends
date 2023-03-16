@@ -183,9 +183,15 @@ NavBar, user loggeed in.
 
 ### **Home Landing Page**
 
+The home screen and landing page, with the recommended profiles sidebar.
+
 ![screenshot](documentation/features/HomePage.png)
 
 ### **Post Page**
+
+The post's page, with the recommended profiles sidebar.
+Thumbs up and thumbs down buttons to upvote or downvote any post to your desire.
+The three dots on the side of the post image is the button to edit or delete your post.
 
 ![screenshot](documentation/features/PostPage1.png)
 ![screenshot](documentation/features/PostPage2.png)
@@ -193,25 +199,39 @@ NavBar, user loggeed in.
 
 ### **About Page**
 
+Just a little paragraph about the site! This page only shows up in the NavBar if you are not signed in.
+
 ![screenshot](documentation/features/About.png)
 
 ### **PawFeed**
+
+The PawFeed consist of posts from users that you follow.
 
 ![screenshot](documentation/features/PawFeed.png)
 
 ### **Saved**
 
+The saved page consists of posts you have specifically saved.
+
 ![screenshot](documentation/features/Saved.png)
 
 ### **Profile Page**
+
+Your profile page, or another user's, along with the sidebar of recommended profiles to follow. 
+The profile page contains a bio section, the bars in the corner to edit your profile, change your username or password.
 
 ![screenshot](documentation/features/ProfilePage.png)
 
 ### **Sign-in**
 
+Sign-in page, along with a link to sign up for an account if you haven't already!
+
 ![screenshot](documentation/features/SignIn.png)
 
 ### **Sign-up**
+
+Sign-up page, along with a link to sign in if you have an account already!
+
 
 ![screenshot](documentation/features/SignUp.png)
 
