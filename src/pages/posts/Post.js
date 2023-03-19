@@ -29,6 +29,7 @@ const Post = (props) => {
     } = props;
 
     const currentUser = useCurrentUser();
+    const is_user = currentUser?.username;
     const is_owner = currentUser?.username === owner;
     const history = useHistory();
 
@@ -175,7 +176,7 @@ const Post = (props) => {
             <Link to={`/posts/${id}`}>
                 <Card.Img src={image} height={450} width={350} alt={title} className={styles.PostImage} />
             </Link>
-                            
+
             {is_owner && postFeed &&
                 <MoreDropdown handleEdit={handleEdit}
                     handleDelete={handleDelete}
@@ -236,16 +237,24 @@ const Post = (props) => {
                         </OverlayTrigger>
                     )}
                     {downvotes_count}
-                    <OverlayTrigger
+
+                    {is_user ? (
+                        <Link to={`/posts/${id}`} aria-label="comment">
+                            <i className="far fa-comment-dots" /></Link>
+                    ) : currentUser ? (
+                        <span>
+                            <i className="far fa-comment-dots" />
+                        </span>
+                    ) : (
+                        <OverlayTrigger
                             placement="bottom"
                             overlay={<Tooltip>Sign in to comment on posts!</Tooltip>}
-                        >
-                    <Link to={`/posts/${id}`} aria-label="comment">
-                        <i className="far fa-comment-dots" />
-                    </Link>
-                    </OverlayTrigger>
-                    {reply_count}
+                        ><Link to ="/signin" >
+                            <i className="far fa-comment-dots" /></Link>
+                        </OverlayTrigger>
 
+                    )}
+                    {reply_count}
                 </div>
 
             </Card.Body>
