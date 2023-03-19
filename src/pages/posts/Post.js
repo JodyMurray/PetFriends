@@ -166,7 +166,9 @@ const Post = (props) => {
                             </span>
                         ) : (
                             <OverlayTrigger placement='top' overlay={<Tooltip>Sign in to save posts!</Tooltip>}>
-                                <i className="fa-regular fa-bookmark" />
+                                <Link to="/signin">
+                                    <i className="fa-regular fa-bookmark" />
+                                </Link>
                             </OverlayTrigger>
                         )}
                     </div>
@@ -209,7 +211,9 @@ const Post = (props) => {
                             placement="bottom"
                             overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}
                         >
-                            <i className="far fa-thumbs-up" />
+                            <Link to="/signin">
+                                <i className="far fa-thumbs-up" />
+                            </Link>
                         </OverlayTrigger>
                     )}
                     {votes_count}
@@ -233,7 +237,9 @@ const Post = (props) => {
                             placement="bottom"
                             overlay={<Tooltip>Sign in to vote for posts!</Tooltip>}
                         >
-                            <i className="far fa-thumbs-down" />
+                            <Link to="/signin">
+                                <i className="far fa-thumbs-down" />
+                            </Link>
                         </OverlayTrigger>
                     )}
                     {downvotes_count}
@@ -249,8 +255,8 @@ const Post = (props) => {
                         <OverlayTrigger
                             placement="bottom"
                             overlay={<Tooltip>Sign in to comment on posts!</Tooltip>}
-                        ><Link to ="/signin" >
-                            <i className="far fa-comment-dots" /></Link>
+                        ><Link to="/signin">
+                                <i className="far fa-comment-dots" /></Link>
                         </OverlayTrigger>
 
                     )}
