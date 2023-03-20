@@ -298,6 +298,8 @@ This project has been continuously tested throughout development stages using th
 
 - All JSX code was validated and corrected throughout the development of the project.
 
+![screenshot](documentation/test_screenshots/EsLint.png)
+
 
 #### **LightHouse testing**
 
@@ -337,6 +339,7 @@ Manual testing for this project were carried out as follows:
 - You can vote, downvote and save and also undo all of these actions if you change your mind.
 - When votes/comments/save icons are hovered over, they let you know if you need to sign in to use this feature, and once clicked on if the user is signed out, you will be redirected to the signin page.
 - The user is notified what each icon represents. In each post page, if the user is the owner, the three dots to the right side of the post image will bring up the edit and delete feature, both icons have an overlaytrigger to indicate which one does what feature.
+- The site was continuously built on google chrome, and once built, it was sucessfully tested on firefox browswer, and safari browser. The only issue found on safari was the inability to signin properly, which was resolved after some research on Slack. (mentioned and detailed in fixed bugs section below) 
 
 
 ### **Fixed bugs and solutions**
@@ -360,7 +363,7 @@ obviously from copying and pasting from font awesome.
 - When the reply icon was clicked on, the page wasn't redirecting to the reply section on the post page.
     * Solution: There was an unnecessary space in the link - {posts/$id}.
 
-- There was an issue with logging in from safari, once I added the credentials it would jump back to the signin page.
+- There was an issue with logging in through safari, once I added the credentials it would jump back to the signin page.
     * Solution: Upon researching in Slack, the issue was with the JWT json web token as a http-only cookie in the browser,
     in the settings in Safari, enabling "Allow cross-website tracking" resolved the issue and it was possible to sign-in.
 
@@ -368,9 +371,28 @@ obviously from copying and pasting from font awesome.
 ## **Deployment**
 
 ### **GitHub**
+The following bullet points detail the steps gone through to set up this project on GitHub:
+- Create Repository on GitHub (Not using any Code Institue Template).
+- Create a new workspace. Once workspace has started, run the following command in the terminal window:
 
+    *npx create-react-app . --template git+https://github.com/Code-Institute-Org/cra-template-moments.git --use-npm*
+
+- Enter "y" to confirm nstalling the create-react-app package.
+- Once the packages have been installed, run *npm start* to check that react is working correctly.
+- Once you can see it's running efficiently, go into the App.js file and remove the React Custom header and replace with a test text "Hello, world!", and remove the logo import at the top of the page.
+- In the preview window, you should see the test text show up now.
+- Once you see this test text, add, commit and push your changes.
 
 ### **Heroku**
+The following bullet points detail the steps gone through to set up this project on Heroku:
+- In heroku: Click on the "new" button and follow the steps to create a new app, noting that a completely unique name is required.
+- Once your unique name is chosen and you've selected your appropriate region, click "Create app".
+- Once this app is created, in the "deploy" tab in Heroku, you can connect this to your github repo.
+- From "Deployment method" section, choose github, and enter the name of the repo just created and use the search feature to find it and then click "connect".
+- When you've successfully connected your repo. Go to 'Manual Deploy' section and click 'Deploy Branch'. Click on 'build logs' to monitor build and ensure deployment is successful. Build is completed when the log says 'Build succeeded!'.
+- Next step is to install Bootstrap 4, by typing the following command in the terminal window:
+
+    *npm install react-bootstrap@1.6.3 bootstrap@4.6.0*
 
 
 ## **Credits**
