@@ -351,4 +351,31 @@ obviously from copying and pasting from font awesome.
 
 ## **Deployment**
 ### **GitHub**
+### **Heroku**
+
+
+## **Credits**
+
+- The Moments walkthrough was used as a guide for this project, it served as a major help in creating this site.
+- My mentor at Code Institute - Martina Terlevic.
+- Keiron Chaudhry, a fellow student and great support!
+
+
+## **Sources**
+
+- The Moments walkthrough was the main source I used as a guide for this project.
+- Slack - was a major help in solving some issues I came across.
+- StackOverflow - another major help in solving issues I came across building this project.
+
+
+## **Media**
+
+- The media sourced for this website, were mostly found on Google.
+- Other images were from friends and family, photos of their pets. And my own pet's images also.
+- The logo was generated using a logo generator from this website - [Looka](https://looka.com/)
+- The background remover tool was very useful to help with the logo and favicon - [here](https://www.remove.bg/)
+- The image for favicon was generated through - [favicon.io](https://favicon.io/)
+- The image for the responsive design at the top of the ReadMe was generated through - 
+[am i responsive?](https://ui.dev/amiresponsive)
+
 
