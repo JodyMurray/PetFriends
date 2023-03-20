@@ -75,6 +75,7 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 
 - [Introduction](#introduction "Introduction")
 - [Validator testing](#validator-testing "Validator Testing")
+- [Manual Testing](#manual-testing "Manual Testing")
 - [Fixed Bugs and Solutions](#fixed-bugs-and-solutions "Fixed Bugs and Solutions") 
 - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 - [Future plans to implement](#future-plans-to-implement "Future plans to implement")
@@ -323,6 +324,21 @@ This project has been continuously tested throughout development stages using th
     | Profile | 51 | 100 | 92 | 100 |
 
 
+### **Manual Testing**
+Manual testing for this project were carried out as follows: 
+- Users can see sign in, sign up and about pages only when not logged in.
+- Users can create a new account.
+- Users can then therefore sign in to their account and then be redirected to the home page.
+- Users can log out.
+- Once signed in, users can create, vote, save, comment on posts. They can edit and delete their posts and comments. 
+- Users can edit and update their profiles, which includes a profile picture, bio entry and a separate username and password edit feature.
+- All NavLinks and buttons go to their destination.
+- Clicking on the post image brings you to the post's page.
+- You can vote, downvote and save and also undo all of these actions if you change your mind.
+- When votes/comments/save icons are hovered over, they let you know if you need to sign in to use this feature, and once clicked on if the user is signed out, you will be redirected to the signin page.
+- The user is notified what each icon represents. In each post page, if the user is the owner, the three dots to the right side of the post image will bring up the edit and delete feature, both icons have an overlaytrigger to indicate which one does what feature.
+
+
 ### **Fixed bugs and solutions**
 
 - TokenTimestamp wasn't functioning as it should.
@@ -350,7 +366,10 @@ obviously from copying and pasting from font awesome.
 
 
 ## **Deployment**
+
 ### **GitHub**
+
+
 ### **Heroku**
 
 
