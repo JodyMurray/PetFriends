@@ -33,7 +33,6 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 
 - [User Demographic](#user-demographic "User Demographic")
 - [Site Goals](#site-goals "Site Goals")
-- [User Goals](#user-goals "User Goals")
 - [Audience](#audience "Audience")
 - [User Stories](#user-stories "User Stories")
 
@@ -124,7 +123,7 @@ User Stories and Backend Tasks can be found in this GitHub repository project Ka
 
 ### **Colour Scheme**
 The colour scheme chosen, was decided from looking up trending colour schemes online from this website 
-[(https://coolors.co/palettes/trending)]
+[coolers](https://coolors.co/palettes/trending).
 - The colour for the NavBar is a linear-gradient (to right, rgba(241, 231, 254), rgba(213, 184, 255))
 - The colour for the content boxes is rgb(246, 239, 245)
 - The colour for the downVotes and saved icons in posts is rgb(7, 108, 108)
@@ -135,7 +134,7 @@ The colour scheme chosen, was decided from looking up trending colour schemes on
 
 ### **Typography**
 
-All fonts are from the Google Fonts library.The following fonts were chosen for the page:
+All fonts are from the Google Fonts library. The following fonts were chosen for the page:
 - 'Hanken Grotesk', sans-serif for the headers in the SignInUpForms.
 - 'Raleway', sans-serif for the rest of the font on the page.
 
@@ -182,21 +181,23 @@ NavBar, user not logged in.
 
 ![screenshot](documentation/features/NavBar2.png)
 
-NavBar, user loggeed in.
+NavBar, user logged in.
 
 ![screenshot](documentation/features/NavBar.png)
 
 ### **Home Landing Page**
 
-The home screen and landing page, with the recommended profiles sidebar.
+The home screen and landing page, with the recommended users to follow sidebar.
 
 ![screenshot](documentation/features/HomePage.png)
 
 ### **Post Page**
 
-The post's page, with the recommended profiles sidebar.
-Thumbs up and thumbs down buttons to upvote or downvote any post to your desire.
-The three dots on the side of the post image is the button to edit or delete your post.
+- The post's page, with the recommended user to follow sidebar.
+- Thumbs up and thumbs down buttons to upvote or downvote any post to your desire.
+- On the top right of the post beide the date posted, you have a bookmark icon to save this post, which later you can view in the "Saved" section from the NavBar.
+- The three dots on the side of the post image is the button to edit or delete your post.
+- And the comment section, create, edit and delete your comments!
 
 ![screenshot](documentation/features/PostPage1.png)
 ![screenshot](documentation/features/PostPage2.png)
@@ -222,8 +223,9 @@ The saved page consists of posts you have specifically saved.
 
 ### **Profile Page**
 
-Your profile page, or another user's, along with the sidebar of recommended profiles to follow. 
-The profile page contains a bio section, the bars in the corner to edit your profile, change your username or password.
+- Your profile page, or another user's, along with the sidebar of recommended profiles to follow. 
+- The profile page contains a bio section, the bars in the corner to edit your profile, change your username or password.
+- The page also holds all of the posts that the owner of the page has added.
 
 ![screenshot](documentation/features/ProfilePage.png)
 
@@ -338,7 +340,7 @@ This project has been continuously tested throughout development stages using th
 
 ### **Validator Testing**
 - All HTML files passed through the HTML checker with no errors, but with an info message to remove trailing slashes in the index.html.
-- After removal of these slashes, there was so message and everything passed.
+- After removal of these slashes, there was no error/info message and everything passed.
 
 ![screenshot](documentation/test_screenshots/HTML_validator.png)
 
@@ -451,6 +453,8 @@ The following bullet points detail the steps gone through to set up this project
 - The Moments walkthrough was used as a guide for this project, it served as a major help in creating this site.
 - My mentor at Code Institute - Martina Terlevic.
 - Keiron Chaudhry, a fellow student and great support!
+
+- Extra big thank you to Code Institute for this entire course, it's been a great journey so far, the tools and support provided during this course were amazing!
 
 
 ## **Sources**
