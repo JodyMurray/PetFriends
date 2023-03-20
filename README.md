@@ -240,6 +240,17 @@ Sign-up page, along with a link to sign in if you have an account already!
 
 ![screenshot](documentation/features/SignUp.png)
 
+### **No results found**
+#### The "No results image" will appear when:
+
+* The search bar entry does not exist:
+
+![screenshot](documentation/test_screenshots/NoResults2.png)
+
+* An invalid HTTP request is made:
+
+![screenshot](documentation/test_screenshots/NoResults1.png)
+
 ### **CRUD**
 
 
