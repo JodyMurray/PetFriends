@@ -344,6 +344,10 @@ obviously from copying and pasting from font awesome.
 - When the reply icon was clicked on, the page wasn't redirecting to the reply section on the post page.
     * Solution: There was an unnecessary space in the link - {posts/$id}.
 
+- There was an issue with logging in from safari, once I added the credentials it would jump back to the signin page.
+    * Solution: Upon researching in Slack, the issue was with the JWT json web token as a http-only cookie in the browser,
+    in the settings in Safari, enabling "Allow cross-website tracking" resolved the issue and it was possible to sign-in.
+
 
 ## **Deployment**
 ### **GitHub**
