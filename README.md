@@ -251,9 +251,49 @@ Sign-up page, along with a link to sign in if you have an account already!
 
 ![screenshot](documentation/test_screenshots/NoResults1.png)
 
+* On the user's profile page, if no posts have been added yet:
+
+![screenshot](documentation/test_screenshots/NoResults3.png)
+
+
 ### **CRUD**
+The CRUD functionality for this project are as follows:
+
+* The user can, once signed up to an account, update their profile with a profile picture/bio. They can also update their username and password from the profile page.
+* The user can also, once a post has been created, update or delete their post. The three dots on the right of the post's image will either delete the post (and bring you back to the home page once this is done) or edit your post, bringing you to an edit post form.
+* Users can also, once created a comment on a post, delete or edit their comments. If chosen, editing a comment will bring up a small form to retype your comment and then you can either save or close if you change your mind.
+* Users can also upvote, downvote and/or save posts, and you can also undo all of these features if you changed your mind.
+* Users can also follow other user's accounts, and following this, unfollow if they desire.
 
 
+### **Defensive Design**
+
+* When making a new account, the following message will appear if any of the inputs are left blank:
+
+![screenshot](documentation/test_screenshots/signupDefensive.png)
+
+* Login attempts with the wrong credentials, will show the following message: 
+
+![screenshot](documentation/test_screenshots/loginDefensive.png)
+
+* Login attempts leaving any input blank, will show the following message: 
+
+![screenshot](documentation/test_screenshots/loginDefensive2.png)
+
+* Attempts to save or vote for your own posts will show the following messages: 
+
+![screenshot](documentation/test_screenshots/savedDefensive.png)
+![screenshot](documentation/test_screenshots/votePostDefensive.png)
+
+* In the edit feature of a user's own posts, found by clicking the three dots on the right side of the post's image on the post page, will show the following message to ensure you know what you're doing before you click:
+
+![screenshot](documentation/test_screenshots/EditPostDefensive.png) 
+
+![screenshot](documentation/test_screenshots/DeletePostDefensive.png)
+
+* In the "Add post" section, leaving certain inputs blank will show the following message: 
+
+![screenshot](documentation/test_screenshots/addPostDefensive.png)
 
 ## **Technologies Used**
 ### **Languages Used**
