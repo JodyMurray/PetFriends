@@ -493,6 +493,7 @@ The following bullet points detail the steps gone through to set up this project
 - The Moments walkthrough was the main source I used as a guide for this project.
 - Slack - was a major help in solving some issues I came across.
 - StackOverflow - another major help in solving issues I came across building this project.
+- Box shadow examples found - [here](https://getcssscan.com/css-box-shadow-examples)
 
 
 ## **Media**
