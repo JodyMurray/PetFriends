@@ -77,9 +77,9 @@ function PostFeed() {
                             next={() => fetchMoreData(replies, setReplies)}
                         />
                     ) : currentUser ? (
-                        <span className={`py-2 p-0 p-lg-4 d-flex justify-content-center text-muted ${appStyles.CommentContainer}`}>Nothing yet! Be the first to say something!</span>
+                        <span className={`py-2 p-0 p-lg-4 d-flex justify-content-center ${appStyles.CommentContainer}`}>Nothing yet! Be the first to say something!</span>
                     ) : (
-                        <span className={`py-2 p-0 p-lg-4 d-flex justify-content-center text-muted ${appStyles.CommentContainer}`}>Nothing yet!</span>
+                        <span className={`py-2 p-0 p-lg-4 d-flex justify-content-center ${appStyles.CommentContainer}`}>Nothing yet!</span>
                     )}
                 </Container>
             </Col>

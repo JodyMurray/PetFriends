@@ -21,7 +21,7 @@ const PopularProfiles = ({ mobile }) => {
                             placement="bottom"
                             overlay={<Tooltip>Sign in to follow other users!</Tooltip>}
                         >
-                            <Link to="/signin">
+                            <Link to="/signin" aria-label="default image">
                                 <i className="fa-regular fa-circle-down" />
                             </Link>
                         </OverlayTrigger>

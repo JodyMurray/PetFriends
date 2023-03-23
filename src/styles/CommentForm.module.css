@@ -4,13 +4,14 @@
 }
 
 .Button {
-    border: none;
+    border: #5a1485 1px solid;
     background-color: #ddc6ec;
-    color: #5a1485;
+    color: #421260;
     border-radius: 100px;
     padding: 4px 10px;
     min-width: 75px;
     margin: 5px;
+    font-weight: 600;
 }
 
 .Button:hover {

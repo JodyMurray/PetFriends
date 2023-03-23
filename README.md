@@ -126,12 +126,13 @@ User Stories and Backend Tasks can be found in this GitHub repository project Ka
 ### **Colour Scheme**
 The colour scheme chosen, was decided from looking up trending colour schemes online from this website 
 [coolers](https://coolors.co/palettes/trending).
-- The colour for the NavBar is a linear-gradient (to right, rgba(241, 231, 254), rgba(213, 184, 255))
-- The colour for the content boxes is rgb(246, 239, 245)
-- The colour for the downVotes and saved icons in posts is rgb(7, 108, 108)
-- The colour for headings in the signup/in page is #7a21b2
-- The colour for the "light" buttons is #7a21b2, #ddc6ec
-- The colour for the unfollow button is rgb(139, 227, 218)
+- The background colour for the app is  *rgb(249, 251, 251)*
+- The background colour for the content boxes is *rgb(246, 239, 245)*
+- The background colour for the NavBar is a linear-gradient *(to right, rgba(241, 231, 254), rgba(213, 184, 255))*
+- The background colour for the downVotes and saved icons in posts is *rgb(7, 108, 108)*
+- The background colour for headings in the signup/in page is *rgb(122,	33,	178)*
+- The background colour for the "light" buttons is *rgb(122, 33, 178), rgb(221, 198, 236)*
+- The background colour for the unfollow button is *rgb(139, 227, 218), rgb(46, 205, 189)*
 
 
 ### **Typography**
@@ -319,6 +320,12 @@ The CRUD functionality for this project are as follows:
 
 ### **Pages**
 
+* Folder: about
+    * AboutPage.js - simply a container returning a paragraph with information about what the site is all about. This page is a link in the NavBar and only appears when a user is not logged in.
+
+* Folder: auth
+    * SignInForm.js - 
+
 ## **Technologies Used**
 ### **Languages Used**
 - HTML
@@ -383,6 +390,7 @@ This project has been continuously tested throughout development stages using th
     | Section | Performance | Accessibility | Best Practices | SEO |
     | --- | --- | --- | --- | --- |
     | Home | 73 | 100 | 92 | 100 |
+    | Post Page | 81 | 100 | 92 | 100 |
     | PawFeed | 73 | 100 | 92 | 100 |
     | Saved | 73 | 100 | 92 | 100 |
     | Sign Up | 86 | 100 | 67 | 100 |
@@ -394,6 +402,7 @@ This project has been continuously tested throughout development stages using th
     | Section | Performance | Accessibility | Best Practices | SEO |
     | --- | --- | --- | --- | --- |
     | Home | 51 | 100 | 92 | 100 |
+    | Post Page | 50 | 100 | 92 | 100 |
     | PawFeed | 53 | 100 | 92 | 100 |
     | Saved | 51 | 100 | 92 | 100 |
     | Sign Up | 53 | 100 | 83 | 100 |
