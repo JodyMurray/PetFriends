@@ -58,7 +58,7 @@
 }
 
 /* For large tablet screens sizes from 768px wide and down */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
 
   .NavLink,
   .NavLink i {

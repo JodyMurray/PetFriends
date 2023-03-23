@@ -18,14 +18,14 @@
 
 /* Media query */
 /* For medium laptop screens sizes from 1024px wide and down */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (min-width: 900px){
     .ProfilesContent {
         margin-top: 15.8% !important;
     }
 }
 
 /* For large tablet screens sizes from 768px wide and down */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .ProfilesContent {
         margin-top: 5% !important;
     }
@@ -34,6 +34,6 @@
 /* For large phone screen sizes from 425px wide and down */
 @media screen and (max-width: 425px){
     .ProfilesContent {
-        margin: 3px auto;
+        margin: 10px auto !important;
     }
 }

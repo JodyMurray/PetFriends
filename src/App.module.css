@@ -108,4 +108,14 @@ figure {
     .Content {
         margin: 2px auto !important;
     }
+    .CommentContainer {
+        padding: 9px !important;
+        text-align: center;
+    }
+}
+/* For large phone screen sizes from 425px wide and down */
+@media screen and (max-width: 320px) {
+    .CommentContainer {
+        padding: 5% !important;
+    }
 }
