@@ -60,6 +60,8 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 - [No results found](#no-results-found "No results found")
 - [CRUD](#crud "CRUD")
 - [Defensive Design](#defensive-design "Defensive Design")
+- [Future Implementations](#future-implementations "Future Implementations")
+- [Components and Pages](#components-and-pages "Components and Pages")
 
 </details>
 
@@ -257,7 +259,6 @@ Sign-up page, along with a link to sign in if you have an account already!
 
 ![screenshot](documentation/test_screenshots/NoResults3.png)
 
-
 ### **CRUD**
 The CRUD functionality for this project are as follows:
 
@@ -296,6 +297,27 @@ The CRUD functionality for this project are as follows:
 * In the "Add post" section, leaving certain inputs blank will show the following message: 
 
 ![screenshot](documentation/test_screenshots/addPostDefensive.png)
+
+### **Future Implementations**
+
+- Add more fields for a user to add to their profile.
+- Add a meow/bark feature, similar to "poke" on facebook, as an alert or notification.
+- Add votes and downvotes count to profile stats.
+- Add feature to allow users to see who voted for their posts.
+
+## **Components and Pages**
+### **Components**
+* Asset.js - component for the spinner seen while the page is loading, used in PostFeed.js, PostsFeed.js, PopularProfiles.js & ProfilePage.js files.
+
+* Avatar.js - component used for displaying of the profile image. Used in NavBar.js, Post.js, Profile.js, ProfilePage.js, Reply.js, ReplyCreateForm.js files.
+
+* MoreDropdown.js - component used for the functionality and display of the icons to edit/delete posts, comments and profiles. Only shown to the owner of such posts and their profiles.
+
+* NavBar.js - component used for the display of the NavBar, added into the main app.js file to display at the top of the page.
+
+* NotFound.js - component used for displaying an error image and message if an invalid page has been typed in.
+
+### **Pages**
 
 ## **Technologies Used**
 ### **Languages Used**
