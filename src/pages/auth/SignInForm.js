@@ -60,7 +60,9 @@ const SignInForm = () => {
                 <Image
                     className={`${styles.FillerImage}`}
                     src={"https://res.cloudinary.com/dmqu7iqfu/image/upload/v1676446767/pets_l8zebk.png"}
-                    alt="sign in image"
+                    height={315}
+                    width={560}
+                    alt="sign-in image"
                 />
             </Col>
             <Col className="my-auto py-2 p-md-3" md={4}>

@@ -50,8 +50,7 @@
 .FillerImage {
     border-radius: 4px;
     margin-top: 15px;
-    width: 90%;
-    height: 95%;
+    
     box-shadow: 10px 10px 5px #ccc;
     -moz-box-shadow: 10px 10px 5px #ccc;
     -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -73,6 +72,7 @@
     .FillerImage {
         width: 98%;
         height: auto;
+        margin-top: 10%;
     }
     .Input {
         width: 120%;

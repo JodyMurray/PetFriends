@@ -394,8 +394,8 @@ This project has been continuously tested throughout the development stages usin
     | Post Page | 81 | 100 | 92 | 100 |
     | PawFeed | 73 | 100 | 92 | 100 |
     | Saved | 73 | 100 | 92 | 100 |
-    | Sign Up | 86 | 100 | 67 | 100 |
-    | Sign in | 87 | 100 | 67 | 100 |
+    | Sign Up | 87 | 100 | 75 | 100 |
+    | Sign in | 87 | 100 | 75 | 100 |
     | Profile | 83 | 100 | 92 | 100 |
 
 * **For Mobile devices:**
@@ -525,8 +525,14 @@ The link To GitHub KanBan Project - [here](https://github.com/users/JodyMurray/p
     * Solution: Upon researching in Slack, the issue was with the JWT json web token as a HTTP-only cookie in the browser,
     in the settings in Safari, enabling "Allow cross-website tracking" resolved the issue and it was possible to sign-in.
 
+
 ### **Unfixed bugs**
 - No unfixed bugs to report during the production of this project.
+
+- One thing to note is when doing the lighthouse report, best practices for the sign-in and sign-up page show a result of 75, the image shows up tagged as low resolution.
+- There are errors in the console of these pages, that were also brought up during the walkthrough Moments. The errors are as follows:
+
+*Failed to load resource: the server responded with a status of 401 (Unauthorized)*
 
 
 ## **Deployment**
