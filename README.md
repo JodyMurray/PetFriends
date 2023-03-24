@@ -576,6 +576,7 @@ The following bullet points detail the steps gone through to set up this project
 - [Slack](https://www.slack.com/) - for helpful tips from fellow students!
 - [W3 Schools](https://www.w3schools.com/)
 - Box shadow examples found - [here](https://getcssscan.com/css-box-shadow-examples)
+- [Grammarly](https://app.grammarly.com/) - for spell checking the readme and about page.
 
 
 ### **Media**
