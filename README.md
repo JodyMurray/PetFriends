@@ -419,16 +419,78 @@ Manual testing for this project were carried out as follows:
 
 
 ### **User story testing**
-**User story**
+**User story:**
 
-1: User: Navigation - *As a user I can view a NavBar from every page so that I can navigate easily between pages.* ✅
+1: User: Navigation - *"As a user I can view a NavBar from every page so that I can navigate easily between pages."* ✅
 
-2: User: Routing - *As a user I can navigate through pages quickly and easily so that I can view content without page refresh.* ✅
+2: User: Routing - *"As a user I can navigate through pages quickly and easily so that I can view content without page refresh."* ✅
 
-3: User: Authentication - *As a user I can create a new account so that I can access all the features for signed up users.*
+3: User: Authentication - Sign up - *"As a user I can create a new account so that I can access all the features for signed up users."*
 ✅
 
-3: 
+4: User: Authentication - Sign in - *"As a user I can sign in to the app so that I can access functionality and features for logged in users."* ✅
+
+5: User: Authentication - Logged in Status - *"As a user I can always tell if I am logged in or not so that I can log in to use features."* ✅
+
+6: User: Authentication - Refreshing access tokens - *"As a user I can maintain my logged-in status (for 24hrs) until I choose to log out so that my user experience is not compromised."* ✅
+
+7: User: Navigation: Conditional rendering - *"As a logged out user I can see sign in/sign up options so that I can sign in/sign up."* ✅
+
+8: User: Avatar - *"As a user I can view other user's avatars so that I can easily identify users of the application."* ✅
+
+9: User: Create posts - *"As a logged in user I can create posts so that I can share my images and image content with my followers."* ✅
+
+10: User: View a post - *"As a user I can view the details of a single post so that I can read more."* ✅
+
+11: User: Like/save a post - *"As a logged in user I can like/save a post so that I can show and see which are my favourite posts."* ✅
+
+12: User: View most recent posts in order - *"As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the most recent content."* ✅
+
+13: User: Searchbar filter - *"As a user, I can search for posts with keywords, so that I can find the posts and user profiles that I prefer to see."* ✅
+
+14: User: View liked/saved posts - *"As a logged in user I can view the posts I liked/saved so that I can find the posts that I love."* ✅
+
+15: User: View posts of followed users - *"As a logged in user I can view content filtered by users I follow so that I can keep up to date with them specifically."* ✅
+
+16: User: Infinite scroll - *"As a user I can keep scrolling through the images on the site, which are loaded automatically so that there is no need for a "next page/previous page" option."* ✅
+
+17: User: Post page - *"As a user I can view the single post page so that I can read the comments specifically about that post."* ✅
+
+18: User: Edit/delete post - *"As a post owner I can edit/delete my post title, description and image so that I can make corrections or update my post after it was created."* ✅
+
+19: User: Create a comment - *"As a logged in user I can add comments to a post so that I can share my opinions about the post and start/have a conversation."* ✅
+
+20: User: View comment date - *"As a user I can see how long ago a comment was made so that I know how old or new a comment is."* ✅
+
+21: User: View comments - *"As a user I can read comments on posts so that I can read what other users think about the posts and reply to them accordingly."* ✅
+
+22: User: Edit/delete a comment - *"As an owner of a comment I can edit and/or delete my comment so that I can edit/remove my comment from the application."* ✅
+
+23: User: View profile page - *"As a user I can view other user's profiles so that I can see their posts and bio and read more about them."* ✅
+
+24: User: Most popular profiles - *"As a user I can see a list of the most followed profiles so that I can see which profiles are popular and see their posts."* ✅
+
+25: User: User profile - view user stats - *"As a user I can view statistics about a specific user: bio, number of posts, followers and users followed so that I can read more about them."* ✅
+
+26: User: Follow/Unfollow a user - *"As a logged in user I can follow and unfollow users so that I can see and remove posts by specific users in my posts feed."* ✅
+
+27: User: View/filter all posts by a specific user - *"As a user I can view all the posts by a specific user by filtering so that I can catch up on their latest posts, or decide to follow them."* ✅
+
+28: User: Edit profile - *"As a logged in user I can edit my profile so that I can change my profile picture, name and bio to keep my followers updated."* ✅
+
+29: User: Delete profile - *"As a logged in user I can delete my profile in case I decide to leave this social media."* - Future implementation.
+
+30: Update username and password - *"As a logged in user I can update my username and password so that I can change my display name and keep my profile more secure."* ✅
+
+31: User: "Bark/Meow" at fellow user - *"As a user I can "bark/meow" so that I can get the attention of another user."* - Future implementation.
+
+32: Admin: Complete README documentation - *"Complete README, fully documenting sources, and all about the frontend and frameworks used."* ✅
+
+33: User: Unlike/unsave a post - *"As a user I can unlike/unsave a post so that I can change what I see in my liked/saved feed."* ✅
+
+34: User: Toggle button - *"As a user I can toggle the post images so that I can see them in different formats."* ✅
+
+The link To GitHub KanBan Project - [here](https://github.com/users/JodyMurray/projects/11)
 
 ### **Fixed bugs and solutions**
 
