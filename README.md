@@ -11,7 +11,7 @@ The three dots on the side of your post allow you to edit or delete your own pos
 
 This project is the final of five projects that needs to be completed in order to receve a diploma in Software Development from The Code Institute.
 
-## Responsive screen display
+## **Responsive screen display**
 
 ![screenshot](documentation/test_screenshots/responsive.png)
 
@@ -61,7 +61,7 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 - [CRUD](#crud "CRUD")
 - [Defensive Design](#defensive-design "Defensive Design")
 - [Future Implementations](#future-implementations "Future Implementations")
-- [Components and Pages](#components-and-pages "Components and Pages")
+- [Components](#components "Components")
 
 </details>
 
@@ -77,9 +77,9 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 - [Introduction](#introduction "Introduction")
 - [Validator testing](#validator-testing "Validator Testing")
 - [Manual Testing](#manual-testing "Manual Testing")
+- [User Story Testing](#user-story-testing "User Story Testing")
 - [Fixed Bugs and Solutions](#fixed-bugs-and-solutions "Fixed Bugs and Solutions") 
 - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
-- [Future plans to implement](#future-plans-to-implement "Future plans to implement")
 
 </details>
 
@@ -305,8 +305,8 @@ The CRUD functionality for this project are as follows:
 - Add a meow/bark feature, similar to "poke" on facebook, as an alert or notification.
 - Add votes and downvotes count to profile stats.
 - Add feature to allow users to see who voted for their posts.
+- Allow users to delete their profile.
 
-## **Components and Pages**
 ### **Components**
 * Asset.js - component for the spinner seen while the page is loading, used in PostFeed.js, PostsFeed.js, PopularProfiles.js & ProfilePage.js files.
 
@@ -317,14 +317,6 @@ The CRUD functionality for this project are as follows:
 * NavBar.js - component used for the display of the NavBar, added into the main app.js file to display at the top of the page.
 
 * NotFound.js - component used for displaying an error image and message if an invalid page has been typed in.
-
-### **Pages**
-
-* Folder: about
-    * AboutPage.js - simply a container returning a paragraph with information about what the site is all about. This page is a link in the NavBar and only appears when a user is not logged in.
-
-* Folder: auth
-    * SignInForm.js - 
 
 ## **Technologies Used**
 ### **Languages Used**
@@ -426,6 +418,18 @@ Manual testing for this project were carried out as follows:
 - The site was continuously built on google chrome, and once built, it was sucessfully tested on firefox browswer, and safari browser. The only issue found on safari was the inability to signin properly, which was resolved after some research on Slack. (mentioned and detailed in fixed bugs section below) 
 
 
+### **User story testing**
+**User story**
+
+1: User: Navigation - *As a user I can view a NavBar from every page so that I can navigate easily between pages.* ✅
+
+2: User: Routing - *As a user I can navigate through pages quickly and easily so that I can view content without page refresh.* ✅
+
+3: User: Authentication - *As a user I can create a new account so that I can access all the features for signed up users.*
+✅
+
+3: 
+
 ### **Fixed bugs and solutions**
 
 - TokenTimestamp wasn't functioning as it should.
@@ -450,6 +454,9 @@ obviously from copying and pasting from font awesome.
 - There was an issue with logging in through safari, once I added the credentials it would jump back to the signin page.
     * Solution: Upon researching in Slack, the issue was with the JWT json web token as a http-only cookie in the browser,
     in the settings in Safari, enabling "Allow cross-website tracking" resolved the issue and it was possible to sign-in.
+
+### **Unfixed bugs**
+- No unfixed bugs to report during the production of this project.
 
 
 ## **Deployment**
