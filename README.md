@@ -1,15 +1,16 @@
 # **PetFriends**
 
-This is a website for pets only! We have here a social media for pets. We can make our beloved pets a profile so they can post silly photos of themselves and follow, vote (or downvote) and comment on other pet's profiles! Saving posts is even possible. All pets welcome! From cats, dogs, hedgehogs, lizards and so on. The site is a content sharing platform, which, once you sign up, you will be redirected to sign in and then redirected to the home page/main feed. From there you can click on your profile icon in the top right of the NavBar and see your profile stats (once you gain some), see your posts, and click on the bars to edit your profile, password and username. Personalise your pet's profile with a picture and a bio, a little bit about your pet!
+This is a social media for your pets! You can make your beloved pets a profile so they can post silly photos of themselves and follow, vote (or downvote), and comment on other pets' profiles! All pets are welcome! From cats, dogs, hedgehogs, lizards, and so on. The site is a content-sharing platform, which, and once you sign up, you will be redirected to sign in and then redirected to the home page/main feed. From there you can click on your profile icon in the top right of the NavBar and see your profile stats - which is a count of how many posts you've added, how many users you follow, and how many users follow you - see your posts and click on the bars to edit your profile, password, and username. Personalise your pet's profile with a picture and a bio, a little bit about your pet!
 
-Once your pet follows a few profiles, you'll be able to see said followed profiles in the "pawfeed" section from the NavBar. The NavBar also contains a "saved" section, which allows you to see posts that you (your pets) specifically saved.
+Once your pet follows a few profiles, you'll be able to see said followed profiles in the "PawFeed" section from the NavBar. The NavBar also contains a "Saved" section, which allows you to see posts that you (your pets) specifically saved.
 
-There is a sidebar featured on the posts and profile pages, to show the popular pets profiles and suggested "recommended users to follow". 
+There is a sidebar featured on the posts and profile pages, which displays the most followed users for a "Recommended users to follow" feature.
 
-Once you're on the homepage, you can "add post", you can also use the search bar above the "add post" section to search through all posts using a keyword or a user's name. 
-The three dots on the side of your post allow you to edit or delete your own posts, and the same goes for comments you've written on posts.
+Once you're on the HomePage, you can "Add post", you can also use the search bar above the "Add post" section to search through all posts using a keyword or a user's name. 
 
-This project is the final of five projects that needs to be completed in order to receve a diploma in Software Development from The Code Institute.
+On the post's page, you will see the full post on a card, the count of votes/downvotes, along with the reply section at the bottom of the post. The three dots on the side of a post you own allow you to edit or delete your posts, and the three dots beside a reply allows for the same functions.
+
+This project is the final of five projects that need to be completed to receive a diploma in Software Development from The Code Institute.
 
 ## **Responsive screen display**
 
@@ -105,17 +106,17 @@ A live version of this website will be found here: https://pet-friends.herokuapp
 
 ### **User Demographic**
 
-This application has been designed for pets of all kinds who want to share content and make some friends!
-Mkae your pet a profile, add a post and start interacting with fellow domesticated animals! 
+This application has been designed for pets of all kinds and ages who want to share content and make some new friends!
+Make your pet a profile, add a post and start interacting with fellow pets! 
 
 ### **Site Goals**
 
-To build a content sharing platform to allow users to make profiles for their pets, add posts, follow and unfollow other users, vote or downvote posts, as well as save them, and comment on posts too! You can use the provided search bar to search through the posts with a keyword or a user's name. 
+The goal for this site has been to build a content sharing platform to allow users to make social media profiles for their pets, add posts, follow and unfollow other users, vote or downvote for posts, as well as save them, and reply to other users' posts too! You can also use the provided search bar to search through the posts with a keyword or a user's name. 
 
 
 ### **Audience**
 
-For your pets! Especially those looking to make new friends.
+For your pets! Especially those looking to make new friends. For users who just want to see photos of pets!
 
 
 ### **User Stories**
@@ -124,7 +125,7 @@ User Stories and Backend Tasks can be found in this GitHub repository project Ka
 ## **Design**
 
 ### **Colour Scheme**
-The colour scheme chosen, was decided from looking up trending colour schemes online from this website 
+The colour scheme was chosen from researching trending colour schemes on this website:
 [coolers](https://coolors.co/palettes/trending).
 - The background colour for the app is  *rgb(249, 251, 251)*
 - The background colour for the content boxes is *rgb(246, 239, 245)*
@@ -147,7 +148,7 @@ The logo used for this project was made using [Looka](https://looka.com/explore)
 
 ![screenshot](documentation/features/LogoShot.png)
 
-- Other icons were taken from [Font awesome](https://fontawesome.com/)
+- Other icons were taken from [Font Awesome](https://fontawesome.com/)
 
 ### **Wireframes**
 
@@ -169,7 +170,7 @@ Wireframe for profile page:
 <br>
 <br>
 
-Wireframe for add post page:
+Wireframe for the page to create a form:
 
 ![screenshot](documentation/wireframes/wireframes4.png)
 <br>
@@ -177,34 +178,34 @@ Wireframe for add post page:
 
 ### **Images**
 
-All images for the websites pages were sourced through google and stored on Cloudinary.
+All images for the website's pages were sourced through google and stored on Cloudinary.
 
-The images used for the posts and pet's profiles were sourced from google, but mostly from pets I live with (Yoda) and my friend's pets. 
+The images used for the posts and pet profiles were sourced from google, but mostly from pets I live with (Yoda) and my friend's pets. 
 
 ## **Features**
 
 ### **NavBar**
-NavBar, user not logged in.
+NavBar, the user is not logged in.
 
 ![screenshot](documentation/features/NavBar2.png)
 
-NavBar, user logged in.
+NavBar, the user is logged in.
 
 ![screenshot](documentation/features/NavBar.png)
 
 ### **Home Landing Page**
 
-The home screen and landing page, with the recommended users to follow sidebar.
+The home screen and landing page, with the "recommended users to follow" sidebar.
 
 ![screenshot](documentation/features/HomePage.png)
 
 ### **Post Page**
 
 - The post's page, with the recommended user to follow sidebar.
-- Thumbs up and thumbs down buttons to upvote or downvote any post to your desire.
-- On the top right of the post beide the date posted, you have a bookmark icon to save this post, which later you can view in the "Saved" section from the NavBar.
+- Thumbs up and thumbs down buttons to upvote or downvote any post to your desire. Each icon goes a solid colour once a user has clicked on it, these icons will also undo the action if clicked on again.
+- On the top right of the post beside the date posted, you have a bookmark icon to save this post, which later you can view in the "Saved" section from the NavBar. If you save a post, it will be indicated by the "bookmark" icon, which goes a solid colour once it's clicked, if clicked again, this will undo the action of saving the post.
 - The three dots on the side of the post image is the button to edit or delete your post.
-- And the comment section, create, edit and delete your comments!
+- And the comment section, create, edit, and delete your comments!
 
 ![screenshot](documentation/features/PostPage1.png)
 ![screenshot](documentation/features/PostPage2.png)
@@ -212,7 +213,7 @@ The home screen and landing page, with the recommended users to follow sidebar.
 
 ### **About Page**
 
-Just a little paragraph about the site! This page only shows up in the NavBar if you are not signed in.
+Just a little paragraph about the site! This page will only appear in the NavBar if you are not signed in.
 
 ![screenshot](documentation/features/About.png)
 
@@ -224,14 +225,14 @@ The PawFeed consists of posts from users that you follow.
 
 ### **Saved**
 
-The saved page consists of posts the user has specifically saved for future viewing.
+The Saved page consists of posts the user has specifically saved for future viewing.
 
 ![screenshot](documentation/features/Saved.png)
 
 ### **Profile Page**
 
 - Your profile page, or another user's, along with the sidebar of recommended profiles to follow. 
-- The profile page contains a bio section, the bars in the corner to edit your profile, change your username or password.
+- The profile page contains a bio section, the bars in the corner to edit your profile and change your username or password.
 - The page also holds all of the posts that the owner of the page has added.
 
 ![screenshot](documentation/features/ProfilePage.png)
@@ -265,13 +266,13 @@ Sign-up page, along with a link to sign in if you have an account already!
 ![screenshot](documentation/test_screenshots/NoResults3.png)
 
 ### **CRUD**
-The CRUD functionality for this project are as follows:
+The CRUD functionality for this project is as follows:
 
 * The user can, once signed up to an account, update their profile with a profile picture/bio. They can also update their username and password from the profile page.
 * The user can also, once a post has been created, update or delete their post. The three dots on the right of the post's image will either delete the post (and bring you back to the home page once this is done) or edit your post, bringing you to an edit post form.
 * Users can also, once they've created a comment on a post, delete or edit their comments. If chosen, editing a comment will bring up a small form to retype your comment and then you can either save or close if you change your mind.
-* Users can also upvote, downvote and/or save posts, and you can also undo all of these actions if they changed their mind.
-* Users can also follow other user's accounts and unfollow if they desire.
+* Users can also upvote, downvote and/or save posts, and you can also undo all of these actions if they changed their minds.
+* Users can also follow other users' accounts and unfollow them if they desire.
 
 ### **Defensive Design**
 
@@ -287,12 +288,12 @@ The CRUD functionality for this project are as follows:
 
 ![screenshot](documentation/test_screenshots/loginDefensive2.png)
 
-* Attempts to save or vote for your own posts will show the following messages: 
+* Attempts to save or vote for your posts will show the following messages: 
 
 ![screenshot](documentation/test_screenshots/savedDefensive.png)
 ![screenshot](documentation/test_screenshots/votePostDefensive.png)
 
-* In the edit feature of a user's own posts, found by clicking the three dots on the right side of the post's image on the post page, will show the following message to ensure you know what you're doing before you click:
+* If you choose to edit or delete your post, clicking the three dots on the right side of the post's image on the post page, will show the following pop-up messages once you hover over each icon, to ensure you know what you're doing before you click:
 
 ![screenshot](documentation/test_screenshots/EditPostDefensive.png) 
 
@@ -308,19 +309,20 @@ The CRUD functionality for this project are as follows:
 
 
 ### **Future Implementations**
+Future plans for this project include:
 
-- Add more fields for a user to add to their profile. Such as location, age and/or email address and other social medias.
-- Add a meow/bark feature, similar to "poke" on facebook, as an alert or notification.
+- Add more fields for a user to add to their profile. Such as location, age, and/or email address and other social media platforms.
+- Add a meow/bark feature, similar to "poke" on Facebook, as an alert or notification.
 - Add votes and downvotes count to profile stats.
-- Add feature to allow users to see who voted for their posts.
+- Add a feature to allow users to see who voted for their posts.
 - Allow users to delete their profile.
 
 ### **Components**
 * Asset.js - component for the spinner seen while the page is loading, used in PostFeed.js, PostsFeed.js, PopularProfiles.js & ProfilePage.js files.
 
-* Avatar.js - component used for displaying of the profile image. Used in NavBar.js, Post.js, Profile.js, ProfilePage.js, Reply.js, ReplyCreateForm.js files.
+* Avatar.js - component used for displaying the profile image. Used in NavBar.js, Post.js, Profile.js, ProfilePage.js, Reply.js, and ReplyCreateForm.js files.
 
-* MoreDropdown.js - component used for the functionality and display of the icons to edit/delete posts, comments and profiles. Only shown to the owner of such posts and their profiles.
+* MoreDropdown.js - component used for the functionality and display of the icons to edit/delete posts, comments, and profiles. Only shown to the owner of such posts and their profiles.
 
 * NavBar.js - component used for the display of the NavBar, added into the main app.js file to display at the top of the page.
 
@@ -334,7 +336,7 @@ The CRUD functionality for this project are as follows:
 - React
 
 
-### **Frameworks, Libraries and Programs Used**
+### **Frameworks, Libraries, and Programs Used**
 - [Axios](https://axios-http.com/): a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data.
 - [Favicon](https://favicon.io/): Used to generate the favicon image from a logo generated.
 - [jwt-decode](https://jwt.io/): is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.
@@ -342,7 +344,7 @@ The CRUD functionality for this project are as follows:
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom): enables you to implement dynamic routing in a web app. 
 - [react-infinite-scroll-component](https://www.npmjs.com/package/react-infinite-scroll-component): a technique that automatically adds the next page as the user scrolls down through content, more content is loaded.
 - [Font Awesome](https://fontawesome.com/): a widely-used icon set that gives you scalable vector images that can be customized with CSS.
-- [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): an open source tool for running technical website audits.
+- [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): an open-source tool for running technical website audits.
 - [Am I Responsive?](https://ui.dev/amiresponsive): to ensure the project looked good across all devices.
 - [HTML Markup Validation](https://validator.w3.org/): used to validate HTML code syntax.
 - [CSS Validation Service](https://jigsaw.w3.org/css-validator/): used to validate CSS code syntax.
@@ -361,15 +363,14 @@ deploy and store for final deployment.
 
 ## **Testing**
 ### **Introduction**
-This project has been continuously tested throughout development stages using the following features:
+This project has been continuously tested throughout the development stages using the following features:
 - Python terminal for backend functionalities
 - Google Developer Tools
 - Manual Testing
 - Automated Testing
 
 ### **Validator Testing**
-- All HTML files passed through the HTML checker with no errors, but with an info message to remove trailing slashes in the index.html.
-- After removal of these slashes, there was no error/info message and everything passed.
+- All HTML files passed through the HTML checker with no errors.
 
 ![screenshot](documentation/test_screenshots/HTML_validator.png)
 
@@ -411,19 +412,19 @@ This project has been continuously tested throughout development stages using th
 
 
 ### **Manual Testing**
-Manual testing for this project were carried out as follows: 
-- Users can see sign in, sign up and about pages only when not logged in.
+Manual testing for this project was carried out as follows: 
+- Users can see sign-in, sign-up, and about pages only when not logged in.
 - Users can create a new account.
-- Users can then therefore sign in to their account and then be redirected to the home page.
+- Users can then, sign in to their account and then be redirected to the home page.
 - Users can log out.
-- Once signed in, users can create, vote, save, comment on posts. They can edit and delete their posts and comments. 
-- Users can edit and update their profiles, which includes a profile picture, bio entry and a separate username and password edit feature.
+- Once signed in, users can create, vote, save, and reply to posts. They can edit and delete their posts and replies. 
+- Users can edit and update their profiles, which include a profile picture, bio entry, and a separate username and password edit feature.
 - All NavLinks and buttons go to their destination.
 - Clicking on the post image brings you to the post's page.
 - You can vote, downvote and save and also undo all of these actions if you change your mind.
-- When votes/comments/save icons are hovered over, they let you know if you need to sign in to use this feature, and once clicked on if the user is signed out, you will be redirected to the signin page.
-- The user is notified what each icon represents. In each post page, if the user is the owner, the three dots to the right side of the post image will bring up the edit and delete feature, both icons have an overlaytrigger to indicate which one does what feature.
-- The site was continuously built on google chrome, and once built, it was sucessfully tested on firefox browswer, and safari browser. The only issue found on safari was the inability to signin properly, which was resolved after some research on Slack. (mentioned and detailed in fixed bugs section below) 
+- Once you hover over the votes/replies/save icons, they let you know if you need to sign-in to use this feature, and once clicked on if the user is signed out, you will be redirected to the sign-in page.
+- The user is notified of what each icon represents. In each post page, if the user is the owner, the three dots to the right side of the post image will bring up the edit and delete feature, both icons have an overlay trigger to indicate which one does what feature.
+- The site was continuously built on google chrome, and once built, it was successfully tested on firefox browser, and safari browser. The only issue found on safari was the inability to sign-in properly, which was resolved after some research on Slack. (mentioned and detailed in the fixed bugs section below) 
 
 
 ### **User story testing**
@@ -505,24 +506,23 @@ The link To GitHub KanBan Project - [here](https://github.com/users/JodyMurray/p
 - TokenTimestamp wasn't functioning as it should.
     * Solution: A spelling error fix solved the issue.
 
-- Reply count unpon testing wasn't going up in count as a reply is added.
+- The reply count upon testing wasn't going up in count as a reply is added.
     * Solution: The variable was wrongly named "replies_count", resolved once renamed "reply_count".
 
-- For smaller screen sizes, the navlink's text and icons stacked on top of each other.
-    * Solution: Reduce padding, size of font and reduce margin on the logo as it was pushing everything to the right.
+- For smaller screen sizes, the nav link's text and icons are stacked on top of each other.
+    * Solution: Reduce padding, and size of the font and reduce the margin on the logo as it was pushing everything to the right.
 
 - An error logged to the console for the logo/favicon image. 
-    * Solution: I had deleted the original favicon.io 16x16 images when I first opened the project, adding these back with. the new logo resolved this error.
+    * Solution: I deleted the original favicon.io 16x16 images when I first opened the project, once these were added, the error disappeared.
 
-- Errors would show up in the console claiming that there were several icons with "class" instead of "className" 
-obviously from copying and pasting from font awesome.
-    * Solution: Searching all icons in the sidebar on github, this was quicky resolved.
+- Errors would show up in the console claiming that there were several icons with "class" instead of "className" from copying and pasting from font awesome.
+    * Solution: Searching all icons in the sidebar on GitHub, this was quickly resolved.
 
 - When the reply icon was clicked on, the page wasn't redirecting to the reply section on the post page.
     * Solution: There was an unnecessary space in the link - {posts/$id}.
 
-- There was an issue with logging in through safari, once I added the credentials it would jump back to the signin page.
-    * Solution: Upon researching in Slack, the issue was with the JWT json web token as a http-only cookie in the browser,
+- There was an issue with logging in through safari, once I added the credentials it would jump back to the sign-in page.
+    * Solution: Upon researching in Slack, the issue was with the JWT json web token as a HTTP-only cookie in the browser,
     in the settings in Safari, enabling "Allow cross-website tracking" resolved the issue and it was possible to sign-in.
 
 ### **Unfixed bugs**
@@ -533,24 +533,24 @@ obviously from copying and pasting from font awesome.
 
 ### **GitHub**
 The following bullet points detail the steps gone through to set up this project on GitHub:
-- Create Repository on GitHub (Not using any Code Institue Template).
-- Create a new workspace. Once workspace has started, run the following command in the terminal window:
+- Create a Repository on GitHub (Not using any Code Institue Template).
+- Create a new workspace. Once the workspace has started, run the following command in the terminal window:
 
     *npx create-react-app . --template git+https://github.com/Code-Institute-Org/cra-template-moments.git --use-npm*
 
-- Enter "y" to confirm nstalling the create-react-app package.
+- Enter "y" to confirm installing the create-react-app package.
 - Once the packages have been installed, run *npm start* to check that react is working correctly.
-- Once you can see it's running efficiently, go into the App.js file and remove the React Custom header and replace with a test text "Hello, world!", and remove the logo import at the top of the page.
+- Once you can see it's running efficiently, go into the App.js file and remove the React Custom header and replace it with a test text "Hello, world!", and remove the logo import at the top of the page.
 - In the preview window, you should see the test text show up now.
-- Once you see this test text, add, commit and push your changes.
+- Once you see this test text, add, commit, and push your changes.
 
 ### **Heroku**
 The following bullet points detail the steps gone through to set up this project on Heroku:
-- In heroku: Click on the "new" button and follow the steps to create a new app, noting that a completely unique name is required.
+- In Heroku: Click on the "new" button and follow the steps to create a new app, noting that a unique name is required.
 - Once your unique name is chosen and you've selected your appropriate region, click "Create app".
-- Once this app is created, in the "deploy" tab in Heroku, you can connect this to your github repo.
-- From "Deployment method" section, choose github, and enter the name of the repo just created and use the search feature to find it and then click "connect".
-- When you've successfully connected your repo. Go to 'Manual Deploy' section and click 'Deploy Branch'. Click on 'build logs' to monitor build and ensure deployment is successful. Build is completed when the log says 'Build succeeded!'.
+- Once this app is created, in the "deploy" tab in Heroku, you can connect this to your GitHub repository.
+- From the "Deployment method" section, choose GitHub, enter the name of the repo just created and use the search feature to find it, and then click "connect".
+- When you've successfully connected your repo. Go to the 'Manual Deploy' section and click 'Deploy Branch'. Click on 'build logs' to monitor the build and ensure deployment is successful. The build is completed when the log says 'Build succeeded!'.
 - Next step is to install Bootstrap 4, by typing the following command in the terminal window:
 
     *npm install react-bootstrap@1.6.3 bootstrap@4.6.0*
@@ -562,9 +562,9 @@ The following bullet points detail the steps gone through to set up this project
 
 - The Moments walkthrough was used as a guide for this project, it served as a major help in creating this site.
 - My mentor at Code Institute - Martina Terlevic.
-- Keiron Chaudhry, a fellow student and great support!
+- Keiron Chaudhry, a fellow student, and great support!
 
-- Extra big thank you to Code Institute for this entire course, it's been a great journey so far, the tools and support provided during this course were amazing!
+- Extra big thank you to Code Institute for this entire course, it's been a great journey so far, and the tools and support provided during this course were amazing!
 
 
 ### **Sources**
@@ -574,6 +574,7 @@ The following bullet points detail the steps gone through to set up this project
 - [Stack Overflow](https://stackoverflow.com/)
 - [GeeksForGeeks](https://www.geeksforgeeks.org/)
 - [Slack](https://www.slack.com/) - for helpful tips from fellow students!
+- [W3 Schools](https://www.w3schools.com/)
 - Box shadow examples found - [here](https://getcssscan.com/css-box-shadow-examples)
 
 
@@ -588,3 +589,6 @@ The following bullet points detail the steps gone through to set up this project
 [am i responsive?](https://ui.dev/amiresponsive)
 
 
+Thank you!
+
+[Back to top](#petfriends)
