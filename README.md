@@ -147,6 +147,7 @@ The logo used for this project was made using [Looka](https://looka.com/explore)
 
 ![screenshot](documentation/features/LogoShot.png)
 
+- Other icons were taken from [Font awesome](https://fontawesome.com/)
 
 ### **Wireframes**
 
@@ -217,13 +218,13 @@ Just a little paragraph about the site! This page only shows up in the NavBar if
 
 ### **PawFeed**
 
-The PawFeed consist of posts from users that you follow.
+The PawFeed consists of posts from users that you follow.
 
 ![screenshot](documentation/features/PawFeed.png)
 
 ### **Saved**
 
-The saved page consists of posts you have specifically saved.
+The saved page consists of posts the user has specifically saved for future viewing.
 
 ![screenshot](documentation/features/Saved.png)
 
@@ -268,10 +269,9 @@ The CRUD functionality for this project are as follows:
 
 * The user can, once signed up to an account, update their profile with a profile picture/bio. They can also update their username and password from the profile page.
 * The user can also, once a post has been created, update or delete their post. The three dots on the right of the post's image will either delete the post (and bring you back to the home page once this is done) or edit your post, bringing you to an edit post form.
-* Users can also, once created a comment on a post, delete or edit their comments. If chosen, editing a comment will bring up a small form to retype your comment and then you can either save or close if you change your mind.
-* Users can also upvote, downvote and/or save posts, and you can also undo all of these features if you changed your mind.
-* Users can also follow other user's accounts, and following this, unfollow if they desire.
-
+* Users can also, once they've created a comment on a post, delete or edit their comments. If chosen, editing a comment will bring up a small form to retype your comment and then you can either save or close if you change your mind.
+* Users can also upvote, downvote and/or save posts, and you can also undo all of these actions if they changed their mind.
+* Users can also follow other user's accounts and unfollow if they desire.
 
 ### **Defensive Design**
 
@@ -298,13 +298,18 @@ The CRUD functionality for this project are as follows:
 
 ![screenshot](documentation/test_screenshots/DeletePostDefensive.png)
 
-* In the "Add post" section, leaving certain inputs blank will show the following message: 
+* In the "Add post" section, leaving the title input blank will show the following message:
 
 ![screenshot](documentation/test_screenshots/addPostDefensive.png)
 
+- Users who forget to add an image while creating a post will still see the post published, with a default image as shown below. Going back into the post page and editing the post will allow the user to rechoose an image:
+
+![screenshot](documentation/test_screenshots/defaultImage.png)
+
+
 ### **Future Implementations**
 
-- Add more fields for a user to add to their profile.
+- Add more fields for a user to add to their profile. Such as location, age and/or email address and other social medias.
 - Add a meow/bark feature, similar to "poke" on facebook, as an alert or notification.
 - Add votes and downvotes count to profile stats.
 - Add feature to allow users to see who voted for their posts.
@@ -553,6 +558,8 @@ The following bullet points detail the steps gone through to set up this project
 
 ## **Credits**
 
+### **Acknowledgements**
+
 - The Moments walkthrough was used as a guide for this project, it served as a major help in creating this site.
 - My mentor at Code Institute - Martina Terlevic.
 - Keiron Chaudhry, a fellow student and great support!
@@ -560,15 +567,17 @@ The following bullet points detail the steps gone through to set up this project
 - Extra big thank you to Code Institute for this entire course, it's been a great journey so far, the tools and support provided during this course were amazing!
 
 
-## **Sources**
+### **Sources**
 
 - The Moments walkthrough was the main source I used as a guide for this project.
-- Slack - was a major help in solving some issues I came across.
-- StackOverflow - another major help in solving issues I came across building this project.
+- [YouTube](https://www.youtube.com/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [GeeksForGeeks](https://www.geeksforgeeks.org/)
+- [Slack](https://www.slack.com/) - for helpful tips from fellow students!
 - Box shadow examples found - [here](https://getcssscan.com/css-box-shadow-examples)
 
 
-## **Media**
+### **Media**
 
 - The media sourced for this website, were mostly found on Google.
 - Other images were from friends and family, photos of their pets. And my own pet's images also.
