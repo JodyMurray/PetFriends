@@ -145,6 +145,9 @@ All fonts are from the Google Fonts library. The following fonts were chosen for
 
 The logo used for this project was made using [Looka](https://looka.com/explore).
 
+![screenshot](documentation/features/LogoShot.png)
+
+
 ### **Wireframes**
 
 Wireframe for home page/feed:
