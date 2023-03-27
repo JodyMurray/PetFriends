@@ -33,7 +33,7 @@ function PostFeed() {
                 setPost({ results: [post] });
                 setReplies(replies);
             } catch (err) {
-                console.log(err);
+                // console.log(err);
             }
         };
 
