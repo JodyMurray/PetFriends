@@ -135,6 +135,9 @@ The colour scheme was chosen from researching trending colour schemes on this we
 - The background colour for the "light" buttons is *rgb(122, 33, 178), rgb(221, 198, 236)*
 - The background colour for the unfollow button is *rgb(139, 227, 218), rgb(46, 205, 189)*
 
+The colour palette in order as mentioned above.
+The source to put this palette together was [here](https://colorhunt.co/)
+
 ![screenshot](documentation/test_screenshots/colourScheme1.png)
 ![screenshot](documentation/test_screenshots/colourScheme2.png)
 
@@ -371,7 +374,6 @@ This project has been continuously tested throughout the development stages usin
 - Python terminal for backend functionalities
 - Google Developer Tools
 - Manual Testing
-- Automated Testing
 
 ### **Validator Testing**
 - All HTML files passed through the HTML checker with no errors.
@@ -587,6 +589,7 @@ The following bullet points detail the steps gone through to set up this project
 - [W3 Schools](https://www.w3schools.com/)
 - Box shadow examples found - [here](https://getcssscan.com/css-box-shadow-examples)
 - [Grammarly](https://app.grammarly.com/) - for spell checking the readme and about page.
+- [Color hunt](https://colorhunt.co/) - for the colour palette in the design section.
 
 
 ### **Media**
