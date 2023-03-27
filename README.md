@@ -135,6 +135,10 @@ The colour scheme was chosen from researching trending colour schemes on this we
 - The background colour for the "light" buttons is *rgb(122, 33, 178), rgb(221, 198, 236)*
 - The background colour for the unfollow button is *rgb(139, 227, 218), rgb(46, 205, 189)*
 
+![screenshot](documentation/test_screenshots/colourScheme1.png)
+![screenshot](documentation/test_screenshots/colourScheme2.png)
+
+
 
 ### **Typography**
 
